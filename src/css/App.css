@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.todo-container{
+  background-color: #e8e3d9;
+  max-width: 600px;
+  margin: 0px auto;
+  margin-top: 20px;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+.add-todo, .todo-list, .filter{
+  padding:20px;
+  min-height: 20px;
+}
+
+.add-todo, .todo-list{
+  border-bottom:1px dotted black;
+}
+
+.add-todo > input{
+  width:50%
+}
+
+.add-todo button{
+  margin-left: 20px;
+}
+
+.todo-list ul li {
+  padding: 10px;
+  background: white;
+  text-align: initial;
+  margin-top:10px;
+  position: relative;
+}
+
+.todo-list ul li:first-child {
+  padding: 10px;
+  background: white;
+  text-align: initial;
+  margin-top:0px;
+}
+
+.todo-list ul li small.delete{
+  color: red;
+  cursor: pointer;
+}
+
+.todo-list ul li small.delete,
+.todo-list ul li small.is-completed{
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  position: absolute;
+  height: 20px;
+}
+
+.todo-list ul li span.todo-text{
+  display:inline-block;
+  width: calc(100% - 50px);
+  margin-left: 20px;
+}
+
+
+.striked{
+  text-decoration: line-through;
+}

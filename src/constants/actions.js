@@ -1,0 +1,6 @@
+export default {
+    ADD_ITEM: 'ADD_ITEM',
+    DELETE_ITEM: 'DELETE_ITEM',
+    UPDATE_ITEM:'UPDATE_ITEM',
+    APPLY_FILTER: 'APPLY_FILTER'
+}
