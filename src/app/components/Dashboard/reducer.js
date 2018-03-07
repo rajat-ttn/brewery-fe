@@ -36,12 +36,24 @@ const beerlist = [
         beerImageUrl: '124',
         currentTemp: '7.5',
         tempRange:'6-7',
-    }]
+    }];
 
 export function beerListReducer(state = beerlist, action) {
     switch (action.type) {
         case ACTION.GET_BEER_LIST :
+
             return [ ...state, action.payload ];
+
+        case ACTION.UPDATE_BEER_TEMPERATURE :
+
+            const updatedItems = state.map(item => {
+                if(item.id === action.payload.id){
+                    return { ...item, ...action.payload }
+                }
+                return item
+            });
+
+            return updatedItems;
 
         default:
             return state;
