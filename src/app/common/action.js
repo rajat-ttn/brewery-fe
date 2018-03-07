@@ -1,4 +1,4 @@
-import ACTION from '../../../constants/actions';
+import ACTION from '../../constants/actions';
 
 export const updateBeerTemperature = (data) => {
     return {
