@@ -1,3 +1,57 @@
+.pageLayout{
+  margin:15px 30px;
+}
+.beerContainer{
+  background-color: #f1f1f1;
+  -webkit-box-shadow:inset 0 0 10px #000000, -1px 1px 8px 2px #cccccc;
+  -moz-box-shadow: inset 0 0 10px #000000,-1px 1px 8px 2px #cccccc;
+  box-shadow: inset 0 0 10px #000000,-1px 1px 8px 2px #cccccc;
+}
+.yellowContainer{
+  background-color: #f1c40f;
+}
+.blueContainer{
+  background-color: #03a9f4;
+}
+.orangeContainer{
+  background-color: #ff9800;
+}
+.greenContainer{
+  background-color: #4caf50;
+}
+.pinkContainer{
+  background-color: #ff00ff;
+}
+.purpleContainer{
+  background-color: #a569bd;
+}
+
+.commonBoxModel{
+  padding-top:15px;
+}
+.overlay {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+.overlayText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
 .App {
   text-align: center;
 }
