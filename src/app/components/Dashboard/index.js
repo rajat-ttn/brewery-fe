@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import '../../../css/bootstrap.css';
-
-import * as actions from './action';
+import { fetchBeerList } from './async.action';
 
 class Dashboard extends Component {
     constructor(props){
         super(props);
         this.state = {}
+    }
+
+    componentDidMount(){
+
+        const { fetchBeerList } = this.props;
+        fetchBeerList();
     }
     
     render() {
@@ -119,10 +124,12 @@ class Dashboard extends Component {
     }
 }
 
-function mapStateToProps(state, ownProps){
-    return {
-        beerList: state.beerList,
-    }
-}
+const mapStateToProps = (state) => ({
+    beerList: state.beerList,
+});
 
-export default connect(mapStateToProps, actions)(Dashboard);
+const mapDispatchToProps = (dispatch) => ({
+    fetchBeerList: () => dispatch(fetchBeerList()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

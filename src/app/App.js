@@ -3,7 +3,6 @@ import { Provider } from 'react-redux';
 
 import '../css/App.css';
 import '../css/bootstrap.css';
-import TodoContainer from './components/Todo/TodoContainer.js';
 import Dashboard from './components/Dashboard';
 import store from './store';
 
