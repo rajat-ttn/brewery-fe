@@ -10,22 +10,39 @@ exports[`BeerComponent component renders the BeerComponent correctly renders cor
     <div
       className="beerContainer"
     >
-      <figure>
+      <h3
+        className="beertype"
+      >
+        Aler Beer
+      </h3>
+      <span
+        className="currentTemp"
+      >
         <img
-          alt="Beer 1"
-          className="beerContainerImage"
-          src="../images/beer.png"
+          className="iconStyling"
+          src="../images/temp-icon.png"
         />
-        <figcaption
-          className="yellowContainer"
-        >
-          Aler Beer
-          <br />
-          Current Temp
-          <br />
-          Temp Range
-        </figcaption>
-      </figure>
+        --
+      </span>
+      <span
+        className="tmpLabel"
+      >
+        Current Temp
+      </span>
+      <span
+        className="rangeTemp"
+      >
+        <img
+          className="iconStyling"
+          src="../images/temp-icon.png"
+        />
+        3 - 5
+      </span>
+      <span
+        className="tmpLabel"
+      >
+        Temp Range
+      </span>
     </div>
   </div>
   <div
@@ -34,22 +51,39 @@ exports[`BeerComponent component renders the BeerComponent correctly renders cor
     <div
       className="beerContainer"
     >
-      <figure>
+      <h3
+        className="beertype"
+      >
+        Aler Beer2
+      </h3>
+      <span
+        className="currentTemp"
+      >
         <img
-          alt="Beer 1"
-          className="beerContainerImage"
-          src="../images/beer.png"
+          className="iconStyling"
+          src="../images/temp-icon.png"
         />
-        <figcaption
-          className="yellowContainer"
-        >
-          Aler Beer2
-          <br />
-          Current Temp
-          <br />
-          Temp Range
-        </figcaption>
-      </figure>
+        --
+      </span>
+      <span
+        className="tmpLabel"
+      >
+        Current Temp
+      </span>
+      <span
+        className="rangeTemp"
+      >
+        <img
+          className="iconStyling"
+          src="../images/temp-icon.png"
+        />
+        3 - 5
+      </span>
+      <span
+        className="tmpLabel"
+      >
+        Temp Range
+      </span>
     </div>
   </div>
   <div
@@ -58,22 +92,39 @@ exports[`BeerComponent component renders the BeerComponent correctly renders cor
     <div
       className="beerContainer"
     >
-      <figure>
+      <h3
+        className="beertype"
+      >
+        Aler Beer
+      </h3>
+      <span
+        className="currentTemp"
+      >
         <img
-          alt="Beer 1"
-          className="beerContainerImage"
-          src="../images/beer.png"
+          className="iconStyling"
+          src="../images/temp-icon.png"
         />
-        <figcaption
-          className="yellowContainer"
-        >
-          Aler Beer
-          <br />
-          Current Temp
-          <br />
-          Temp Range
-        </figcaption>
-      </figure>
+        --
+      </span>
+      <span
+        className="tmpLabel"
+      >
+        Current Temp
+      </span>
+      <span
+        className="rangeTemp"
+      >
+        <img
+          className="iconStyling"
+          src="../images/temp-icon.png"
+        />
+        3 - 5
+      </span>
+      <span
+        className="tmpLabel"
+      >
+        Temp Range
+      </span>
     </div>
   </div>
 </div>
