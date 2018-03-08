@@ -16,7 +16,7 @@ class Dashboard extends Component {
     }
     
     render() {
-    console.log(this.props.beerList, "beerlist----------------------->")
+    //console.log(this.props.beerList, "beerlist----------------------->")
         return (
             <div className="pageLayout">
                 <header><h1>The Brewery - Transport Refrigeration Sensors</h1></header>
