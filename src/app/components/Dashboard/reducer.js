@@ -1,15 +1,25 @@
 import ACTION from '../../../constants/actions';
-const initialState = {
-    beerList : [],
+const initialState = [];
+
+const updateBeerData = (state, {beers}) => {
+    return [...beers ]
 };
 
-const updateBeerData = (state, { beers }) => {
-    return { ...state, beerList:beers };
+const updateCurrentBeerTemperature = (state, payload) => {
+    const updatedItems = state.map(item => {
+        if(item.containerId === parseInt(payload.containerId, 10)){
+            return { ...item, ...payload }
+        }
+        return item
+    })
+
+    return updatedItems;
 };
 
 export default function beerListReducer(state = initialState, action) {
     switch (action.type) {
         case ACTION.GET_BEER_LIST: return updateBeerData(state, action.payload);
+        case ACTION.UPDATE_CONTAINER_TEMPERATURE: return updateCurrentBeerTemperature(state, action.payload);
         default: return state;
     }
 };
