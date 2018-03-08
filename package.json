@@ -24,8 +24,13 @@
       "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
     }
   },
+  "snapshotSerializers": [
+    "enzyme-to-json/serializer"
+  ],
   "devDependencies": {
     "babel-preset-stage-0": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "react-test-renderer": "^16.2.0",
     "redux-devtools-extension": "^2.13.2"
   }
 }
