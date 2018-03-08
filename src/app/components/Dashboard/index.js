@@ -29,7 +29,7 @@ class Dashboard extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    beerList: state.beerList.beers,
+    beerList: state.beerList,
 });
 
 const mapDispatchToProps = (dispatch) => ({
