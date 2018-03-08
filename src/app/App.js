@@ -13,7 +13,6 @@ class App extends Component {
 
     componentDidMount() {
         socket.on("CONTAINER_TEMPERATURE_CHANGE", (data) => {
-            console.log("data --------->",data)
             store.dispatch(actions.updateBeerTemperature(data));
         });
     }
