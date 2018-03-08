@@ -12,15 +12,32 @@ const BeerComponent = ({ beerContentDetail, temperatureType }) => {
          <div className="col-md-4 commonBoxModel">
               <div className="beerContainer">
                    <h3 className="beertype">{beerType}</h3>
-                   <span className="currentTemp danger">
-                       <img className="iconStyling" src="../images/temp-icon.png" />
-                       {currentTemperature ? ConvertTempCelciusToFahrenheit(temperatureType,currentTemperature) : '--'}&#8451;
-                   </span>
+                   {
+                     currentTemperature > tempRange[1] ?
+                        <span className="currentTemp danger red">
+                            <img className="iconStyling" src="../images/temp-icon.png" />
+                            {currentTemperature ? ConvertTempCelciusToFahrenheit(temperatureType,currentTemperature) : '--'}&#8451;
+                        </span>
+                        : currentTemperature < tempRange[0] ?
+                            <span className="currentTemp danger blue">
+                                <img className="iconStyling" src="../images/temp-icon.png" />
+                                {currentTemperature ? ConvertTempCelciusToFahrenheit(temperatureType, currentTemperature) : '--'}&#8451;
+                            </span>
+                            :
+                            <span className="currentTemp">
+                                 <img className="iconStyling" src="../images/temp-icon.png" />
+                                 {currentTemperature ? ConvertTempCelciusToFahrenheit(temperatureType,currentTemperature) : '--'}&#8451;
+                            </span>
+
+                   }
+
                    <span className="tmpLabel">Current Temp</span>
+
                    <span className="rangeTemp">
                        <img className="iconStyling" src="../images/temp-icon.png" />
-                       {`${minTemp} - ${maxTemp}`} &#8451;
-                       </span>
+                       {`${tempRange[0]} - ${tempRange[1]}`}&#8451;
+                   </span>
+
                    <span className="tmpLabel">Temp Range</span>
               </div>
           </div>
