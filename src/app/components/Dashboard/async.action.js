@@ -1,12 +1,11 @@
 import API from '../../../config/endpoints';
-import TextConstant from '../../../constants/textConstants';
 import { getBeerList } from './action'
 import { setErrorMessage, removeErrorMessage } from '../Common/ErrorHandling/action'
 
 export const fetchBeerList = () => async (dispatch) => {
     const { DOMAIN, BASE, VERSION, DASHBOARD } = API.ENDPOINT;
     let {url, method } = DASHBOARD.getBeer;
-    let beerListUrl = `${DOMAIN}://${BASE}${VERSION}${url}/123`;
+    let beerListUrl = `${DOMAIN}://${BASE}${VERSION}${url}`;
     const response = await fetch(beerListUrl, {
         method,
         headers: { 'Content-Type': 'application/json' },
