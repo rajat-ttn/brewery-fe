@@ -5,7 +5,8 @@ import '../../../css/bootstrap.css';
 import { fetchBeerList } from './async.action';
 import { setTemperatureType } from '../Common/RunTimeConfig/action';
 import Header from '../Common/Header'
-import ContainerComponent from '../ContainerComponent'
+import BeerComponent from '../BeerComponent';
+import TemperatureFilter from './temperatureFilter';
 
 class Dashboard extends Component {
     constructor(props){
@@ -32,7 +33,19 @@ class Dashboard extends Component {
             <div>
                 <Header />
                 <div className="pageLayout">
-                <ContainerComponent beerList={beerList} temperatureType={temperatureType} changeTemperatureType={this.changeTemperatureType} />
+                    <div className="row">
+                        <div className="col-lg-2 pull-right">
+                            <TemperatureFilter temperatureType={temperatureType} changeTemperatureType={this.changeTemperatureType}/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        {
+                            beerList && beerList.length ?
+                                beerList.map((beer, index) => (
+                                    <BeerComponent beerContentDetail={beer} key={beer.id} temperatureType={temperatureType} />
+                                )) : null
+                        }
+                    </div>
                 </div>
             </div>
         );
