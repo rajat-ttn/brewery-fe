@@ -16,16 +16,16 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
+    }
+  },
   "devDependencies": {
+    "babel-preset-stage-0": "^6.24.1",
     "redux-devtools-extension": "^2.13.2"
   }
 }
-
-
-//beerType
-//berrImgUrl
-//range: [min. max]
-//currentTemp
