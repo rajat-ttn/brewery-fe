@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
 import '../../../css/bootstrap.css';
 import { fetchBeerList } from './async.action';
@@ -28,6 +29,14 @@ class Dashboard extends Component {
         );
     }
 }
+
+Dashboard.defaultProps = {
+    beerList: [],
+};
+
+Dashboard.propTypes = {
+    fetchBeerList: PropTypes.func.isRequired,
+};
 
 const mapStateToProps = (state) => ({
     beerList: state.beerList,
