@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
 import '../../../css/bootstrap.css';
 import { fetchBeerList } from './async.action';
@@ -19,14 +20,23 @@ class Dashboard extends Component {
     render() {
         const { beerList } = this.props;
         return (
-            <div className="pageLayout">
+            <div>
                 <Header />
+                <div className="pageLayout">
                 <ContainerComponent beerList={beerList} />
-
+                </div>
             </div>
         );
     }
 }
+
+Dashboard.defaultProps = {
+    beerList: [],
+};
+
+Dashboard.propTypes = {
+    fetchBeerList: PropTypes.func.isRequired,
+};
 
 const mapStateToProps = (state) => ({
     beerList: state.beerList,

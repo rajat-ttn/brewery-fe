@@ -7,7 +7,7 @@ const updateBeerData = (state, {beers}) => {
 
 const updateCurrentBeerTemperature = (state, payload) => {
     const updatedItems = state.map(item => {
-        if(item.containerId === parseInt(payload.containerId, 10)){
+        if(parseInt(item.containerId,0) === parseInt(payload.containerId, 10)){
             return { ...item, ...payload }
         }
         return item

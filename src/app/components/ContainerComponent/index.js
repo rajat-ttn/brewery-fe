@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 import BeerComponent from '../BeerComponent'
 import './style.css';
 
@@ -15,4 +16,9 @@ const ContainerComponent = ({ beerList }) => {
         </div>
     );
 }
+
+ContainerComponent.propTypes = {
+    beerList: PropTypes.array.isRequired,
+};
+
 export default ContainerComponent;

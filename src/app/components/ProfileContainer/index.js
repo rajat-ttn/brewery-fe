@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-const Header = (props) => {
+const ProfileContainer = (props) => {
     return (
         <header>
              <img src="../images/logo.png" alt="logo" className="logoStyle"/>
@@ -10,4 +10,4 @@ const Header = (props) => {
     );
 }
 
-export default Header;
+export default ProfileContainer;
