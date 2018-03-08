@@ -12,7 +12,8 @@ import socket from './socket';
 class App extends Component {
 
     componentDidMount() {
-        socket.on("BEER_TEMPERATURE_CHANGE", (data) => {
+        socket.on("CONTAINER_TEMPERATURE_CHANGE", (data) => {
+            console.log("data --------->",data)
             store.dispatch(actions.updateBeerTemperature(data));
         });
     }
