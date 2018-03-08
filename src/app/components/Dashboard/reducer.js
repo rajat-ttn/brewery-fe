@@ -2,8 +2,6 @@ import ACTION from '../../../constants/actions';
 const initialState = [];
 
 const updateBeerData = (state, {beers}) => {
-    console.log("update payload ----->",beers)
-    //console.log("update payload ----->",payload)
     return [...beers ]
 };
 

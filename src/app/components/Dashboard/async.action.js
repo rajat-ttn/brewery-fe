@@ -12,7 +12,6 @@ export const fetchBeerList = () => async (dispatch) => {
     });
     const { status } = response;
     const data = await response.json();
-    console.log("data async ------>",data)
     if( status === 200){
         dispatch(getBeerList(data));
     } else {
