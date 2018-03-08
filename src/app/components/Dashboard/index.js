@@ -23,87 +23,52 @@ class Dashboard extends Component {
                 <div className="row">
                     <div className="col-md-4 commonBoxModel">
                         <div className="beerContainer">
-                            <figure>
-                             <img src="../images/beer.png" alt="Beer 1" className="beerContainerImage"/>
-                            <figcaption className="yellowContainer">
+                                <h3 className="beertype">KingFisher</h3>
+                                <span className="currentTemp">34</span>
+                                <span className="tmpLabel">Current Temp</span>
+                                <span className="rangeTemp">20-40</span>
+                                <span className="tmpLabel">Temp Range</span>
+
+                        </div>
+                    </div>
+
+                    <div className="col-md-4 commonBoxModel">
+                        <div className="beerContainer">
                                 Beer 1<br/>
                                 Current Temp<br/>
                                 Temp Range
-                            </figcaption>
-                            </figure>
-
                         </div>
                     </div>
 
                     <div className="col-md-4 commonBoxModel">
                         <div className="beerContainer">
-                            <figure>
-                             <img src="../images/beer.png" alt="Beer 2"  className="beerContainerImage"/>
-                            <figcaption class="blueContainer">
-                                Beer 2<br/>
+                                Beer 1<br/>
                                 Current Temp<br/>
                                 Temp Range
-                            </figcaption>
-                            </figure>
-
                         </div>
                     </div>
 
                     <div className="col-md-4 commonBoxModel">
                         <div className="beerContainer">
-                            <figure>
-                             <img src="../images/beer.png" alt="Beer 3"  className="beerContainerImage"/>
-                            <figcaption className="pinkContainer">
-                                Beer 3<br/>
+                                Beer 1<br/>
                                 Current Temp<br/>
                                 Temp Range
-                            </figcaption>
-                            </figure>
-
                         </div>
                     </div>
 
                     <div className="col-md-4 commonBoxModel">
                         <div className="beerContainer">
-                            <figure>
-                             <img src="../images/beer.png" alt="Beer 4"  className="beerContainerImage"/>
-                            <figcaption class="greenContainer">
-                                Beer 4<br/>
+                                Beer 1<br/>
                                 Current Temp<br/>
                                 Temp Range
-                            </figcaption>
-                            </figure>
-                            <div className="overlay commonBoxModel">
-                                 <div className="overlayText">4.5 <p>Below</p></div>
-                            </div>
                         </div>
                     </div>
 
                     <div className="col-md-4 commonBoxModel">
                         <div className="beerContainer">
-                            <figure>
-                             <img src="../images/beer.png" alt="Beer 5"  className="beerContainerImage"/>
-                            <figcaption className="orangeContainer">
-                                Beer 5<br/>
+                                Beer 1<br/>
                                 Current Temp<br/>
                                 Temp Range
-                            </figcaption>
-                            </figure>
-
-                        </div>
-                    </div>
-
-                    <div className="col-md-4 commonBoxModel">
-                        <div className="beerContainer">
-                            <figure>
-                             <img src="../images/beer.png" alt="Beer 6"  className="beerContainerImage"/>
-                            <figcaption className="purpleContainer">
-                                Beer 6<br/>
-                                Current Temp<br/>
-                                Temp Range
-                            </figcaption>
-                            </figure>
-
                         </div>
                     </div>
 

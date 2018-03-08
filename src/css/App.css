@@ -2,19 +2,41 @@
   background-size: contain;
 }
 .pageLayout{
-  margin:15px 50px 0   50px;
+  margin:15px 30px 0 30px;
 }
 .beerContainer{
   background-color: #f1f1f1;
+  border-radius:8px;
+  text-align: right;
+  padding-top:35px;
+  padding-right: 25px;
+  width:100%;
+  height:270px;
+  color:#fff;
+  background-image: url("../assets/images/container.png");
   -webkit-box-shadow: -1px 1px 8px 2px #cccccc;
   -moz-box-shadow: -1px 1px 8px 2px #cccccc;
   box-shadow: -1px 1px 8px 2px #cccccc;
 }
+.beertype{
+  font: bold 28px Proxima Nova, Arial, Helvetica, sans-serif;
+}
+.currentTemp{
+  font: bold 44px Proxima Nova, Arial, Helvetica, sans-serif;
+  display:block;
+}
+.rangeTemp{
+  font: bold 35px Proxima Nova, Arial, Helvetica, sans-serif;
+  display:block;
+}
+.tmpLabel{
+  font: regular 18px/150% Proxima Nova, Arial, Helvetica, sans-serif;
+}
 .beerContainer:hover{
   background-color: #f1f1f1;
-  -webkit-box-shadow: -1px 1px 15px 5px #cccccc;
-  -moz-box-shadow: -1px 1px 15px 5px #cccccc;
-  box-shadow: -1px 2px 20px 5px #cccccc;
+  -webkit-box-shadow: -1px 1px 15px 5px #f1c40f;
+  -moz-box-shadow: -1px 1px 15px 5px #f1c40f;
+  box-shadow: -1px 2px 20px 5px #f1c40f;
 }
 .beerContainer > figure > img{padding:10px;}
 .beerContainerImage{
@@ -48,7 +70,7 @@ figcaption{
   background-color: #a569bd;
 }
 .commonBoxModel{
-  padding: 15px 40px;
+  padding: 15px 15px;
 }
 .overlay {
   position: absolute;
