@@ -121,6 +121,23 @@ figcaption{
 }
 .red{color:red}
 .blue{color:blue}
+.colorInfo{
+  float: right;
+  margin-top: 10px;
+  margin-right:10px;
+}
+.colorInfo span{
+  float:left;
+  margin-right:8px;
+}
+.status-circle{
+  width:20px;
+  height:20px;
+  border-radius: 10px;
+  border:1px solid #000000;
+}
+.blueBackground{background-color:blue}
+.redBackground{background-color:red}
 @-webkit-keyframes condemned_blink_effect {
   0% {
     visibility: hidden;
