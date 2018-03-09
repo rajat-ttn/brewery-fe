@@ -21,14 +21,13 @@
   -moz-box-shadow: -1px 1px 8px 2px #cccccc;
   box-shadow: -1px 1px 8px 2px #cccccc;
   position: relative;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
 
 }
 .beertype{
-  font: bold 28px Proxima Nova, Arial, Helvetica, sans-serif;
+  font: bold 28px/46px Proxima Nova, Arial, Helvetica, sans-serif;
 }
 .currentTemp{
-  font: bold 50px Proxima Nova, Arial, Helvetica, sans-serif;
+  font: bold 65px/57px Proxima Nova, Arial, Helvetica, sans-serif;
   display:block;
 }
 .rangeTemp{
@@ -40,14 +39,20 @@
   margin-right:5px;
 }
 .tmpLabel{
-  font: regular 18px Proxima Nova, Arial, Helvetica, sans-serif;
+  font: normal 14px Proxima Nova, Arial, Helvetica, sans-serif;
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .logoStyle{
-  width:70px;
-  height:auto;
-  float:left;
+  width: 41px;
+  height: auto;
+  float: left;
+  margin-top: 6px;
+  margin-left: 20px;
+  margin-right: 6px;
+}
+span.currentTemp> span {
+  font-size: 60px;
 }
 .beerContainer:hover{
   background-color: #f1f1f1;
@@ -81,24 +86,21 @@ header h1{
   border-radius: 8px;
   background-color: rgba(0,0,0,0.5);
   z-index: 2;
-  cursor: pointer;    padding-right: 25px;
+  padding-right: 25px;
   padding-top: 22px;
 }
-.overlayText{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
+.redOverlay{
+  background-color: rgba(1620,0,0,0.5);
+}
+.blueOverlay{
+  background-color: rgba(0,0,1620,0.5);
 }
 .danger {
   -webkit-animation: 2s linear infinite condemned_blink_effect; // for android
   animation: 2s linear infinite condemned_blink_effect;
 }
 .red{color:red}
-.blue{color:blue}
+.blue{color:#025ab9}
 .beerlistSection{
   padding-top: 20px;
 }
@@ -120,7 +122,7 @@ header h1{
   margin-right:5px;
   margin-left: 25px;
 }
-.blueBackground{background-color:blue}
+.blueBackground{background-color:#025ab9}
 .redBackground{background-color:red}
 @-webkit-keyframes condemned_blink_effect {
   0% {
@@ -154,6 +156,12 @@ footer{
 }
 .dropdownSection{
   position: absolute;
-  right: 30px;
-  top: 11px;
+  right: 35px;
+  top: 18px;
+}
+.dropdownSection > select.form-control:not([size]):not([multiple]){
+  height: 22px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 14px;
 }
