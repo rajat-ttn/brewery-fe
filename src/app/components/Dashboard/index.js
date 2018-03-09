@@ -5,6 +5,7 @@ import '../../../css/bootstrap.css';
 import { fetchBeerList } from './async.action';
 import { setTemperatureType } from '../Common/RunTimeConfig/action';
 import Header from '../Common/Header'
+import Footer from '../Common/Footer'
 import BeerComponent from '../BeerComponent';
 import TemperatureFilter from './temperatureFilter';
 
@@ -47,6 +48,7 @@ class Dashboard extends Component {
                         }
                     </div>
                 </div>
+                <Footer />
             </div>
         );
     }
