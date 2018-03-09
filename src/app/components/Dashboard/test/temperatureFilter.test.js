@@ -3,28 +3,27 @@ import { shallow } from 'enzyme';
 import TemperatureFilter from '../temperatureFilter';
 
 describe('Temperature Filter filters beer based on temperature correctly', () => {
+    let allProps,
+        temperatureFilter;
     const temperatureType = 'CELSIUS';
     const event = {
         preventDefault() {},
         target: { value: 'FAHRENHEIT' }
     };
-    let allProps;
     beforeEach(() => {
         allProps = {
             temperatureType: "FAHRENHEIT",
             changeTemperatureType: () => {}
         };
+        temperatureFilter = shallow(<TemperatureFilter {...allProps} />);
     });
 
     it('temperature select should work properly', () => {
-        const wrapper = shallow(<TemperatureFilter {...allProps} />);
-        expect(wrapper).toMatchSnapshot()
+        expect(temperatureFilter).toMatchSnapshot()
     });
 
     it('trigger Event', () => {
-        const wrapper = shallow(<TemperatureFilter {...allProps} />);
-        wrapper.find('select').simulate('change', event);
-        expect(wrapper.find('select').props().value).toBe("FAHRENHEIT");
-
+        temperatureFilter.find('select').simulate('change', event);
+        expect(temperatureFilter.find('select').props().value).toBe("FAHRENHEIT");
     });
 });

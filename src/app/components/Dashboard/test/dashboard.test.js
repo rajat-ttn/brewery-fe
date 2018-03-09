@@ -1,7 +1,7 @@
 import React from 'react';
 import { fetchBeerList } from '../async.action';
-import { setTemperatureType } from '../../Common/RunTimeConfig/action';
 import { shallow } from 'enzyme';
+import { setTemperatureType } from '../../Common/RunTimeConfig/action';
 import {DashboardContainer, mapStateToProps, mapDispatchToProps} from '../index';
 
 
@@ -11,7 +11,8 @@ fetchBeerList.mockReturnValue(FETCH_ACTION);
 
 
 describe('BeerComponent component renders the BeerComponent correctly', () => {
-    let allProps;
+    let allProps,
+        dashboardContainer;
 
     beforeEach(() => {
         allProps = {
@@ -20,27 +21,28 @@ describe('BeerComponent component renders the BeerComponent correctly', () => {
             fetchBeerList: () => {},
             setTemperatureType: () => {}
         };
+        dashboardContainer = shallow(<DashboardContainer {...allProps}  />);
     });
 
 
     it('renders correctly with beer detail and temperature', () => {
-        expect(<DashboardContainer {...allProps}  />).toMatchSnapshot();
+        expect(dashboardContainer).toMatchSnapshot();
     });
 
     it('renders correctly without beerList', () => {
         allProps.beerList = [];
-        expect(<DashboardContainer {...allProps}  />).toMatchSnapshot();
+        expect(dashboardContainer).toMatchSnapshot();
     });
 
     it('renders correctly with different temperature', () => {
         allProps.temperatureType = "CELSIUS";
-        expect(<DashboardContainer {...allProps}  />).toMatchSnapshot();
+        expect(dashboardContainer).toMatchSnapshot();
     });
 });
 
 describe('mapStateToProps ', () => {
     const state = {
-        beerList: [{ a: 20 }],
+        beerList: [{beerType : "Aler Beer", containerId: 1, id: 1, tempRange: [3,5]}],
         temperatureType: {
             temperatureType: 'CELSIUS',
         }

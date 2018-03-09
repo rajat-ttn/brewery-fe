@@ -1,15 +1,35 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import BeerComponent from './index';
 
 
 describe('BeerComponent component renders the BeerComponent correctly', () => {
+    let beerComp,
+        allProps;
+
+    beforeEach(()=> {
+        allProps = {
+            beerContentDetail: { beerType : "Aler Beer", containerId: 1, id: 1, tempRange: [3,5] },
+            temperatureType: "FAHRENHEIT"
+        };
+        beerComp = shallow(<BeerComponent {...allProps} />);
+    });
+
+    it('render the BeerComponent component', () => {
+        expect(beerComp.length).toEqual(1)
+    });
+
     it('renders correctly with beer detail and temperature', () => {
-        const beerContentDetail = {beerType : "Aler Beer", containerId: 1, id: 1, tempRange: [3,5]};
-        const temperatureType = "FAHRENHEIT";
-        const beerComp = renderer.create(
-            <BeerComponent beerContentDetail={beerContentDetail} temperatureType={"FAHRENHEIT"}  />
-        );
-        expect(beerComp.toJSON()).toMatchSnapshot();
+        expect(beerComp).toMatchSnapshot();
+    });
+
+    it('renders with different temperature', () => {
+        allProps.temperatureType = "CELSIUS";
+        expect(beerComp).toMatchSnapshot();
+    });
+
+    it('renders with no data', () => {
+        allProps.beerContentDetail = {};
+        expect(beerComp).toMatchSnapshot();
     });
 });
