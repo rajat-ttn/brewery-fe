@@ -8,7 +8,7 @@
   background-color: #f1f1f1;
   border-radius:8px;
   text-align: right;
-  padding-top:35px;
+  padding-top:25px;
   padding-right: 25px;
   width:100%;
   height:260px;
@@ -22,7 +22,7 @@
   font: bold 28px Proxima Nova, Arial, Helvetica, sans-serif;
 }
 .currentTemp{
-  font: bold 44px Proxima Nova, Arial, Helvetica, sans-serif;
+  font: bold 48px Proxima Nova, Arial, Helvetica, sans-serif;
   display:block;
 }
 .rangeTemp{
@@ -31,6 +31,7 @@
 }
 .iconStyling{
   margin-top: -8px;
+  margin-right:5px;
 }
 .tmpLabel{
   font: regular 18px Proxima Nova, Arial, Helvetica, sans-serif;
@@ -60,6 +61,11 @@ header h1{
   font-size: 35px;
   display:inline-block;
 }
+.colorInfo{
+  float:right;
+  margin-top:10px;
+  margin-right:10px;
+}
 .beerContainer > figure > img{padding:10px;}
 .beerContainerImage{
   width:100%;
@@ -74,22 +80,28 @@ figcaption{
   box-shadow: -1px 1px 8px 2px #cccccc;
 }
 .yellowContainer{
-  background-color: #f1c40f;
+  color: #f1c40f;
+  border-color:#f1c40f;
 }
 .blueContainer{
-  background-color: #03a9f4;
+  color: #03a9f4;
+  border-color:#03a9f4;
 }
 .orangeContainer{
-  background-color: #ff9800;
+  color: #ff9800;
+  border-color:#ff9800;
 }
 .greenContainer{
-  background-color: #4caf50;
+  color: #4caf50;
+  border-color:#4caf50;
 }
 .pinkContainer{
-  background-color: #ff00ff;
+  color: #ff00ff;
+  border-color:#ff00ff;
 }
 .purpleContainer{
-  background-color: #a569bd;
+  color: #a569bd;
+  border-color:#a569bd;
 }
 .commonBoxModel{
   padding: 15px 15px;
@@ -116,6 +128,7 @@ figcaption{
 }
 
 
+
 /*css for 2nd design*/
 .beerContainer{
   background-color: #ffffff;
@@ -133,7 +146,7 @@ figcaption{
 }
 .status-circle{
   width:20px; height:20px; border-radius:10px;  float: left;
-  margin-right: 10px;
+  margin-right: 10px;border:1px solid #000000;
 }
 .normal-temp{
   background-color:green;
@@ -144,8 +157,11 @@ figcaption{
 .high-temp{
   background-color:red;
 }
-.danger{
-  animation: blink .5s step-end infinite alternate;
+.dangerHigh{
+  animation: blinkRed .5s step-end infinite alternate;
+}
+.dangerLow{
+  animation: blinkBlue .5s step-end infinite alternate;
 }
 .borderBox{
   border:1px solid #000;
@@ -173,9 +189,9 @@ figcaption{
   margin:2% 10%;
 }
 
-@keyframes blink {
+@keyframes blinkRed {
   50% {border:4px solid #ff0000;}
 }
-table{ /*or other element you want*/
-  animation: blink .5s step-end infinite alternate;
+@keyframes blinkBlue {
+  50% {border:4px solid #0000ff;}
 }
