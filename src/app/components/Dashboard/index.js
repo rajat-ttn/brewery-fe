@@ -62,14 +62,16 @@ Dashboard.propTypes = {
     temperatureType: PropTypes.string.isRequired,
 };
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
     beerList: state.beerList,
     temperatureType: state.temperatureType.temperatureType,
 });
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
     fetchBeerList: () => dispatch(fetchBeerList()),
     setTemperatureType: (value) => dispatch(setTemperatureType(value)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
+
+export { Dashboard as DashboardContainer };

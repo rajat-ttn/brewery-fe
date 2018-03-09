@@ -6,7 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <TemperatureFilter
     changeTemperatureType={[Function]}
-    temperatureType="CELSIUS"
+    temperatureType="FAHRENHEIT"
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -34,7 +34,7 @@ ShallowWrapper {
       ],
       "className": "input-sm form-control input-s-sm inline",
       "onChange": [Function],
-      "value": "CELSIUS",
+      "value": "FAHRENHEIT",
     },
     "ref": null,
     "rendered": Array [
@@ -85,7 +85,7 @@ ShallowWrapper {
         ],
         "className": "input-sm form-control input-s-sm inline",
         "onChange": [Function],
-        "value": "CELSIUS",
+        "value": "FAHRENHEIT",
       },
       "ref": null,
       "rendered": Array [

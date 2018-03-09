@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BeerComponent component renders the BeerComponent correctly renders correctly with beer detail and temperature 1`] = `
+<Dashboard
+  beerList={
+    Array [
+      Object {
+        "beerType": "Aler Beer",
+        "containerId": 1,
+        "id": 1,
+        "tempRange": Array [
+          3,
+          5,
+        ],
+      },
+    ]
+  }
+  fetchBeerList={[Function]}
+  setTemperatureType={[Function]}
+  temperatureType="FAHRENHEIT"
+/>
+`;
+
+exports[`BeerComponent component renders the BeerComponent correctly renders correctly with different temperature 1`] = `
+<Dashboard
+  beerList={
+    Array [
+      Object {
+        "beerType": "Aler Beer",
+        "containerId": 1,
+        "id": 1,
+        "tempRange": Array [
+          3,
+          5,
+        ],
+      },
+    ]
+  }
+  fetchBeerList={[Function]}
+  setTemperatureType={[Function]}
+  temperatureType="CELSIUS"
+/>
+`;
+
+exports[`BeerComponent component renders the BeerComponent correctly renders correctly without beerList 1`] = `
+<Dashboard
+  beerList={Array []}
+  fetchBeerList={[Function]}
+  setTemperatureType={[Function]}
+  temperatureType="FAHRENHEIT"
+/>
+`;
