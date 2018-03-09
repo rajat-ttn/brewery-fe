@@ -1,24 +1,24 @@
-import React, {Component} from 'react';
-import logo from '../assets/logo.svg';
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
 import '../css/App.css';
-import TodoContainer from './components/Todo/TodoContainer.js';
-import {Provider} from 'react-redux'; //← Bridge React and Redux
+import '../css/bootstrap.css';
+import Dashboard from './components/Dashboard';
 import store from './store';
+import { updateBeerTemperature } from './common/action';
+import socket from './socket';
 
 class App extends Component {
+
+    componentDidMount() {
+        socket.on("CONTAINER_TEMPERATURE_CHANGE", (data) => {
+            store.dispatch(updateBeerTemperature(data));
+        });
+    }
+
     render() {
         return (
             <Provider store={store}>
-                <div className="App">
-                    <header className="App-header">
-                        <img src={logo} className="App-logo" alt="logo"/>
-                        <h1 className="App-title">Welcome to React Todo App</h1>
-                    </header>
-                    <p className="App-intro">
-                        Add Todos!
-                    </p>
-                    <TodoContainer></TodoContainer>
-                </div>
+                <Dashboard />
             </Provider>
         );
     }

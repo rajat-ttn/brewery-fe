@@ -1,6 +1,9 @@
-import * as todo from './components/Todo/reducer'
+import beerListReducer from './components/Dashboard/reducer';
+import errorHandlingReducer from './components/Common/ErrorHandling/reducer';
+import temperatureTypeReducer from './components/Common/RunTimeConfig/reducer';
 
 export default {
-    todoList : todo.todoListReducer,
-    filter: todo.filterReducer
+    beerList: beerListReducer,
+    error: errorHandlingReducer,
+    temperatureType: temperatureTypeReducer,
 };

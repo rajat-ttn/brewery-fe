@@ -1,94 +1,167 @@
-.App {
-  text-align: center;
+*{
+  font-family: Proxima Nova, Arial, Helvetica, sans-serif;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.dashboardBackground{
+  background-size: contain;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.pageLayout{
+  margin:0 30px;
 }
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.todo-container{
-  background-color: #e8e3d9;
-  max-width: 600px;
-  margin: 0px auto;
-  margin-top: 20px;
-  border-radius: 25px;
-  border: 1px solid black;
-}
-.add-todo, .todo-list, .filter{
-  padding:20px;
-  min-height: 20px;
-}
-
-.add-todo, .todo-list{
-  border-bottom:1px dotted black;
-}
-
-.add-todo > input{
-  width:50%
-}
-
-.add-todo button{
-  margin-left: 20px;
-}
-
-.todo-list ul li {
-  padding: 10px;
-  background: white;
-  text-align: initial;
-  margin-top:10px;
+.beerContainer{
+  background-color: #f1f1f1;
+  border-radius:8px;
+  text-align: right;
+  padding-top:25px;
+  padding-right: 25px;
+  width:100%;
+  height:255px;
+  color:#fff;
+  background-image: url("../assets/images/container.png");
+  -webkit-box-shadow: -1px 1px 8px 2px #cccccc;
+  -moz-box-shadow: -1px 1px 8px 2px #cccccc;
+  box-shadow: -1px 1px 8px 2px #cccccc;
   position: relative;
-}
 
-.todo-list ul li:first-child {
-  padding: 10px;
-  background: white;
-  text-align: initial;
-  margin-top:0px;
 }
-
-.todo-list ul li small.delete{
-  color: red;
-  cursor: pointer;
+.beertype{
+  font: bold 28px/46px Proxima Nova, Arial, Helvetica, sans-serif;
 }
-
-.todo-list ul li small.delete,
-.todo-list ul li small.is-completed{
-  display: inline-block;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-  position: absolute;
-  height: 20px;
+.currentTemp{
+  font: bold 65px/57px Proxima Nova, Arial, Helvetica, sans-serif;
+  display:block;
 }
-
-.todo-list ul li span.todo-text{
-  display:inline-block;
-  width: calc(100% - 50px);
+.rangeTemp{
+  font: bold 35px Proxima Nova, Arial, Helvetica, sans-serif;
+  display:block;
+}
+.iconStyling{
+  margin-top: -8px;
+  margin-right:5px;
+}
+.tmpLabel{
+  font: normal 14px Proxima Nova, Arial, Helvetica, sans-serif;
+  display: block;
+  margin-bottom: 15px;
+}
+.logoStyle{
+  width: 41px;
+  height: auto;
+  float: left;
+  margin-top: 6px;
   margin-left: 20px;
+  margin-right: 6px;
+}
+span.currentTemp> span {
+  font-size: 60px;
+}
+.beerContainer:hover{
+  background-color: #f1f1f1;
+  -webkit-box-shadow: -1px 1px 15px 5px #f1c40f;
+  -moz-box-shadow: -1px 1px 15px 5px #f1c40f;
+  box-shadow: -1px 2px 20px 5px #f1c40f;
+}
+header{
+  background-color: #34302c;
+  color:#ffffff;
+  border-bottom: 2px solid #000000;
+  box-shadow: 0 -2px 4px 2px #000000;
+  -moz-box-shadow: 0 -2px 4px 2px #000000;
+  -webkit-box-shadow: 0 -2px 4px 2px #000000;
+}
+header h1{
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+.commonBoxModel{
+  padding: 15px 15px;
+}
+.overlay {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  padding-right: 25px;
+  padding-top: 22px;
+}
+.redOverlay{
+  background-color: rgba(1620,0,0,0.5);
+}
+.blueOverlay{
+  background-color: rgba(0,0,1620,0.5);
+}
+.danger {
+  -webkit-animation: 2s linear infinite condemned_blink_effect; // for android
+  animation: 2s linear infinite condemned_blink_effect;
+}
+.red{color:red}
+.blue{color:#025ab9}
+.beerlistSection{
+  padding-top: 20px;
+}
+.colorInfoWrapper{
+  position:relative;
+}
+.colorInfo{
+  top: 5px;
+  right:8px;
+  position: absolute;
 }
 
-
-.striked{
-  text-decoration: line-through;
+.status-circle{
+  width:12px;
+  height:12px;
+  border-radius: 6px;
+  border:1px solid #000000;
+  display:inline-block;
+  margin-right:5px;
+  margin-left: 25px;
+}
+.blueBackground{background-color:#025ab9}
+.redBackground{background-color:red}
+@-webkit-keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  20% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  20% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+footer{
+  background-color: #34302c;
+  color:#ffffff;
+  padding:5px;
+  text-align: center;
+  margin-top:15px;
+  border-top:2px solid #aaaaaa;
+}
+.dropdownSection{
+  position: absolute;
+  right: 35px;
+  top: 18px;
+}
+.dropdownSection > select.form-control:not([size]):not([multiple]){
+  height: 22px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 14px;
 }
