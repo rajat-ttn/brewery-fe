@@ -1,14 +1,15 @@
 *{
   font-family: Proxima Nova, Arial, Helvetica, sans-serif;
 }
-.dashboardBackground{
-  background-size: contain;
+body{ background-color: #f1f1f2;}
+.msgStyle{
+  text-align: center; width:100%; margin-top: 10px; font-weight: bold;
 }
 .pageLayout{
   margin:0 30px;
 }
 .beerContainer{
-  background-color: #f1f1f1;
+  background-color: #e1e1e1;
   border-radius:8px;
   text-align: right;
   padding-top:25px;
@@ -99,7 +100,7 @@ header h1{
   -webkit-animation: 2s linear infinite condemned_blink_effect; // for android
   animation: 2s linear infinite condemned_blink_effect;
 }
-.red{color:red}
+.red{color:#ff0000}
 .blue{color:#025ab9}
 .beerlistSection{
   padding-top: 20px;
@@ -114,16 +115,15 @@ header h1{
 }
 
 .status-circle{
-  width:12px;
-  height:12px;
-  border-radius: 6px;
-  border:1px solid #000000;
-  display:inline-block;
-  margin-right:5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 5px;
   margin-left: 25px;
 }
 .blueBackground{background-color:#025ab9}
-.redBackground{background-color:red}
+.redBackground{background-color:#ff0000}
 @-webkit-keyframes condemned_blink_effect {
   0% {
     visibility: hidden;

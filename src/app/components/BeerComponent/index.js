@@ -2,6 +2,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import { ConvertTempCelciusToFahrenheit } from '../../../util/helper';
 import './style.css';
+import { OVERLAY_COLOR } from '../../../constants/textConstants';
 
 const BeerComponent = ({ beerContentDetail, temperatureType }) => {
     const { beerType, tempRange, currentTemperature } = beerContentDetail;
