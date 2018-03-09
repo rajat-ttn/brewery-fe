@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing should render children correctly 1`] = `
+<div>
+  <header>
+    <img
+      alt="logo"
+      className="logoStyle"
+      src="../images/logo.png"
+    />
+    <h1>
+      Welcome to Baz Brewery
+    </h1>
+    <div
+      className="colorInfo"
+    >
+      <div>
+        <span
+          className="status-circle blueBackground"
+        />
+        Current Temperature is Below Temperature Range
+      </div>
+      <div>
+        <span
+          className="status-circle redBackground"
+        />
+        Current Temperature is  Above Temperature Range
+      </div>
+    </div>
+  </header>
+  <div
+    className="pageLayout"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-lg-2 pull-right"
+      >
+        <select
+          className="input-sm form-control input-s-sm inline"
+          onChange={[Function]}
+          value="CELSIUS"
+        >
+          <option
+            value="CELSIUS"
+          >
+            Celsius
+          </option>
+          <option
+            value="FAHRENHEIT"
+          >
+            Fahrenheit
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      className="row"
+    />
+  </div>
+</div>
+`;
