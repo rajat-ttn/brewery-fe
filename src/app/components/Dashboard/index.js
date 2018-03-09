@@ -13,8 +13,9 @@ class Dashboard extends Component {
     constructor(props){
         super(props);
         this.state = {
-            audio: new Audio('http://www.galls.com/wav/SVPPhaser.wav'),
-        }
+            audio: new Audio('/sounds/Alarm.mp3'),
+        };
+        this.AudioEndEvent();
     }
 
     componentDidMount(){
@@ -22,18 +23,21 @@ class Dashboard extends Component {
         fetchBeerList();
     }
 
-    componentWillReceiveProps({ beerList, isMute }) {
+    componentWillReceiveProps({ isMute, isAnyBeerOutOfTempRange }) {
         const { audio } = this.state;
-        if (isMute) {
+        if (isMute || !isAnyBeerOutOfTempRange) {
             audio.pause();
-            return;
-        } else {
-            beerList.filter(({ currentTemperature, tempRange }) => {
-                if (currentTemperature < tempRange[0] || currentTemperature > tempRange[1]) {
-                    audio.play();
-                }
-            });
+        } else if (isAnyBeerOutOfTempRange) {
+            audio.play();
         };
+    };
+
+    AudioEndEvent = () => {
+        this.state.audio.onended = () => {
+            if (this.props.isAnyBeerOutOfTempRange && !this.props.isMute) {
+                this.state.audio.play();
+            }
+        }
     };
 
     changeTemperatureType = event => {
@@ -86,11 +90,20 @@ Dashboard.propTypes = {
     config: PropTypes.object,
 };
 
-const mapStateToProps = (state) => ({
-    beerList: state.beerList,
-    temperatureType: state.config.temperatureType,
-    isMute: state.config.isMute,
-});
+const mapStateToProps = state => {
+    let isAnyBeerOutOfTempRange = false;
+    state.beerList.filter(({ currentTemperature, tempRange }) => {
+        if (currentTemperature < tempRange[0] || currentTemperature > tempRange[1]) {
+            isAnyBeerOutOfTempRange = true;
+        }
+    });
+    return  ({
+        beerList: state.beerList,
+        temperatureType: state.config.temperatureType,
+        isMute: state.config.isMute,
+        isAnyBeerOutOfTempRange,
+    })
+};
 
 const mapDispatchToProps = dispatch => ({
     fetchBeerList: () => dispatch(fetchBeerList()),
