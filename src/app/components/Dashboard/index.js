@@ -34,12 +34,18 @@ class Dashboard extends Component {
             <div>
                 <Header />
                 <div className="pageLayout">
-                    <div className="row">
-                        <div className="col-lg-2 pull-right">
-                            <TemperatureFilter temperatureType={temperatureType} changeTemperatureType={this.changeTemperatureType}/>
+                    <div className="dropdownSection">
+                        <TemperatureFilter temperatureType={temperatureType} changeTemperatureType={this.changeTemperatureType}/>
+                    </div>
+                    <div className="colorInfoWrapper">
+                        <div className="colorInfo">
+                            <span className="status-circle blueBackground"></span>
+                            <small><strong>Too Low</strong></small>
+                            <span className="status-circle redBackground"></span>
+                            <small><strong>Too High</strong></small>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row beerlistSection">
                         {
                             beerList && beerList.length ?
                                 beerList.map((beer, index) => (

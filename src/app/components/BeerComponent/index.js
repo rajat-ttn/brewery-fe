@@ -11,37 +11,39 @@ const BeerComponent = ({ beerContentDetail, temperatureType }) => {
     return (
          <div className="col-md-4 commonBoxModel">
               <div className="beerContainer">
-                   <h3 className="beertype">{beerType}</h3>
-                   {
-                     currentTemperature > tempRange[1] ?
-                        <span className="currentTemp danger red">
-                            <img className="iconStyling" src="../images/temp-icon.png" />
-                            {currentTemperature ? ConvertTempCelciusToFahrenheit(temperatureType,currentTemperature) : '--'}
-                            {currentTemperature ? tempSymbol : ''}
-                        </span>
-                        : currentTemperature < tempRange[0] ?
-                            <span className="currentTemp danger blue">
-                                <img className="iconStyling" src="../images/temp-icon.png" />
-                                {currentTemperature ? ConvertTempCelciusToFahrenheit(temperatureType, currentTemperature) : '--'}
-                                {currentTemperature ? tempSymbol : ''}
-                            </span>
-                            :
-                            <span className="currentTemp">
-                                 <img className="iconStyling" src="../images/temp-icon.png" />
-                                 {currentTemperature ? ConvertTempCelciusToFahrenheit(temperatureType,currentTemperature) : '--'}
-                                {currentTemperature ? tempSymbol : ''}
-                            </span>
+                <div className="overlay">
+                    <h3 className="beertype">{beerType}</h3>
+                                       {
+                                         currentTemperature > tempRange[1] ?
+                                            <span className="currentTemp danger red">
+                                                <img className="iconStyling" src="../images/temp-icon.png" />
+                                                {currentTemperature ? ConvertTempCelciusToFahrenheit(temperatureType,currentTemperature) : '--'}
+                                                {currentTemperature ? tempSymbol : ''}
+                                            </span>
+                                            : currentTemperature < tempRange[0] ?
+                                                <span className="currentTemp danger blue">
+                                                    <img className="iconStyling" src="../images/temp-icon.png" />
+                                                    {currentTemperature ? ConvertTempCelciusToFahrenheit(temperatureType, currentTemperature) : '--'}
+                                                    {currentTemperature ? tempSymbol : ''}
+                                                </span>
+                                                :
+                                                <span className="currentTemp">
+                                                     <img className="iconStyling" src="../images/temp-icon.png" />
+                                                     {currentTemperature ? ConvertTempCelciusToFahrenheit(temperatureType,currentTemperature) : '--'}
+                                                    {currentTemperature ? tempSymbol : ''}
+                                                </span>
 
-                   }
+                                       }
 
-                   <span className="tmpLabel">Current Temp</span>
+                                       <span className="tmpLabel">Current Temp</span>
 
-                   <span className="rangeTemp">
-                       <img className="iconStyling" src="../images/temp-icon.png" />
-                       {`${minTemp} - ${maxTemp}`}{tempSymbol}
-                   </span>
+                                       <span className="rangeTemp">
+                                           <img className="iconStyling" src="../images/temp-icon.png" />
+                                           {`${minTemp} - ${maxTemp}`}{tempSymbol}
+                                       </span>
 
-                   <span className="tmpLabel">Temp Range</span>
+                                       <span className="tmpLabel">Temp Range</span>
+                </div>
               </div>
           </div>
     );

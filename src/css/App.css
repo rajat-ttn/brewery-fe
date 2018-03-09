@@ -1,8 +1,11 @@
+*{
+  font-family: Proxima Nova, Arial, Helvetica, sans-serif;
+}
 .dashboardBackground{
   background-size: contain;
 }
 .pageLayout{
-  margin:15px 30px 0 30px;
+  margin:0 30px;
 }
 .beerContainer{
   background-color: #f1f1f1;
@@ -17,12 +20,15 @@
   -webkit-box-shadow: -1px 1px 8px 2px #cccccc;
   -moz-box-shadow: -1px 1px 8px 2px #cccccc;
   box-shadow: -1px 1px 8px 2px #cccccc;
+  position: relative;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+
 }
 .beertype{
   font: bold 28px Proxima Nova, Arial, Helvetica, sans-serif;
 }
 .currentTemp{
-  font: bold 48px Proxima Nova, Arial, Helvetica, sans-serif;
+  font: bold 50px Proxima Nova, Arial, Helvetica, sans-serif;
   display:block;
 }
 .rangeTemp{
@@ -39,10 +45,9 @@
   margin-bottom: 25px;
 }
 .logoStyle{
-  width:100px;
+  width:70px;
   height:auto;
-  padding:12px 12px 12px 30px;
-  display:inline-block;
+  float:left;
 }
 .beerContainer:hover{
   background-color: #f1f1f1;
@@ -51,7 +56,8 @@
   box-shadow: -1px 2px 20px 5px #f1c40f;
 }
 header{
-  background-color: #f1c40f;
+  background-color: #34302c;
+  color:#ffffff;
   border-bottom: 2px solid #000000;
   box-shadow: 0 -2px 4px 2px #000000;
   -moz-box-shadow: 0 -2px 4px 2px #000000;
@@ -59,7 +65,8 @@ header{
 }
 header h1{
   font-size: 35px;
-  display:inline-block;
+  font-weight: bold;
+  padding-top: 8px;
 }
 .commonBoxModel{
   padding: 15px 15px;
@@ -67,13 +74,15 @@ header h1{
 .overlay {
   position: absolute;
   display: block;
-  top: 15px;
-  left: 40px;
-  right: 40px;
-  bottom: 30px;
-  background-color: rgba(255,0,0,0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  background-color: rgba(0,0,0,0.5);
   z-index: 2;
-  cursor: pointer;
+  cursor: pointer;    padding-right: 25px;
+  padding-top: 22px;
 }
 .overlayText{
   position: absolute;
@@ -90,20 +99,26 @@ header h1{
 }
 .red{color:red}
 .blue{color:blue}
+.beerlistSection{
+  padding-top: 20px;
+}
+.colorInfoWrapper{
+  position:relative;
+}
 .colorInfo{
-  float: right;
-  margin-top: 10px;
-  margin-right:10px;
+  top: 5px;
+  right:8px;
+  position: absolute;
 }
-.colorInfo span{
-  float:left;
-  margin-right:5px;
-}
+
 .status-circle{
-  width:16px;
-  height:16px;
-  border-radius: 8px;
-  border:1px solid #000000; margin-top:5px;
+  width:12px;
+  height:12px;
+  border-radius: 6px;
+  border:1px solid #000000;
+  display:inline-block;
+  margin-right:5px;
+  margin-left: 25px;
 }
 .blueBackground{background-color:blue}
 .redBackground{background-color:red}
@@ -111,7 +126,7 @@ header h1{
   0% {
     visibility: hidden;
   }
-  50% {
+  20% {
     visibility: hidden;
   }
   100% {
@@ -122,7 +137,7 @@ header h1{
   0% {
     visibility: hidden;
   }
-  50% {
+  20% {
     visibility: hidden;
   }
   100% {
@@ -132,8 +147,13 @@ header h1{
 footer{
   background-color: #34302c;
   color:#ffffff;
-  padding:15px;
+  padding:5px;
   text-align: center;
   margin-top:15px;
   border-top:2px solid #aaaaaa;
+}
+.dropdownSection{
+  position: absolute;
+  right: 30px;
+  top: 11px;
 }
