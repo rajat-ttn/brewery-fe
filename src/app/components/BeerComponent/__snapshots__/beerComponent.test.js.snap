@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BeerComponent component renders the BeerComponent correctly renders correctly with beer detail and temperature 1`] = `
+<div
+  className="col-md-4 commonBoxModel"
+>
+  <div
+    className="beerContainer"
+  >
+    <h3
+      className="beertype"
+    >
+      Aler Beer
+    </h3>
+    <span
+      className="currentTemp"
+    >
+      <img
+        className="iconStyling"
+        src="../images/temp-icon.png"
+      />
+      --
+      
+    </span>
+    <span
+      className="tmpLabel"
+    >
+      Current Temp
+    </span>
+    <span
+      className="rangeTemp"
+    >
+      <img
+        className="iconStyling"
+        src="../images/temp-icon.png"
+      />
+      37.4 - 41
+      <span>
+        ℉
+      </span>
+    </span>
+    <span
+      className="tmpLabel"
+    >
+      Temp Range
+    </span>
+  </div>
+</div>
+`;

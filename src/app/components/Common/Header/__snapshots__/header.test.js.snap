@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component Should render correctly renders correctly 1`] = `
+<header>
+  <img
+    alt="logo"
+    className="logoStyle"
+    src="../images/logo.png"
+  />
+  <h1>
+    Welcome to Baz Brewery
+  </h1>
+  <div
+    className="colorInfo"
+  >
+    <div>
+      <span
+        className="status-circle blueBackground"
+      />
+      Current Temperature is Below Temperature Range
+    </div>
+    <div>
+      <span
+        className="status-circle redBackground"
+      />
+      Current Temperature is  Above Temperature Range
+    </div>
+  </div>
+</header>
+`;
