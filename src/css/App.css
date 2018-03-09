@@ -1,28 +1,34 @@
-.dashboardBackground{
-  background-size: contain;
+*{
+  font-family: Proxima Nova, Arial, Helvetica, sans-serif;
+}
+body{ background-color: #f1f1f2;}
+.msgStyle{
+  text-align: center; width:100%; margin-top: 10px; font-weight: bold;
 }
 .pageLayout{
-  margin:15px 30px 0 30px;
+  margin:0 30px;
 }
 .beerContainer{
-  background-color: #f1f1f1;
+  background-color: #e1e1e1;
   border-radius:8px;
   text-align: right;
   padding-top:25px;
   padding-right: 25px;
   width:100%;
-  height:260px;
+  height:255px;
   color:#fff;
   background-image: url("../assets/images/container.png");
   -webkit-box-shadow: -1px 1px 8px 2px #cccccc;
   -moz-box-shadow: -1px 1px 8px 2px #cccccc;
   box-shadow: -1px 1px 8px 2px #cccccc;
+  position: relative;
+
 }
 .beertype{
-  font: bold 28px Proxima Nova, Arial, Helvetica, sans-serif;
+  font: bold 28px/46px Proxima Nova, Arial, Helvetica, sans-serif;
 }
 .currentTemp{
-  font: bold 48px Proxima Nova, Arial, Helvetica, sans-serif;
+  font: bold 65px/57px Proxima Nova, Arial, Helvetica, sans-serif;
   display:block;
 }
 .rangeTemp{
@@ -34,15 +40,20 @@
   margin-right:5px;
 }
 .tmpLabel{
-  font: regular 18px Proxima Nova, Arial, Helvetica, sans-serif;
+  font: normal 14px Proxima Nova, Arial, Helvetica, sans-serif;
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .logoStyle{
-  width:100px;
-  height:auto;
-  padding:12px 12px 12px 30px;
-  display:inline-block;
+  width: 41px;
+  height: auto;
+  float: left;
+  margin-top: 6px;
+  margin-left: 20px;
+  margin-right: 6px;
+}
+span.currentTemp> span {
+  font-size: 60px;
 }
 .beerContainer:hover{
   background-color: #f1f1f1;
@@ -51,7 +62,8 @@
   box-shadow: -1px 2px 20px 5px #f1c40f;
 }
 header{
-  background-color: #f1c40f;
+  background-color: #34302c;
+  color:#ffffff;
   border-bottom: 2px solid #000000;
   box-shadow: 0 -2px 4px 2px #000000;
   -moz-box-shadow: 0 -2px 4px 2px #000000;
@@ -59,38 +71,8 @@ header{
 }
 header h1{
   font-size: 35px;
-  display:inline-block;
-}
-.beerContainer > figure > img{padding:10px;}
-.beerContainerImage{
-  width:100%;
-  max-height:175px;
-  width:auto;
-  height:auto;
-  overflow: hidden;
-}
-figcaption{
-  -webkit-box-shadow: -1px 1px 8px 2px #cccccc;
-  -moz-box-shadow: -1px 1px 8px 2px #cccccc;
-  box-shadow: -1px 1px 8px 2px #cccccc;
-}
-.yellowContainer{
-  background-color: #f1c40f;
-}
-.blueContainer{
-  background-color: #03a9f4;
-}
-.orangeContainer{
-  background-color: #ff9800;
-}
-.greenContainer{
-  background-color: #4caf50;
-}
-.pinkContainer{
-  background-color: #ff00ff;
-}
-.purpleContainer{
-  background-color: #a569bd;
+  font-weight: bold;
+  padding-top: 8px;
 }
 .commonBoxModel{
   padding: 15px 15px;
@@ -98,51 +80,55 @@ figcaption{
 .overlay {
   position: absolute;
   display: block;
-  top: 15px;
-  left: 40px;
-  right: 40px;
-  bottom: 30px;
-  background-color: rgba(255,0,0,0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  background-color: rgba(0,0,0,0.5);
   z-index: 2;
-  cursor: pointer;
+  padding-right: 25px;
+  padding-top: 22px;
 }
-.overlayText{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
+.redOverlay{
+  background-color: rgba(1620,0,0,0.5);
+}
+.blueOverlay{
+  background-color: rgba(0,0,1620,0.5);
 }
 .danger {
   -webkit-animation: 2s linear infinite condemned_blink_effect; // for android
   animation: 2s linear infinite condemned_blink_effect;
 }
-.red{color:red}
-.blue{color:blue}
+.red{color:#ff0000}
+.blue{color:#025ab9}
+.beerlistSection{
+  padding-top: 20px;
+}
+.colorInfoWrapper{
+  position:relative;
+}
 .colorInfo{
-  float: right;
-  margin-top: 10px;
-  margin-right:10px;
+  top: 5px;
+  right:8px;
+  position: absolute;
 }
-.colorInfo span{
-  float:left;
-  margin-right:8px;
-}
+
 .status-circle{
-  width:20px;
-  height:20px;
-  border-radius: 10px;
-  border:1px solid #000000;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 25px;
 }
-.blueBackground{background-color:blue}
-.redBackground{background-color:red}
+.blueBackground{background-color:#025ab9}
+.redBackground{background-color:#ff0000}
 @-webkit-keyframes condemned_blink_effect {
   0% {
     visibility: hidden;
   }
-  50% {
+  20% {
     visibility: hidden;
   }
   100% {
@@ -153,10 +139,29 @@ figcaption{
   0% {
     visibility: hidden;
   }
-  50% {
+  20% {
     visibility: hidden;
   }
   100% {
     visibility: visible;
   }
+}
+footer{
+  background-color: #34302c;
+  color:#ffffff;
+  padding:5px;
+  text-align: center;
+  margin-top:15px;
+  border-top:2px solid #aaaaaa;
+}
+.dropdownSection{
+  position: absolute;
+  right: 35px;
+  top: 18px;
+}
+.dropdownSection > select.form-control:not([size]):not([multiple]){
+  height: 22px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 14px;
 }

@@ -5,6 +5,7 @@ import '../../../css/bootstrap.css';
 import { fetchBeerList } from './async.action';
 import { setTemperatureType } from '../Common/RunTimeConfig/action';
 import Header from '../Common/Header'
+import Footer from '../Common/Footer'
 import BeerComponent from '../BeerComponent';
 import TemperatureFilter from './temperatureFilter';
 
@@ -33,20 +34,27 @@ class Dashboard extends Component {
             <div>
                 <Header />
                 <div className="pageLayout">
-                    <div className="row">
-                        <div className="col-lg-2 pull-right">
-                            <TemperatureFilter temperatureType={temperatureType} changeTemperatureType={this.changeTemperatureType}/>
+                    <div className="dropdownSection">
+                        <TemperatureFilter temperatureType={temperatureType} changeTemperatureType={this.changeTemperatureType}/>
+                    </div>
+                    <div className="colorInfoWrapper">
+                        <div className="colorInfo">
+                            <span className="status-circle blueBackground"></span>
+                            <small><strong>Too Low</strong></small>
+                            <span className="status-circle redBackground"></span>
+                            <small><strong>Too High</strong></small>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row beerlistSection">
                         {
                             beerList && beerList.length ?
                                 beerList.map((beer, index) => (
                                     <BeerComponent beerContentDetail={beer} key={beer.id} temperatureType={temperatureType} />
-                                )) : null
+                                )) : <div className="msgStyle"><p>No Container Found</p></div>
                         }
                     </div>
                 </div>
+                <Footer />
             </div>
         );
     }

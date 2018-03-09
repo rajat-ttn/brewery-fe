@@ -3,10 +3,9 @@ import './style.css';
 
 const Footer = (props) => {
     return (
-        <header>
-             <img src="../images/logo.png" alt="logo" className="logoStyle"/>
-            <h1>Welcome Baz to <strong>The Brewery</strong></h1>
-        </header>
+        <footer>
+             <small>&copy; 2018 The Brewery  - Transport Refrigeration Sensors</small>
+        </footer>
     );
 }
 
