@@ -50,7 +50,7 @@ class Dashboard extends Component {
                             beerList && beerList.length ?
                                 beerList.map((beer, index) => (
                                     <BeerComponent beerContentDetail={beer} key={beer.id} temperatureType={temperatureType} />
-                                )) : null
+                                )) : <div className="text-center"><p>No Container Found</p></div>
                         }
                     </div>
                 </div>
