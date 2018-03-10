@@ -36,7 +36,7 @@ describe('BeerComponent component renders the BeerComponent correctly', () => {
 
 
 	it('should have audio event', () => {
-		expect(dashboardContainer.instance().AudioEndEvent).toBeDefined();
+		expect(dashboardContainer.instance().attachAudioEvents).toBeDefined();
 	});
 
 	it('should have audio event', () => {
