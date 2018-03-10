@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for brewery-fe/src/app/components/BeerComponent/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">All files</a> / <a href="index.html">brewery-fe/src/app/components/BeerComponent</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>11/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>5/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>11/11</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import { PropTypes } from 'prop-types';
+import { convertTempCelciusToFahrenheit } from '../../../util/helper';
+import './style.css';
+&nbsp;
+const BeerComponent = ({ beerContentDetail, temperatureType }) =&gt; {
+    const { beerType, tempRange, currentTemperature } = beerContentDetail;
+    const minTemp = convertTempCelciusToFahrenheit(temperatureType,tempRange[0]);
+    const maxTemp = convertTempCelciusToFahrenheit(temperatureType,tempRange[1]);
+    const parsedCurrTemp = parseInt(currentTemperature,10);
+    const tempSymbol = temperatureType === 'CELSIUS' ? <span class="branch-0 cbranch-no" title="branch not covered" >&lt;span&gt;&amp;#8451;&lt;/span&gt; </span>: &lt;span&gt;&amp;#8457;&lt;/span&gt;;
+    const alertCss = parsedCurrTemp &gt; maxTemp ? <span class="branch-0 cbranch-no" title="branch not covered" >'danger red ' </span>: currentTemperature &lt; minTemp ? <span class="branch-0 cbranch-no" title="branch not covered" >'danger blue' </span>: '';
+    const showCurrentTemp = parsedCurrTemp ? <span class="branch-0 cbranch-no" title="branch not covered" >convertTempCelciusToFahrenheit(temperatureType,parsedCurrTemp) </span>: '--';
+    const showSymbol = parsedCurrTemp ? <span class="branch-0 cbranch-no" title="branch not covered" >tempSymbol </span>: '';
+    return (
+         &lt;div className="col-md-4 commonBoxModel"&gt;
+              &lt;div className="beerContainer"&gt;
+                &lt;div className="overlay"&gt;
+                    &lt;h3 className="beertype"&gt;{beerType}&lt;/h3&gt;
+                        &lt;span className={`currentTemp ${alertCss}`}&gt;
+                                &lt;img className="iconStyling" src="../images/temp-icon.png" /&gt;
+                            {showCurrentTemp } {showSymbol}
+                        &lt;/span&gt;
+                       &lt;span className="tmpLabel"&gt;Current Temp&lt;/span&gt;
+&nbsp;
+                       &lt;span className="rangeTemp"&gt;
+                           &lt;img className="iconStyling" src="../images/temp-icon.png" /&gt;
+                           {`${minTemp} - ${maxTemp}`}{tempSymbol}
+                       &lt;/span&gt;
+&nbsp;
+                       &lt;span className="tmpLabel"&gt;Temp Range&lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;
+    );
+};
+BeerComponent.propTypes = {
+    beerContentDetail: PropTypes.object.isRequired,
+    temperatureType: PropTypes.string.isRequired,
+};
+&nbsp;
+export default BeerComponent;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Mar 10 2018 17:04:54 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>

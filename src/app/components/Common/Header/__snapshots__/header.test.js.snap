@@ -5,26 +5,19 @@ exports[`Header Component Should render correctly renders correctly 1`] = `
   <img
     alt="logo"
     className="logoStyle"
-    src="../images/logo.png"
+    src="../images/beer_logo.png"
   />
   <h1>
-    Welcome to Baz Brewery
+    The Brewery
   </h1>
-  <div
-    className="colorInfo"
+  <span
+    onClick={undefined}
   >
-    <div>
-      <span
-        className="status-circle blueBackground"
-      />
-      Current Temperature is Below Temperature Range
-    </div>
-    <div>
-      <span
-        className="status-circle redBackground"
-      />
-      Current Temperature is  Above Temperature Range
-    </div>
-  </div>
+    <img
+      alt="alarm"
+      className="bellIcon"
+      src="../images/beer_logo.png"
+    />
+  </span>
 </header>
 `;

@@ -11,6 +11,15 @@ exports[`renders without crashing should render children correctly 1`] = `
     <h1>
       The Brewery
     </h1>
+    <span
+      onClick={[Function]}
+    >
+      <img
+        alt="alarm"
+        className="bellIcon"
+        src="../images/beer_logo.png"
+      />
+    </span>
   </header>
   <div
     className="pageLayout"

@@ -13,7 +13,7 @@ describe('Temperature Filter filters beer based on temperature correctly', () =>
     beforeEach(() => {
         allProps = {
             temperatureType: "FAHRENHEIT",
-            changeTemperatureType: () => {}
+            changeTemperatureType: jest.fn()
         };
         temperatureFilter = shallow(<TemperatureFilter {...allProps} />);
     });

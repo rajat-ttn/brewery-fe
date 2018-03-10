@@ -156,7 +156,7 @@ footer{
 }
 .dropdownSection{
   position: absolute;
-  right: 35px;
+  right: 100px;
   top: 18px;
 }
 .dropdownSection > select.form-control:not([size]):not([multiple]){
@@ -164,4 +164,11 @@ footer{
   padding-top: 0;
   padding-bottom: 0;
   font-size: 14px;
+}
+.bellIcon{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 40px;
+  top: 5px;
 }
