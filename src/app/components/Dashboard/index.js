@@ -12,10 +12,8 @@ import TemperatureFilter from './temperatureFilter';
 class Dashboard extends Component {
     constructor(props){
         super(props);
-        this.state = {
-            audio: new Audio('/sounds/Alarm.mp3'),
-        };
-        this.AudioEndEvent();
+        this.audio = new Audio('/sounds/Alarm.mp3');
+        this.attachAudioEvents();
     }
 
     componentDidMount(){
@@ -24,7 +22,7 @@ class Dashboard extends Component {
     }
 
     componentWillReceiveProps({ isMute, isAnyBeerOutOfTempRange }) {
-        const { audio } = this.state;
+        const audio = this.audio;
         if (isMute || !isAnyBeerOutOfTempRange) {
             audio.pause();
         } else if (isAnyBeerOutOfTempRange) {
@@ -32,10 +30,10 @@ class Dashboard extends Component {
         };
     };
 
-    AudioEndEvent = () => {
-        this.state.audio.onended = () => {
+    attachAudioEvents = () => {
+        this.audio.onended = () => {
             if (this.props.isAnyBeerOutOfTempRange && !this.props.isMute) {
-                this.state.audio.play();
+                this.audio.play();
             }
         }
     };
@@ -92,7 +90,7 @@ Dashboard.propTypes = {
 
 export const mapStateToProps = state => {
     let isAnyBeerOutOfTempRange = false;
-    state.beerList.filter(({ currentTemperature, tempRange }) => {
+    state.beerList.forEach(({ currentTemperature, tempRange }) => {
         if (currentTemperature < tempRange[0] || currentTemperature > tempRange[1]) {
             isAnyBeerOutOfTempRange = true;
         }
