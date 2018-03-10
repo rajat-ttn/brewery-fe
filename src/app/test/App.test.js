@@ -6,7 +6,7 @@ import renderer from 'react-test-renderer';
 import configureStore from 'redux-mock-store';
 
 
-describe('renders without crashing', () => {
+describe('App renders without crashing', () => {
     const initialState = {output:100};
     const mockStore = configureStore();
     let store = mockStore(initialState);
