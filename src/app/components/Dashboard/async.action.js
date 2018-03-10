@@ -18,4 +18,5 @@ export const fetchBeerList = () => async (dispatch) => {
         dispatch(setErrorMessage(data));
         setTimeout(() => dispatch(removeErrorMessage()), 4000);
     }
+    return response;
 };

@@ -8,19 +8,29 @@ import Header from '../Common/Header'
 import Footer from '../Common/Footer'
 import BeerComponent from '../BeerComponent';
 import TemperatureFilter from './temperatureFilter';
+import LoadingIndicator from '../Common/LoadingIndicator';
 
 class Dashboard extends Component {
     constructor(props){
         super(props);
         this.state = {
             audio: new Audio('/sounds/Alarm.mp3'),
+            showLoader: true,
         };
         this.AudioEndEvent();
     }
 
     componentDidMount(){
         const { fetchBeerList } = this.props;
-        fetchBeerList();
+        //fetchBeerList();
+        fetchBeerList().then(response => {
+            console.log("response -------------->",response)
+            if (response.status === 200) {
+                this.setState({ showLoader: true });
+            } else if (response.status !== 200) {
+                this.setState({ showLoader: false });
+            }
+        }).catch(() => this.setState({ showLoader: false }));
     }
 
     componentWillReceiveProps({ isMute, isAnyBeerOutOfTempRange }) {
@@ -50,8 +60,10 @@ class Dashboard extends Component {
     
     render() {
         const { beerList, temperatureType, isMute } = this.props;
+        const { showLoader } = this.state;
         return (
             <div>
+                <LoadingIndicator showLoader={showLoader}/>
                 <Header toggleSound={() => { this.props.toggleSound(!isMute); }} />
                 <div className="pageLayout">
                     <div className="dropdownSection">
