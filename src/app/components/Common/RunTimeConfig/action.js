@@ -6,3 +6,10 @@ export const setTemperatureType = (currentValue) => {
         payload: currentValue,
     }
 };
+
+export const toggleSound = (isMute) => {
+    return {
+        type: ACTION.TOGGLE_SOUND,
+        payload: isMute,
+    }
+};
