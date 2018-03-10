@@ -3,11 +3,7 @@ import './style.css';
 const LoadingIndicator = ({ showLoader = false }) => {
     if(showLoader) {
         return (
-            <div className="main-container">
-                <div className="se-pre-con">
-
-                </div>
-            </div>
+            <div className="loader" />
         );
     }
     return null;
