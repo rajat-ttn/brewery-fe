@@ -43,7 +43,7 @@ describe('BeerComponent component renders the BeerComponent correctly', () => {
 		expect(dashboardContainer.instance().state.audio).not.toBeNull();
 	});
 
-	 it('renders correctly with beer detail and temperature', () => {
+    it('renders correctly with beer detail and temperature', () => {
 		expect(dashboardContainer).toMatchSnapshot();
 	});
 
@@ -66,6 +66,104 @@ describe('BeerComponent component renders the BeerComponent correctly', () => {
 		allProps.isAnyBeerOutOfTempRange = "true";
 		expect(dashboardContainer).toMatchSnapshot();
 	});
+
+
+
+    it('audio should not play on mute', () => {
+
+    	const dashboardContainerInstance = dashboardContainer.instance();
+
+        const play = jest.spyOn(dashboardContainerInstance.audio, 'play');
+        const pause = jest.spyOn(dashboardContainerInstance.audio, 'pause');
+        dashboardContainerInstance.componentWillReceiveProps({
+            isMute:true,
+            isAnyBeerOutOfTempRange:true
+		});
+
+        expect(play).not.toHaveBeenCalled();
+        expect(pause).toHaveBeenCalled();
+
+        [play, pause].forEach((spy)=>{
+        	spy.mockReset();
+            spy.mockRestore();
+        });
+    });
+
+    it('audio should play if not on mute & Beer temperature is out of range', () => {
+
+        const dashboardContainerInstance = dashboardContainer.instance();
+
+        const play = jest.spyOn(dashboardContainerInstance.audio, 'play');
+        const pause = jest.spyOn(dashboardContainerInstance.audio, 'pause');
+        dashboardContainerInstance.componentWillReceiveProps({
+            isMute:false,
+            isAnyBeerOutOfTempRange:true
+        });
+
+        expect(play).toHaveBeenCalled();
+        expect(pause).not.toHaveBeenCalled();
+
+        [play, pause].forEach((spy)=>{
+            spy.mockReset();
+            spy.mockRestore();
+        });
+    });
+
+    it('audio should not play if Beer temperature is in range', () => {
+
+        const dashboardContainerInstance = dashboardContainer.instance();
+
+        const play = jest.spyOn(dashboardContainerInstance.audio, 'play');
+        const pause = jest.spyOn(dashboardContainerInstance.audio, 'pause');
+        dashboardContainerInstance.componentWillReceiveProps({
+            isMute:true,
+            isAnyBeerOutOfTempRange:false
+        });
+
+        expect(play).not.toHaveBeenCalled();
+        expect(pause).toHaveBeenCalled();
+
+        [play, pause].forEach((spy)=>{
+            spy.mockReset();
+            spy.mockRestore();
+        });
+    });
+
+    it('audio should restart on ending if beerTemperature is out of Range & sound is enabled', () => {
+
+        dashboardContainer = shallow(<DashboardContainer {...allProps } isAnyBeerOutOfTempRange = {true} isMute={false}  />);
+
+        const dashboardContainerInstance = dashboardContainer.instance();
+
+        const play = jest.spyOn(dashboardContainerInstance.audio, 'play');
+
+        dashboardContainerInstance.audio.onended();
+
+        expect(play).toHaveBeenCalled();
+
+        [play].forEach((spy)=>{
+            spy.mockReset();
+            spy.mockRestore();
+        });
+    });
+
+    it('audio should not restart on ending if beerTemperature is in Range', () => {
+
+        dashboardContainer = shallow(<DashboardContainer { ...allProps }  isAnyBeerOutOfTempRange = {false} isMute={false} />);
+
+        const dashboardContainerInstance = dashboardContainer.instance();
+        const play = jest.spyOn(dashboardContainerInstance.audio, 'play');
+
+        dashboardContainerInstance.audio.onended();
+
+        expect(play).not.toHaveBeenCalled();
+
+        [play].forEach((spy)=>{
+            spy.mockReset();
+            spy.mockRestore();
+        });
+    });
+
 });
 
 describe('mapStateToProps ', () => {
