@@ -18,4 +18,4 @@ You can clone repository [Brewery-fe](https://github.com/rajat-ttn/brewery-fe.gi
 
 ## Run test cases
 
-* Use `npm test` it will launch the test runner in the interactive watch mode.
+* Use `npm run test` it will launch the test runner in the interactive watch mode.
