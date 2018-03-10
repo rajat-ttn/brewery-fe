@@ -1,5 +1,5 @@
-import * as actions from './action';
-import * as types from '../../../../constants/actions';
+import * as actions from '../action';
+import * as types from '../../../../../constants/actions';
 
 
 describe('update error message',()=> {

@@ -6,7 +6,7 @@ describe('should convert physical quantity',()=> {
         value = "4";
 
     it('should convert celsius to fahrenheit', () => {
-        expect(helper.ConvertTempCelciusToFahrenheit(type,value)).toBeDefined();
+        expect(helper.convertTempCelciusToFahrenheit(type,value)).toBeDefined();
     });
 
 });
