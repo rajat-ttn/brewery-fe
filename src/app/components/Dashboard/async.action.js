@@ -8,8 +8,7 @@ export const fetchBeerList = () => async (dispatch) => {
         const {DOMAIN, BASE, VERSION, DASHBOARD} = API.ENDPOINT;
         let {url, method} = DASHBOARD.getBeer;
         let beerListUrl = `${DOMAIN}://${BASE}${VERSION}${url}`;
-        const response = await axios(beerListUrl, {
-            method,
+        const response = await axios[method](beerListUrl, {
             headers: {'Content-Type': 'application/json'},
         });
         const {status} = response;
