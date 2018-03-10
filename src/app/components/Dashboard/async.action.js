@@ -21,6 +21,6 @@ export const fetchBeerList = () => async (dispatch) => {
         }
     }
     catch(err){
-        console.log('error ocurred while fetching beers!' + err);
+        console.log('error occurred while fetching beers!' + err);
     }
 };
