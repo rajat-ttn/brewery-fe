@@ -2,6 +2,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import { convertTempCelciusToFahrenheit } from '../../../util/helper';
 import './style.css';
+import TimeAgo from '../Common/TimeAgo';
 
 const BeerComponent = ({ beerContentDetail, temperatureType }) => {
     const { beerType, tempRange, currentTemperature } = beerContentDetail;
@@ -29,6 +30,12 @@ const BeerComponent = ({ beerContentDetail, temperatureType }) => {
                        </span>
 
                        <span className="tmpLabel">Temp Range</span>
+                        {
+                            parsedCurrTemp ?
+                                <TimeAgo beerContentDetail={beerContentDetail} /> :
+                                null
+                        }
+
                 </div>
               </div>
           </div>
