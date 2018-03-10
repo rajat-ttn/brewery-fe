@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import BeerComponent from './index';
+import BeerComponent from '../index';
 
 
 describe('BeerComponent component renders the BeerComponent correctly', () => {

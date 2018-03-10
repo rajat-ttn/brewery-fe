@@ -52,12 +52,22 @@ describe('testing beerList reducer',()=> {
         initialState =[{
             "id": 1,
             "containerId": 1,
-            "beerType": "Aler Beer",
+            "beerType": "Ale Beer",
             "tempRange": [
                 4,
                 6
             ]
-        }];
+        },
+        {
+            "id": 1,
+            "containerId": 2,
+            "beerType": "Draught Beer",
+            "tempRange": [
+                4,
+                6
+            ]
+        }
+        ];
         let changedState = beerListReducer(initialState, action);
         let updateBeerItemState = changedState.find((beer) => beer.containerId === action.payload.containerId );
 
