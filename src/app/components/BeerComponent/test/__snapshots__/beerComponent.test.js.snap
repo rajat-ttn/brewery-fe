@@ -45,6 +45,7 @@ ShallowWrapper {
                         className="currentTemp "
                 >
                         <img
+                                alt="temperature"
                                 className="iconStyling"
                                 src="../images/temp-icon.png"
                         />
@@ -61,6 +62,7 @@ ShallowWrapper {
                         className="rangeTemp"
                 >
                         <img
+                                alt="temperature"
                                 className="iconStyling"
                                 src="../images/temp-icon.png"
                         />
@@ -96,6 +98,7 @@ ShallowWrapper {
                     className="currentTemp "
           >
                     <img
+                              alt="temperature"
                               className="iconStyling"
                               src="../images/temp-icon.png"
                     />
@@ -112,6 +115,7 @@ ShallowWrapper {
                     className="rangeTemp"
           >
                     <img
+                              alt="temperature"
                               className="iconStyling"
                               src="../images/temp-icon.png"
                     />
@@ -144,6 +148,7 @@ ShallowWrapper {
               className="currentTemp "
 >
               <img
+                            alt="temperature"
                             className="iconStyling"
                             src="../images/temp-icon.png"
               />
@@ -160,6 +165,7 @@ ShallowWrapper {
               className="rangeTemp"
 >
               <img
+                            alt="temperature"
                             className="iconStyling"
                             src="../images/temp-icon.png"
               />
@@ -197,6 +203,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <img
+                  alt="temperature"
                   className="iconStyling"
                   src="../images/temp-icon.png"
 />,
@@ -213,6 +220,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
+                  "alt": "temperature",
                   "className": "iconStyling",
                   "src": "../images/temp-icon.png",
                 },
@@ -245,6 +253,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <img
+                  alt="temperature"
                   className="iconStyling"
                   src="../images/temp-icon.png"
 />,
@@ -262,6 +271,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
+                  "alt": "temperature",
                   "className": "iconStyling",
                   "src": "../images/temp-icon.png",
                 },
@@ -324,6 +334,7 @@ ShallowWrapper {
                               className="currentTemp "
                     >
                               <img
+                                        alt="temperature"
                                         className="iconStyling"
                                         src="../images/temp-icon.png"
                               />
@@ -340,6 +351,7 @@ ShallowWrapper {
                               className="rangeTemp"
                     >
                               <img
+                                        alt="temperature"
                                         className="iconStyling"
                                         src="../images/temp-icon.png"
                               />
@@ -375,6 +387,7 @@ ShallowWrapper {
                         className="currentTemp "
             >
                         <img
+                                    alt="temperature"
                                     className="iconStyling"
                                     src="../images/temp-icon.png"
                         />
@@ -391,6 +404,7 @@ ShallowWrapper {
                         className="rangeTemp"
             >
                         <img
+                                    alt="temperature"
                                     className="iconStyling"
                                     src="../images/temp-icon.png"
                         />
@@ -423,6 +437,7 @@ ShallowWrapper {
                 className="currentTemp "
 >
                 <img
+                                alt="temperature"
                                 className="iconStyling"
                                 src="../images/temp-icon.png"
                 />
@@ -439,6 +454,7 @@ ShallowWrapper {
                 className="rangeTemp"
 >
                 <img
+                                alt="temperature"
                                 className="iconStyling"
                                 src="../images/temp-icon.png"
                 />
@@ -476,6 +492,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <img
+                    alt="temperature"
                     className="iconStyling"
                     src="../images/temp-icon.png"
 />,
@@ -492,6 +509,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
+                    "alt": "temperature",
                     "className": "iconStyling",
                     "src": "../images/temp-icon.png",
                   },
@@ -524,6 +542,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <img
+                    alt="temperature"
                     className="iconStyling"
                     src="../images/temp-icon.png"
 />,
@@ -541,6 +560,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
+                    "alt": "temperature",
                     "className": "iconStyling",
                     "src": "../images/temp-icon.png",
                   },
@@ -638,6 +658,7 @@ ShallowWrapper {
                         className="currentTemp "
                 >
                         <img
+                                alt="temperature"
                                 className="iconStyling"
                                 src="../images/temp-icon.png"
                         />
@@ -654,6 +675,7 @@ ShallowWrapper {
                         className="rangeTemp"
                 >
                         <img
+                                alt="temperature"
                                 className="iconStyling"
                                 src="../images/temp-icon.png"
                         />
@@ -689,6 +711,7 @@ ShallowWrapper {
                     className="currentTemp "
           >
                     <img
+                              alt="temperature"
                               className="iconStyling"
                               src="../images/temp-icon.png"
                     />
@@ -705,6 +728,7 @@ ShallowWrapper {
                     className="rangeTemp"
           >
                     <img
+                              alt="temperature"
                               className="iconStyling"
                               src="../images/temp-icon.png"
                     />
@@ -737,6 +761,7 @@ ShallowWrapper {
               className="currentTemp "
 >
               <img
+                            alt="temperature"
                             className="iconStyling"
                             src="../images/temp-icon.png"
               />
@@ -753,6 +778,7 @@ ShallowWrapper {
               className="rangeTemp"
 >
               <img
+                            alt="temperature"
                             className="iconStyling"
                             src="../images/temp-icon.png"
               />
@@ -790,6 +816,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <img
+                  alt="temperature"
                   className="iconStyling"
                   src="../images/temp-icon.png"
 />,
@@ -806,6 +833,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
+                  "alt": "temperature",
                   "className": "iconStyling",
                   "src": "../images/temp-icon.png",
                 },
@@ -838,6 +866,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <img
+                  alt="temperature"
                   className="iconStyling"
                   src="../images/temp-icon.png"
 />,
@@ -855,6 +884,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
+                  "alt": "temperature",
                   "className": "iconStyling",
                   "src": "../images/temp-icon.png",
                 },
@@ -917,6 +947,7 @@ ShallowWrapper {
                               className="currentTemp "
                     >
                               <img
+                                        alt="temperature"
                                         className="iconStyling"
                                         src="../images/temp-icon.png"
                               />
@@ -933,6 +964,7 @@ ShallowWrapper {
                               className="rangeTemp"
                     >
                               <img
+                                        alt="temperature"
                                         className="iconStyling"
                                         src="../images/temp-icon.png"
                               />
@@ -968,6 +1000,7 @@ ShallowWrapper {
                         className="currentTemp "
             >
                         <img
+                                    alt="temperature"
                                     className="iconStyling"
                                     src="../images/temp-icon.png"
                         />
@@ -984,6 +1017,7 @@ ShallowWrapper {
                         className="rangeTemp"
             >
                         <img
+                                    alt="temperature"
                                     className="iconStyling"
                                     src="../images/temp-icon.png"
                         />
@@ -1016,6 +1050,7 @@ ShallowWrapper {
                 className="currentTemp "
 >
                 <img
+                                alt="temperature"
                                 className="iconStyling"
                                 src="../images/temp-icon.png"
                 />
@@ -1032,6 +1067,7 @@ ShallowWrapper {
                 className="rangeTemp"
 >
                 <img
+                                alt="temperature"
                                 className="iconStyling"
                                 src="../images/temp-icon.png"
                 />
@@ -1069,6 +1105,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <img
+                    alt="temperature"
                     className="iconStyling"
                     src="../images/temp-icon.png"
 />,
@@ -1085,6 +1122,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
+                    "alt": "temperature",
                     "className": "iconStyling",
                     "src": "../images/temp-icon.png",
                   },
@@ -1117,6 +1155,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <img
+                    alt="temperature"
                     className="iconStyling"
                     src="../images/temp-icon.png"
 />,
@@ -1134,6 +1173,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
+                    "alt": "temperature",
                     "className": "iconStyling",
                     "src": "../images/temp-icon.png",
                   },
@@ -1231,6 +1271,7 @@ ShallowWrapper {
                         className="currentTemp "
                 >
                         <img
+                                alt="temperature"
                                 className="iconStyling"
                                 src="../images/temp-icon.png"
                         />
@@ -1247,6 +1288,7 @@ ShallowWrapper {
                         className="rangeTemp"
                 >
                         <img
+                                alt="temperature"
                                 className="iconStyling"
                                 src="../images/temp-icon.png"
                         />
@@ -1282,6 +1324,7 @@ ShallowWrapper {
                     className="currentTemp "
           >
                     <img
+                              alt="temperature"
                               className="iconStyling"
                               src="../images/temp-icon.png"
                     />
@@ -1298,6 +1341,7 @@ ShallowWrapper {
                     className="rangeTemp"
           >
                     <img
+                              alt="temperature"
                               className="iconStyling"
                               src="../images/temp-icon.png"
                     />
@@ -1330,6 +1374,7 @@ ShallowWrapper {
               className="currentTemp "
 >
               <img
+                            alt="temperature"
                             className="iconStyling"
                             src="../images/temp-icon.png"
               />
@@ -1346,6 +1391,7 @@ ShallowWrapper {
               className="rangeTemp"
 >
               <img
+                            alt="temperature"
                             className="iconStyling"
                             src="../images/temp-icon.png"
               />
@@ -1383,6 +1429,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <img
+                  alt="temperature"
                   className="iconStyling"
                   src="../images/temp-icon.png"
 />,
@@ -1399,6 +1446,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
+                  "alt": "temperature",
                   "className": "iconStyling",
                   "src": "../images/temp-icon.png",
                 },
@@ -1431,6 +1479,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <img
+                  alt="temperature"
                   className="iconStyling"
                   src="../images/temp-icon.png"
 />,
@@ -1448,6 +1497,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
+                  "alt": "temperature",
                   "className": "iconStyling",
                   "src": "../images/temp-icon.png",
                 },
@@ -1510,6 +1560,7 @@ ShallowWrapper {
                               className="currentTemp "
                     >
                               <img
+                                        alt="temperature"
                                         className="iconStyling"
                                         src="../images/temp-icon.png"
                               />
@@ -1526,6 +1577,7 @@ ShallowWrapper {
                               className="rangeTemp"
                     >
                               <img
+                                        alt="temperature"
                                         className="iconStyling"
                                         src="../images/temp-icon.png"
                               />
@@ -1561,6 +1613,7 @@ ShallowWrapper {
                         className="currentTemp "
             >
                         <img
+                                    alt="temperature"
                                     className="iconStyling"
                                     src="../images/temp-icon.png"
                         />
@@ -1577,6 +1630,7 @@ ShallowWrapper {
                         className="rangeTemp"
             >
                         <img
+                                    alt="temperature"
                                     className="iconStyling"
                                     src="../images/temp-icon.png"
                         />
@@ -1609,6 +1663,7 @@ ShallowWrapper {
                 className="currentTemp "
 >
                 <img
+                                alt="temperature"
                                 className="iconStyling"
                                 src="../images/temp-icon.png"
                 />
@@ -1625,6 +1680,7 @@ ShallowWrapper {
                 className="rangeTemp"
 >
                 <img
+                                alt="temperature"
                                 className="iconStyling"
                                 src="../images/temp-icon.png"
                 />
@@ -1662,6 +1718,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <img
+                    alt="temperature"
                     className="iconStyling"
                     src="../images/temp-icon.png"
 />,
@@ -1678,6 +1735,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
+                    "alt": "temperature",
                     "className": "iconStyling",
                     "src": "../images/temp-icon.png",
                   },
@@ -1710,6 +1768,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <img
+                    alt="temperature"
                     className="iconStyling"
                     src="../images/temp-icon.png"
 />,
@@ -1727,6 +1786,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
+                    "alt": "temperature",
                     "className": "iconStyling",
                     "src": "../images/temp-icon.png",
                   },
