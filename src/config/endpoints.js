@@ -1,7 +1,6 @@
 const API = {
     ENDPOINT: {
-        BASE: 'localhost:3001',
-        HOLA: process.env.REACT_APP_API_URL,
+        BASE: process.env.REACT_APP_API_URL || 'localhost:3001',
         DOMAIN: 'http',
         VERSION: '/api',
         DASHBOARD: {
@@ -12,7 +11,5 @@ const API = {
         },
     },
 };
-
-window.HOLA = process.env.REACT_APP_API_URL;
 
 export default API;
