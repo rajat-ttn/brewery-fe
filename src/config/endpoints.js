@@ -1,7 +1,7 @@
 const API = {
     ENDPOINT: {
         BASE: process.env.REACT_APP_API_URL || 'localhost:3001',
-        DOMAIN: 'http',
+        DOMAIN: process.env.REACT_APP_API_URL_PROTOCOL || 'http',
         VERSION: '/api',
         DASHBOARD: {
             getBeer: {
