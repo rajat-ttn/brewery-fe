@@ -1,5 +1,4 @@
 import React from 'react';
-import './style.css';
 
 const Header = ({ toggleSound, isMute }) => {
     const imageName = isMute ? 'alarm-mute.png' : 'alarm.png';
