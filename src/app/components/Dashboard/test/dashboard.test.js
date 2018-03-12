@@ -1,9 +1,9 @@
 import React from 'react';
-import { fetchBeerList } from '../async.action';
 import { shallow } from 'enzyme';
-import { setTemperatureType, toggleSound } from '../../Common/RunTimeConfig/action';
-import {DashboardContainer, mapStateToProps, mapDispatchToProps} from '../index';
 
+import { fetchBeerList } from '../async.action';
+import { setTemperatureType, toggleSound } from '../../Common/RunTimeConfig/action';
+import { DashboardContainer, mapStateToProps, mapDispatchToProps } from '../index';
 
 jest.mock('../async.action');
 jest.mock('../../Common/RunTimeConfig/action');
@@ -66,9 +66,7 @@ describe('BeerComponent component renders the BeerComponent correctly', () => {
 		allProps.isAnyBeerOutOfTempRange = "true";
 		expect(dashboardContainer).toMatchSnapshot();
 	});
-
-
-
+    
     it('audio should not play on mute', () => {
 
     	const dashboardContainerInstance = dashboardContainer.instance();
@@ -103,7 +101,7 @@ describe('BeerComponent component renders the BeerComponent correctly', () => {
         expect(play).toHaveBeenCalled();
         expect(pause).not.toHaveBeenCalled();
 
-        [play, pause].forEach((spy)=>{
+        [play, pause].forEach((spy) => {
             spy.mockReset();
             spy.mockRestore();
         });
@@ -141,7 +139,7 @@ describe('BeerComponent component renders the BeerComponent correctly', () => {
 
         expect(play).toHaveBeenCalled();
 
-        [play].forEach((spy)=>{
+        [play].forEach((spy) => {
             spy.mockReset();
             spy.mockRestore();
         });
@@ -158,7 +156,7 @@ describe('BeerComponent component renders the BeerComponent correctly', () => {
 
         expect(play).not.toHaveBeenCalled();
 
-        [play].forEach((spy)=>{
+        [play].forEach((spy) => {
             spy.mockReset();
             spy.mockRestore();
         });

@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 import './style.css';
 
@@ -10,3 +11,7 @@ const LoadingIndicator = ({ showLoader = false }) => {
 };
 
 export default LoadingIndicator;
+
+LoadingIndicator.propTypes = {
+    showLoader: PropTypes.bool,
+};

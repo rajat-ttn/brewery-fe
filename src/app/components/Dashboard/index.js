@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
+
 import '../../../css/bootstrap.css';
 import { fetchBeerList } from './async.action';
 import { setTemperatureType, toggleSound } from '../Common/RunTimeConfig/action';
@@ -51,7 +52,7 @@ class Dashboard extends Component {
     changeTemperatureType = event => {
         const updatedTempType = event.target.value;
         const { setTemperatureType } = this.props;
-        if(updatedTempType){
+        if (updatedTempType) {
             setTemperatureType(updatedTempType)
         }
     };
