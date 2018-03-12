@@ -31,9 +31,9 @@ class TimeAgo extends Component {
         });
         const lastTime = moment(lastTimeUpdated).fromNow();
         return (
-            <span>
-                {lastTime}
-            </span>
+            <small className="italic">
+                Last updated: {lastTime}
+            </small>
         );
     }
 }
