@@ -5,8 +5,13 @@ import Dashboard from './components/Dashboard';
 import store from './store';
 import '../css/App.css';
 import '../css/bootstrap.css';
+import NotificationService from './service/notificationService'
 
 class App extends Component {
+
+    componentDidMount(){
+        NotificationService.requestPermission();
+    }
 
     render() {
         return (

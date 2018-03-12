@@ -12,6 +12,7 @@ import TemperatureFilter from './temperatureFilter';
 import LoadingIndicator from '../Common/LoadingIndicator';
 import subscribeToUpdateTemperature from '../../socket';
 import { updateBeerTemperature } from './action';
+import NotificationService from '../../service/notificationService';
 
 class Dashboard extends Component {
     constructor(props){
@@ -21,6 +22,12 @@ class Dashboard extends Component {
         this.attachAudioEvents();
         subscribeToUpdateTemperature(data => {
             updateTemperature(data);
+            if(this.props.isAnyBeerOutOfTempRange) {
+                NotificationService.createNotification({
+                    title: 'Temperature out of range',
+                    body: 'Please check beer containers'
+                });
+            }
         });
         this.state = {
             showLoader: true,
