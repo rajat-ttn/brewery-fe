@@ -15,7 +15,7 @@ class TimeAgo extends Component {
     }
 
     componentDidMount () {
-        this.interval = setInterval(this.tick, 60000);
+        this.interval = setInterval(this.tick, 30000);
     }
     componentWillUnmount () {
         clearInterval(this.interval);
