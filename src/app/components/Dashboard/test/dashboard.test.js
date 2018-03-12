@@ -1,10 +1,10 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-
 import { fetchBeerList } from '../async.action';
+import { shallow } from 'enzyme';
 import { updateBeerTemperature } from '../action';
 import { setTemperatureType, toggleSound } from '../../Common/RunTimeConfig/action';
-import { DashboardContainer, mapStateToProps, mapDispatchToProps } from '../index';
+import {DashboardContainer, mapStateToProps, mapDispatchToProps} from '../index';
+
 
 jest.mock('../async.action');
 jest.mock('../../Common/RunTimeConfig/action');
@@ -22,7 +22,7 @@ toggleSound.mockReturnValue(TOGGLE_ACTION);
 const UPDATE_ACTION = Symbol('');
 updateBeerTemperature.mockReturnValue(UPDATE_ACTION);
 
-describe('BeerComponent component renders the BeerComponent correctly', () => {
+describe('Dashboard component should render correctly', () => {
 	let allProps,
 		dashboardContainer;
 
@@ -72,7 +72,7 @@ describe('BeerComponent component renders the BeerComponent correctly', () => {
 		allProps.isAnyBeerOutOfTempRange = "true";
 		expect(dashboardContainer).toMatchSnapshot();
 	});
-    
+
     it('audio should not play on mute', () => {
 
     	const dashboardContainerInstance = dashboardContainer.instance();

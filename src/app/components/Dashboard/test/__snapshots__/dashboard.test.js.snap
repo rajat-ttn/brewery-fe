@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BeerComponent component renders the BeerComponent correctly renders correctly with beer detail and temperature 1`] = `
+exports[`Dashboard component should render correctly renders correctly with beer detail and temperature 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -793,7 +793,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`BeerComponent component renders the BeerComponent correctly renders correctly with change in temperature 1`] = `
+exports[`Dashboard component should render correctly renders correctly with change in temperature 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -1586,7 +1586,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`BeerComponent component renders the BeerComponent correctly renders correctly with different temperature 1`] = `
+exports[`Dashboard component should render correctly renders correctly with different temperature 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -2379,7 +2379,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`BeerComponent component renders the BeerComponent correctly renders correctly with sound 1`] = `
+exports[`Dashboard component should render correctly renders correctly with sound 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -3172,7 +3172,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`BeerComponent component renders the BeerComponent correctly renders correctly without beerList 1`] = `
+exports[`Dashboard component should render correctly renders correctly without beerList 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],

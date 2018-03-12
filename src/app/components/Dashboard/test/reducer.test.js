@@ -43,7 +43,7 @@ describe('testing beerList reducer',() => {
         expect(changedState).toEqual(action.payload.beers);
     });
 
-    it('UPDATE_CONTAINER_TEMPERATURE action should should update temperature in reducer state', () => {
+    it('UPDATE_CONTAINER_TEMPERATURE action should update temperature in reducer state', () => {
         action.type = ACTION.UPDATE_CONTAINER_TEMPERATURE;
         action.payload = {
             containerId:1,
