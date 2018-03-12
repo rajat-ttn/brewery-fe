@@ -78,7 +78,7 @@ ShallowWrapper {
                 </span>
         </div>
 </div>,
-      "className": "col-md-4 commonBoxModel",
+      "className": "col-sm-6  col-md-6 col-lg-4 commonBoxModel",
     },
     "ref": null,
     "rendered": Object {
@@ -369,7 +369,7 @@ ShallowWrapper {
                     </span>
           </div>
 </div>,
-        "className": "col-md-4 commonBoxModel",
+        "className": "col-sm-6  col-md-6 col-lg-4 commonBoxModel",
       },
       "ref": null,
       "rendered": Object {
@@ -695,7 +695,7 @@ ShallowWrapper {
                 </span>
         </div>
 </div>,
-      "className": "col-md-4 commonBoxModel",
+      "className": "col-sm-6  col-md-6 col-lg-4 commonBoxModel",
     },
     "ref": null,
     "rendered": Object {
@@ -986,7 +986,7 @@ ShallowWrapper {
                     </span>
           </div>
 </div>,
-        "className": "col-md-4 commonBoxModel",
+        "className": "col-sm-6  col-md-6 col-lg-4 commonBoxModel",
       },
       "ref": null,
       "rendered": Object {
@@ -1312,7 +1312,7 @@ ShallowWrapper {
                 </span>
         </div>
 </div>,
-      "className": "col-md-4 commonBoxModel",
+      "className": "col-sm-6  col-md-6 col-lg-4 commonBoxModel",
     },
     "ref": null,
     "rendered": Object {
@@ -1603,7 +1603,7 @@ ShallowWrapper {
                     </span>
           </div>
 </div>,
-        "className": "col-md-4 commonBoxModel",
+        "className": "col-sm-6  col-md-6 col-lg-4 commonBoxModel",
       },
       "ref": null,
       "rendered": Object {
