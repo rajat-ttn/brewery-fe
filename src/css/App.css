@@ -1,65 +1,21 @@
+/*----Common----*/
 *{
   font-family: Proxima Nova, Arial, Helvetica, sans-serif;
 }
-.dashboardBackground{
-  background-size: contain;
+body{ background-color: #f1f1f2;}
+.msgStyle{
+  text-align: center; width:100%; margin-top: 10px; font-weight: bold; margin-top: 20%;
 }
 .pageLayout{
   margin:0 30px;
 }
-.beerContainer{
-  background-color: #f1f1f1;
-  border-radius:8px;
-  text-align: right;
-  padding-top:25px;
-  padding-right: 25px;
-  width:100%;
-  height:255px;
-  color:#fff;
-  background-image: url("../assets/images/container.png");
-  -webkit-box-shadow: -1px 1px 8px 2px #cccccc;
-  -moz-box-shadow: -1px 1px 8px 2px #cccccc;
-  box-shadow: -1px 1px 8px 2px #cccccc;
-  position: relative;
+.wrapper{
+  min-height:100%;
+  position:relative;
+  margin-bottom: 35px;
+}
 
-}
-.beertype{
-  font: bold 28px/46px Proxima Nova, Arial, Helvetica, sans-serif;
-}
-.currentTemp{
-  font: bold 65px/57px Proxima Nova, Arial, Helvetica, sans-serif;
-  display:block;
-}
-.rangeTemp{
-  font: bold 35px Proxima Nova, Arial, Helvetica, sans-serif;
-  display:block;
-}
-.iconStyling{
-  margin-top: -8px;
-  margin-right:5px;
-}
-.tmpLabel{
-  font: normal 14px Proxima Nova, Arial, Helvetica, sans-serif;
-  display: block;
-  margin-bottom: 15px;
-}
-.logoStyle{
-  width: 41px;
-  height: auto;
-  float: left;
-  margin-top: 6px;
-  margin-left: 20px;
-  margin-right: 6px;
-}
-span.currentTemp> span {
-  font-size: 60px;
-}
-.beerContainer:hover{
-  background-color: #f1f1f1;
-  -webkit-box-shadow: -1px 1px 15px 5px #f1c40f;
-  -moz-box-shadow: -1px 1px 15px 5px #f1c40f;
-  box-shadow: -1px 2px 20px 5px #f1c40f;
-}
+/*----Header----*/
 header{
   background-color: #34302c;
   color:#ffffff;
@@ -73,8 +29,62 @@ header h1{
   font-weight: bold;
   padding-top: 8px;
 }
+.logoStyle{
+  width: 41px;
+  height: auto;
+  float: left;
+  margin-top: 6px;
+  margin-left: 20px;
+  margin-right: 6px;
+}
+.dropdownSection{
+  position: absolute;
+  right: 100px;
+  top: 18px;
+}
+.dropdownSection > select.form-control:not([size]):not([multiple]){
+  height: 22px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 14px;
+}
+.bellIcon{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 40px;
+  top: 15px;
+}
+
+/*----Content Part----*/
+.beerlistSection{
+  padding-top: 20px;
+}
 .commonBoxModel{
   padding: 15px 15px;
+}
+.beerContainer{
+  background-color: #e1e1e1;
+  border-radius:8px;
+  text-align: right;
+  padding-top:25px;
+  padding-right: 25px;
+  width:100%;
+  height:255px;
+  color:#fff;
+  background-image: url("/images/container.png");
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  -webkit-box-shadow: -1px 1px 8px 2px #cccccc;
+  -moz-box-shadow: -1px 1px 8px 2px #cccccc;
+  box-shadow: -1px 1px 8px 2px #cccccc;
+  position: relative;
+}
+.beerContainer:hover{
+  background-color: #f1f1f1;
+  -webkit-box-shadow: -1px 1px 15px 5px #f1c40f;
+  -moz-box-shadow: -1px 1px 15px 5px #f1c40f;
+  box-shadow: -1px 2px 20px 5px #f1c40f;
 }
 .overlay {
   position: absolute;
@@ -89,21 +99,31 @@ header h1{
   padding-right: 25px;
   padding-top: 22px;
 }
-.redOverlay{
-  background-color: rgba(1620,0,0,0.5);
+.beertype{
+  font: bold 28px/36px Proxima Nova, Arial, Helvetica, sans-serif;
 }
-.blueOverlay{
-  background-color: rgba(0,0,1620,0.5);
+.currentTemp{
+  font: bold 65px/57px Proxima Nova, Arial, Helvetica, sans-serif;
+  display:block;
 }
-.danger {
-  -webkit-animation: 2s linear infinite condemned_blink_effect; // for android
-  animation: 2s linear infinite condemned_blink_effect;
+span.currentTemp> span {
+  font-size: 60px;
 }
-.red{color:red}
-.blue{color:#025ab9}
-.beerlistSection{
-  padding-top: 20px;
+.rangeTemp{
+  font: bold 35px Proxima Nova, Arial, Helvetica, sans-serif;
+  display:block;
 }
+.iconStyling{
+  margin-top: -8px;
+  margin-right:5px;
+}
+.tmpLabel{
+  font: normal 14px Proxima Nova, Arial, Helvetica, sans-serif;
+  display: block;
+  margin-bottom: 16px;
+}
+
+/*----Top Right legends----*/
 .colorInfoWrapper{
   position:relative;
 }
@@ -112,18 +132,26 @@ header h1{
   right:8px;
   position: absolute;
 }
-
 .status-circle{
-  width:12px;
-  height:12px;
-  border-radius: 6px;
-  border:1px solid #000000;
-  display:inline-block;
-  margin-right:5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 5px;
   margin-left: 25px;
 }
 .blueBackground{background-color:#025ab9}
-.redBackground{background-color:red}
+.redBackground{background-color:#ff0000}
+
+/*----Out of Range Tempertature Colors----*/
+.danger {
+  -webkit-animation: 2s linear infinite condemned_blink_effect;
+  animation: 2s linear infinite condemned_blink_effect;
+}
+.red{color:#ff0000}
+.blue{color:#025ab9}
+
+/*----Blink Animation----*/
 @-webkit-keyframes condemned_blink_effect {
   0% {
     visibility: hidden;
@@ -146,6 +174,15 @@ header h1{
     visibility: visible;
   }
 }
+
+/*----Last Updated time----*/
+.italic{
+  font-style: italic;
+  font-size: 70%;
+}
+
+
+/*----Footer----*/
 footer{
   background-color: #34302c;
   color:#ffffff;
@@ -153,15 +190,52 @@ footer{
   text-align: center;
   margin-top:15px;
   border-top:2px solid #aaaaaa;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  z-index: 9;
 }
-.dropdownSection{
-  position: absolute;
-  right: 35px;
-  top: 18px;
+
+/*----Customize Responsive CSS----*/
+@media only screen and (max-width: 1024px){
+  .beerContainer{
+    height:290px;
+  }
+  .beertype {
+    line-height: 55px;
+  }
+  .tmpLabel{
+    margin-bottom: 20px;
+  }
 }
-.dropdownSection > select.form-control:not([size]):not([multiple]){
-  height: 22px;
-  padding-top: 0;
-  padding-bottom: 0;
-  font-size: 14px;
+@media only screen and (max-width: 768px) {
+
+  .tmpLabel{
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .beerContainer{
+    height: 265px;
+  }
+  .tmpLabel{
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  header {
+    height:100px;
+  }
+  .bellIcon{
+    top: 60px;
+  }
+  .dropdownSection{
+    top: 60px;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 575px){
+  .beerContainer{
+    width:80%;
+    margin:0 auto;
+  }
 }

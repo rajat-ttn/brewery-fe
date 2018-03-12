@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders without crashing should render children correctly 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="loader"
+  />
+  <header>
+    <img
+      alt="logo"
+      className="logoStyle"
+      src="/images/beer_logo.png"
+    />
+    <h1>
+      The Brewery
+    </h1>
+    <span
+      onClick={[Function]}
+    >
+      <img
+        alt="alarm"
+        className="bellIcon"
+        src="/images/alarm.png"
+      />
+    </span>
+  </header>
+  <div
+    className="pageLayout"
+  >
+    <div
+      className="dropdownSection"
+    >
+      <select
+        className="input-sm form-control input-s-sm inline"
+        onChange={[Function]}
+        value="CELSIUS"
+      >
+        <option
+          value="CELSIUS"
+        >
+          Celsius
+        </option>
+        <option
+          value="FAHRENHEIT"
+        >
+          Fahrenheit
+        </option>
+      </select>
+    </div>
+    <div
+      className="colorInfoWrapper"
+    >
+      <div
+        className="colorInfo"
+      >
+        <span
+          className="status-circle blueBackground"
+        />
+        <small>
+          <strong>
+            Too Low
+          </strong>
+        </small>
+        <span
+          className="status-circle redBackground"
+        />
+        <small>
+          <strong>
+            Too High
+          </strong>
+        </small>
+      </div>
+    </div>
+    <div
+      className="row beerlistSection"
+    >
+      <div
+        className="msgStyle"
+      >
+        <p>
+          No Container Found
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <small>
+      © 2018 The Brewery  - Transport Refrigeration Sensors
+    </small>
+  </footer>
+</div>
+`;

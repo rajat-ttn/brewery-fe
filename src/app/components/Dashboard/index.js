@@ -3,22 +3,50 @@ import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
 import '../../../css/bootstrap.css';
 import { fetchBeerList } from './async.action';
-import { setTemperatureType } from '../Common/RunTimeConfig/action';
+import { setTemperatureType, toggleSound } from '../Common/RunTimeConfig/action';
 import Header from '../Common/Header'
 import Footer from '../Common/Footer'
 import BeerComponent from '../BeerComponent';
 import TemperatureFilter from './temperatureFilter';
+import LoadingIndicator from '../Common/LoadingIndicator';
 
 class Dashboard extends Component {
     constructor(props){
         super(props);
-        this.state = {}
+        this.audio = new Audio('/sounds/Alarm.mp3');
+        this.attachAudioEvents();
+        this.state = {
+            showLoader: true,
+        };
     }
 
     componentDidMount(){
         const { fetchBeerList } = this.props;
-        fetchBeerList();
+        fetchBeerList().then(response => {
+            if (response.status === 200) {
+                this.setState({ showLoader: false });
+            } else if (response.status !== 200) {
+                this.setState({ showLoader: false });
+            }
+        }).catch(() => this.setState({ showLoader: false }));
     }
+
+    componentWillReceiveProps({ isMute, isAnyBeerOutOfTempRange }) {
+        const audio = this.audio;
+        if (isMute || !isAnyBeerOutOfTempRange) {
+            audio.pause();
+        } else if (isAnyBeerOutOfTempRange) {
+            audio.play();
+        };
+    };
+
+    attachAudioEvents = () => {
+        this.audio.onended = () => {
+            if (this.props.isAnyBeerOutOfTempRange && !this.props.isMute) {
+                this.audio.play();
+            }
+        }
+    };
 
     changeTemperatureType = event => {
         const updatedTempType = event.target.value;
@@ -26,22 +54,24 @@ class Dashboard extends Component {
         if(updatedTempType){
             setTemperatureType(updatedTempType)
         }
-    }
+    };
     
     render() {
-        const { beerList, temperatureType } = this.props;
+        const { beerList, temperatureType, isMute } = this.props;
+        const { showLoader } = this.state;
         return (
-            <div>
-                <Header />
+            <div className="wrapper">
+                <LoadingIndicator showLoader={showLoader}/>
+                <Header toggleSound={() => { this.props.toggleSound(!isMute); }} isMute={isMute} />
                 <div className="pageLayout">
                     <div className="dropdownSection">
                         <TemperatureFilter temperatureType={temperatureType} changeTemperatureType={this.changeTemperatureType}/>
                     </div>
                     <div className="colorInfoWrapper">
                         <div className="colorInfo">
-                            <span className="status-circle blueBackground"></span>
+                            <span className="status-circle blueBackground" />
                             <small><strong>Too Low</strong></small>
-                            <span className="status-circle redBackground"></span>
+                            <span className="status-circle redBackground" />
                             <small><strong>Too High</strong></small>
                         </div>
                     </div>
@@ -50,7 +80,7 @@ class Dashboard extends Component {
                             beerList && beerList.length ?
                                 beerList.map((beer, index) => (
                                     <BeerComponent beerContentDetail={beer} key={beer.id} temperatureType={temperatureType} />
-                                )) : null
+                                )) : <div className="msgStyle"><p>No Container Found</p></div>
                         }
                     </div>
                 </div>
@@ -67,17 +97,31 @@ Dashboard.defaultProps = {
 Dashboard.propTypes = {
     fetchBeerList: PropTypes.func.isRequired,
     setTemperatureType: PropTypes.func.isRequired,
-    temperatureType: PropTypes.string.isRequired,
+    config: PropTypes.object,
 };
 
-const mapStateToProps = (state) => ({
-    beerList: state.beerList,
-    temperatureType: state.temperatureType.temperatureType,
-});
+export const mapStateToProps = state => {
+    let isAnyBeerOutOfTempRange = false;
+    state.beerList.forEach(({ currentTemperature, tempRange }) => {
+        if (currentTemperature < tempRange[0] || currentTemperature > tempRange[1]) {
+            isAnyBeerOutOfTempRange = true;
+        }
+    });
+    return  ({
+        beerList: state.beerList,
+        temperatureType: state.config.temperatureType,
+        isMute: state.config.isMute,
+        isAnyBeerOutOfTempRange,
+    })
+};
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = dispatch => ({
     fetchBeerList: () => dispatch(fetchBeerList()),
-    setTemperatureType: (value) => dispatch(setTemperatureType(value)),
+    setTemperatureType: value => dispatch(setTemperatureType(value)),
+    toggleSound: isMute => dispatch(toggleSound(isMute)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
+
+
+export { Dashboard as DashboardContainer };

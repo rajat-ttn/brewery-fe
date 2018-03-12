@@ -6,11 +6,12 @@ import Dashboard from './components/Dashboard';
 import store from './store';
 import { updateBeerTemperature } from './common/action';
 import socket from './socket';
+import { TEMP_EVENT } from '../constants/textConstants';
 
 class App extends Component {
 
     componentDidMount() {
-        socket.on("CONTAINER_TEMPERATURE_CHANGE", (data) => {
+        socket.on(TEMP_EVENT.CONTAINER_TEMPERATURE_CHANGE, (data) => {
             store.dispatch(updateBeerTemperature(data));
         });
     }
