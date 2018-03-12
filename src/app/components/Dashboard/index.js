@@ -49,8 +49,8 @@ class Dashboard extends Component {
     render() {
         const { beerList, temperatureType, isMute } = this.props;
         return (
-            <div>
-                <Header toggleSound={() => { this.props.toggleSound(!isMute); }} />
+            <div className="wrapper">
+                <Header toggleSound={() => { this.props.toggleSound(!isMute); }} isMute={isMute} />
                 <div className="pageLayout">
                     <div className="dropdownSection">
                         <TemperatureFilter temperatureType={temperatureType} changeTemperatureType={this.changeTemperatureType}/>

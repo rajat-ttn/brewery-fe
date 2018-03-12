@@ -2,8 +2,13 @@
   font-family: Proxima Nova, Arial, Helvetica, sans-serif;
 }
 body{ background-color: #f1f1f2;}
+.wrapper{
+  min-height:100%;
+  position:relative;
+  margin-bottom: 35px;
+}
 .msgStyle{
-  text-align: center; width:100%; margin-top: 10px; font-weight: bold;
+  text-align: center; width:100%; margin-top: 10px; font-weight: bold; margin-top: 20%;
 }
 .pageLayout{
   margin:0 30px;
@@ -18,6 +23,8 @@ body{ background-color: #f1f1f2;}
   height:255px;
   color:#fff;
   background-image: url("../assets/images/container.png");
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
   -webkit-box-shadow: -1px 1px 8px 2px #cccccc;
   -moz-box-shadow: -1px 1px 8px 2px #cccccc;
   box-shadow: -1px 1px 8px 2px #cccccc;
@@ -25,7 +32,7 @@ body{ background-color: #f1f1f2;}
 
 }
 .beertype{
-  font: bold 28px/46px Proxima Nova, Arial, Helvetica, sans-serif;
+  font: bold 28px/36px Proxima Nova, Arial, Helvetica, sans-serif;
 }
 .currentTemp{
   font: bold 65px/57px Proxima Nova, Arial, Helvetica, sans-serif;
@@ -42,7 +49,7 @@ body{ background-color: #f1f1f2;}
 .tmpLabel{
   font: normal 14px Proxima Nova, Arial, Helvetica, sans-serif;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 .logoStyle{
   width: 41px;
@@ -122,6 +129,11 @@ header h1{
   margin-right: 5px;
   margin-left: 25px;
 }
+.italic{
+  font-style: italic;
+  font-size: 70%;
+
+ }
 .blueBackground{background-color:#025ab9}
 .redBackground{background-color:#ff0000}
 @-webkit-keyframes condemned_blink_effect {
@@ -153,6 +165,9 @@ footer{
   text-align: center;
   margin-top:15px;
   border-top:2px solid #aaaaaa;
+  position:fixed;
+  bottom:0;
+  width:100%;
 }
 .dropdownSection{
   position: absolute;
@@ -166,9 +181,41 @@ footer{
   font-size: 14px;
 }
 .bellIcon{
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   right: 40px;
-  top: 5px;
+  top: 15px;
+}
+@media only screen and (max-width: 1024px){
+  .beerContainer{
+    height:290px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .beerContainer{
+    height:270px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .beerContainer{
+    height:245px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  header {
+    height:100px;
+  }
+  .bellIcon{
+    top: 60px;
+  }
+  .dropdownSection{
+    top: 60px;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 575px){
+  .beerContainer{
+    width:80%;
+    margin:0 auto;
+  }
 }
