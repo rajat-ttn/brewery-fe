@@ -10,12 +10,9 @@ describe('show last temperature correctly', () => {
     const initialState = {};
     const mockStore = configureStore();
     let TimeAgoComponent;
-    let store = {
-        beerList: [{beerType : "Aler Beer1", containerId: 1, id: 1, currentTemperature: 6, lastUpdatedTime: '', tempRange: [4,6] }, {beerType : "Aler Beer2", containerId: 2, id: 2, currentTemperature: 3, lastUpdatedTime: '', tempRange: [4,6] }],
-        beerContentDetail: {beerType : "Aler Beer", containerId: 1, id: 1, currentTemperature: 6, lastUpdatedTime: '', tempRange: [4,6] }
-    };
     const beerContentDetail= {beerType : "Aler Beer", containerId: 1, id: 1, currentTemperature: 6, lastUpdatedTime: '', tempRange: [4,6] };
     const beerList= [{beerType : "Aler Beer1", containerId: 1, id: 1, currentTemperature: 6, lastUpdatedTime: '', tempRange: [4,6] }, {beerType : "Aler Beer2", containerId: 2, id: 2, currentTemperature: 3, lastUpdatedTime: '', tempRange: [4,6] }];
+    let store = {beerContentDetail, beerList};
     const dispatch= jest.fn();
 
     beforeEach(() => {
@@ -23,12 +20,11 @@ describe('show last temperature correctly', () => {
         TimeAgoComponent = shallow(<TimeAgo store={store} beerContentDetail={beerContentDetail}  />);
     });
 
-
     it('last temperature update', () => {
         expect(TimeAgoComponent).toMatchSnapshot();
     });
 
-    it('should set state', () => {
+    it('should set state correctly', () => {
         const TimeAgoContainerComponent = shallow(<TimeAgoContainer beerList={beerList}  beerContentDetail={beerContentDetail}  />);
         expect(TimeAgoContainerComponent.state()).toEqual({ secondsElapsed: 0 });
     });
@@ -39,7 +35,6 @@ describe('show last temperature correctly', () => {
             const tick = jest.spyOn(timeAgoContainerInstance.tick, 'tick');
             expect(tick).toHaveBeenCalled();
             expect(timeAgoContainerInstance.state()).toEqual({secondsElapsed: this.state.secondsElapsed + 1});
-
         })
     });
 

@@ -17,7 +17,7 @@ setTemperatureType.mockReturnValue(TEMP_ACTION);
 const TOGGLE_ACTION = Symbol('');
 toggleSound.mockReturnValue(TOGGLE_ACTION);
 
-describe('BeerComponent component renders the BeerComponent correctly', () => {
+describe('Dashboard component should render correctly', () => {
 	let allProps,
 		dashboardContainer;
 
@@ -66,8 +66,6 @@ describe('BeerComponent component renders the BeerComponent correctly', () => {
 		allProps.isAnyBeerOutOfTempRange = "true";
 		expect(dashboardContainer).toMatchSnapshot();
 	});
-
-
 
     it('audio should not play on mute', () => {
 
