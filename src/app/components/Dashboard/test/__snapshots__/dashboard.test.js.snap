@@ -38,6 +38,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <LoadingIndicator
+          showLoader={true}
+/>,
         <Header
           isMute="false"
           toggleSound={[Function]}
@@ -102,6 +105,17 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "showLoader": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -399,6 +413,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <LoadingIndicator
+            showLoader={true}
+/>,
           <Header
             isMute="false"
             toggleSound={[Function]}
@@ -463,6 +480,17 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "showLoader": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -802,6 +830,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <LoadingIndicator
+          showLoader={true}
+/>,
         <Header
           isMute="false"
           toggleSound={[Function]}
@@ -866,6 +897,17 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "showLoader": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -1163,6 +1205,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <LoadingIndicator
+            showLoader={true}
+/>,
           <Header
             isMute="false"
             toggleSound={[Function]}
@@ -1227,6 +1272,17 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "showLoader": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -1566,6 +1622,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <LoadingIndicator
+          showLoader={true}
+/>,
         <Header
           isMute="false"
           toggleSound={[Function]}
@@ -1630,6 +1689,17 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "showLoader": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -1927,6 +1997,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <LoadingIndicator
+            showLoader={true}
+/>,
           <Header
             isMute="false"
             toggleSound={[Function]}
@@ -1991,6 +2064,17 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "showLoader": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -2330,6 +2414,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <LoadingIndicator
+          showLoader={true}
+/>,
         <Header
           isMute="false"
           toggleSound={[Function]}
@@ -2394,6 +2481,17 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "showLoader": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -2691,6 +2789,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <LoadingIndicator
+            showLoader={true}
+/>,
           <Header
             isMute="false"
             toggleSound={[Function]}
@@ -2755,6 +2856,17 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "showLoader": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -3094,6 +3206,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <LoadingIndicator
+          showLoader={true}
+/>,
         <Header
           isMute="false"
           toggleSound={[Function]}
@@ -3158,6 +3273,17 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "showLoader": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -3455,6 +3581,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <LoadingIndicator
+            showLoader={true}
+/>,
           <Header
             isMute="false"
             toggleSound={[Function]}
@@ -3519,6 +3648,17 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "showLoader": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,

@@ -4,6 +4,9 @@ exports[`App renders without crashing should render children correctly 1`] = `
 <div
   className="wrapper"
 >
+  <div
+    className="loader"
+  />
   <header>
     <img
       alt="logo"
