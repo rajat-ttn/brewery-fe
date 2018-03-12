@@ -1,8 +1,7 @@
 import * as actions from '../action';
 import * as types from '../../../../../constants/actions';
 
-
-describe('update temperature',()=> {
+describe('update temperature', () => {
     it('should set correct temperature', () => {
         let currentValue = "CELSIUS";
         const expectedAction = {
@@ -12,7 +11,7 @@ describe('update temperature',()=> {
         expect(actions.setTemperatureType(currentValue)).toEqual(expectedAction);
     });
     it('On trigger sound should toggle', () => {
-        let isMute = "false";
+        let isMute = false;
         const expectedAction = {
             type: types.default.TOGGLE_SOUND,
             payload: isMute

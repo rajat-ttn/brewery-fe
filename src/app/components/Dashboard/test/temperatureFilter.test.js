@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+
 import TemperatureFilter from '../temperatureFilter';
 
 describe('Temperature Filter filters beer based on temperature correctly', () => {

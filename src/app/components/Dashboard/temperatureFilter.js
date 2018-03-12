@@ -1,5 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+
 import { TEMPERATURE_TYPE } from '../../../constants/textConstants';
 
 const TemperatureFilter = ({ temperatureType, changeTemperatureType }) => {

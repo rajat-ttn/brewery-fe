@@ -1,7 +1,7 @@
 import ACTION from '../../../constants/actions';
 const initialState = [];
 
-const updateBeerData = (state, {beers}) => {
+const updateBeerData = (state, { beers }) => {
     return [...beers ]
 };
 

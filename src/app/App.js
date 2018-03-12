@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import '../css/App.css';
-import '../css/bootstrap.css';
+
 import Dashboard from './components/Dashboard';
 import store from './store';
 import { updateBeerTemperature } from './common/action';
 import socket from './socket';
 import { TEMP_EVENT } from '../constants/textConstants';
+import '../css/App.css';
+import '../css/bootstrap.css';
 
 class App extends Component {
 

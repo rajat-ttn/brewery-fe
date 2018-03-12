@@ -1,16 +1,16 @@
 import ACTION from '../../../../../constants/actions';
 import configReducer from '../reducer';
 
-describe('testing config reducer',()=> {
+describe('testing config reducer', () => {
 
     let initialState = {
-        temperatureType : 'CELSIUS',
+        temperatureType: 'CELSIUS',
         isMute: false,
     };
 
     let action = {
         type: null,
-        payload:null
+        payload: null
     };
 
     it('SET_TEMPERATURE_TYPE action should update reducer state', () => {

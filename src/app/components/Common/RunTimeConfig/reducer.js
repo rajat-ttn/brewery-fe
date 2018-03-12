@@ -1,11 +1,12 @@
 import ACTION from '../../../../constants/actions';
+
 const initialState = {
-    temperatureType : 'CELSIUS',
+    temperatureType: 'CELSIUS',
     isMute: false,
 };
 
 const setTemperatureType = (state, payload) => {
-    return { ...state, temperatureType:payload };
+    return { ...state, temperatureType: payload };
 };
 
 export default function configReducer(state = initialState, action) {

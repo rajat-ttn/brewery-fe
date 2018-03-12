@@ -1,6 +1,7 @@
-import {fetchBeerList} from '../async.action';
 import axios from 'axios';
+
 import { getBeerList } from '../action'
+import { fetchBeerList } from '../async.action';
 import { setErrorMessage } from '../../Common/ErrorHandling/action'
 
 describe('testing beerList reducer',()=> {
@@ -12,20 +13,20 @@ describe('testing beerList reducer',()=> {
             name:'rajat'
         }
     };
-    beforeAll(()=>{
+    beforeAll(() => {
         actualImplementation = axios.get;
-        axios.get  = function(){
+        axios.get  = () => {
             return Promise.resolve(mockedResponse);
         }
     });
 
-    afterAll(()=>{
+    afterAll(() => {
         axios.get = actualImplementation;
     });
 
     it('should trigger GET_BEER_LIST action with appropriate data if API call is successful', () => {
         const dispatch = jest.fn();
-        return fetchBeerList()(dispatch).then(()=>{
+        return fetchBeerList()(dispatch).then(() => {
             expect(dispatch).toBeCalledWith(getBeerList(mockedResponse.data));
         });
     });
@@ -36,7 +37,7 @@ describe('testing beerList reducer',()=> {
             errorMsg:'some_error'
         };
         const dispatch = jest.fn();
-        return fetchBeerList()(dispatch).then(()=>{
+        return fetchBeerList()(dispatch).then(() => {
             expect(dispatch).toBeCalledWith(setErrorMessage(mockedResponse.data));
         });
     });
