@@ -28,6 +28,7 @@ class TimeAgo extends Component {
             if (beerContentDetail.containerId === containerId) {
                 lastTimeUpdated = lastUpdatedTime;
             }
+            return lastTimeUpdated;
         });
         const lastTime = moment(lastTimeUpdated).fromNow();
         return (
@@ -43,11 +44,12 @@ TimeAgo.propTypes = {
     beerContentDetail: PropTypes.object.isRequired,
 };
 
-const mapStateToProps = state => {
+export const mapStateToProps = state => {
     return  ({
-        beerList: state.beerList,
+        beerList: state.beerList || [],
     })
 };
 
 
 export default connect(mapStateToProps, null)(TimeAgo);
+export { TimeAgo as TimeAgoContainer };
