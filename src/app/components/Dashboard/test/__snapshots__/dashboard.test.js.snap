@@ -19,8 +19,8 @@ ShallowWrapper {
           ]
     }
     fetchBeerList={[Function]}
-    isAnyBeerOutOfTempRange="false"
-    isMute="false"
+    isAnyBeerOutOfTempRange={false}
+    isMute={false}
     setTemperatureType={[Function]}
     temperatureType="FAHRENHEIT"
     toggleSound={[Function]}
@@ -38,7 +38,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <LoadingIndicator
+          showLoader={true}
+/>,
         <Header
+          isMute={false}
           toggleSound={[Function]}
 />,
         <div
@@ -97,6 +101,7 @@ ShallowWrapper {
 </div>,
         <Footer />,
       ],
+      "className": "wrapper",
     },
     "ref": null,
     "rendered": Array [
@@ -105,6 +110,18 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "showLoader": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "isMute": false,
           "toggleSound": [Function],
         },
         "ref": null,
@@ -396,7 +413,11 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <LoadingIndicator
+            showLoader={true}
+/>,
           <Header
+            isMute={false}
             toggleSound={[Function]}
 />,
           <div
@@ -455,6 +476,7 @@ ShallowWrapper {
 </div>,
           <Footer />,
         ],
+        "className": "wrapper",
       },
       "ref": null,
       "rendered": Array [
@@ -463,6 +485,18 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "showLoader": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "isMute": false,
             "toggleSound": [Function],
           },
           "ref": null,
@@ -777,8 +811,8 @@ ShallowWrapper {
           ]
     }
     fetchBeerList={[Function]}
-    isAnyBeerOutOfTempRange="false"
-    isMute="false"
+    isAnyBeerOutOfTempRange={false}
+    isMute={false}
     setTemperatureType={[Function]}
     temperatureType="FAHRENHEIT"
     toggleSound={[Function]}
@@ -796,7 +830,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <LoadingIndicator
+          showLoader={true}
+/>,
         <Header
+          isMute={false}
           toggleSound={[Function]}
 />,
         <div
@@ -855,6 +893,7 @@ ShallowWrapper {
 </div>,
         <Footer />,
       ],
+      "className": "wrapper",
     },
     "ref": null,
     "rendered": Array [
@@ -863,6 +902,18 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "showLoader": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "isMute": false,
           "toggleSound": [Function],
         },
         "ref": null,
@@ -1154,7 +1205,11 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <LoadingIndicator
+            showLoader={true}
+/>,
           <Header
+            isMute={false}
             toggleSound={[Function]}
 />,
           <div
@@ -1213,6 +1268,7 @@ ShallowWrapper {
 </div>,
           <Footer />,
         ],
+        "className": "wrapper",
       },
       "ref": null,
       "rendered": Array [
@@ -1221,6 +1277,18 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "showLoader": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "isMute": false,
             "toggleSound": [Function],
           },
           "ref": null,
@@ -1535,8 +1603,8 @@ ShallowWrapper {
           ]
     }
     fetchBeerList={[Function]}
-    isAnyBeerOutOfTempRange="false"
-    isMute="false"
+    isAnyBeerOutOfTempRange={false}
+    isMute={false}
     setTemperatureType={[Function]}
     temperatureType="FAHRENHEIT"
     toggleSound={[Function]}
@@ -1554,7 +1622,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <LoadingIndicator
+          showLoader={true}
+/>,
         <Header
+          isMute={false}
           toggleSound={[Function]}
 />,
         <div
@@ -1613,6 +1685,7 @@ ShallowWrapper {
 </div>,
         <Footer />,
       ],
+      "className": "wrapper",
     },
     "ref": null,
     "rendered": Array [
@@ -1621,6 +1694,18 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "showLoader": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "isMute": false,
           "toggleSound": [Function],
         },
         "ref": null,
@@ -1912,7 +1997,11 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <LoadingIndicator
+            showLoader={true}
+/>,
           <Header
+            isMute={false}
             toggleSound={[Function]}
 />,
           <div
@@ -1971,6 +2060,7 @@ ShallowWrapper {
 </div>,
           <Footer />,
         ],
+        "className": "wrapper",
       },
       "ref": null,
       "rendered": Array [
@@ -1979,6 +2069,18 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "showLoader": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "isMute": false,
             "toggleSound": [Function],
           },
           "ref": null,
@@ -2293,8 +2395,8 @@ ShallowWrapper {
           ]
     }
     fetchBeerList={[Function]}
-    isAnyBeerOutOfTempRange="false"
-    isMute="false"
+    isAnyBeerOutOfTempRange={false}
+    isMute={false}
     setTemperatureType={[Function]}
     temperatureType="FAHRENHEIT"
     toggleSound={[Function]}
@@ -2312,7 +2414,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <LoadingIndicator
+          showLoader={true}
+/>,
         <Header
+          isMute={false}
           toggleSound={[Function]}
 />,
         <div
@@ -2371,6 +2477,7 @@ ShallowWrapper {
 </div>,
         <Footer />,
       ],
+      "className": "wrapper",
     },
     "ref": null,
     "rendered": Array [
@@ -2379,6 +2486,18 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "showLoader": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "isMute": false,
           "toggleSound": [Function],
         },
         "ref": null,
@@ -2670,7 +2789,11 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <LoadingIndicator
+            showLoader={true}
+/>,
           <Header
+            isMute={false}
             toggleSound={[Function]}
 />,
           <div
@@ -2729,6 +2852,7 @@ ShallowWrapper {
 </div>,
           <Footer />,
         ],
+        "className": "wrapper",
       },
       "ref": null,
       "rendered": Array [
@@ -2737,6 +2861,18 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "showLoader": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "isMute": false,
             "toggleSound": [Function],
           },
           "ref": null,
@@ -3051,8 +3187,8 @@ ShallowWrapper {
           ]
     }
     fetchBeerList={[Function]}
-    isAnyBeerOutOfTempRange="false"
-    isMute="false"
+    isAnyBeerOutOfTempRange={false}
+    isMute={false}
     setTemperatureType={[Function]}
     temperatureType="FAHRENHEIT"
     toggleSound={[Function]}
@@ -3070,7 +3206,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <LoadingIndicator
+          showLoader={true}
+/>,
         <Header
+          isMute={false}
           toggleSound={[Function]}
 />,
         <div
@@ -3129,6 +3269,7 @@ ShallowWrapper {
 </div>,
         <Footer />,
       ],
+      "className": "wrapper",
     },
     "ref": null,
     "rendered": Array [
@@ -3137,6 +3278,18 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "showLoader": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "isMute": false,
           "toggleSound": [Function],
         },
         "ref": null,
@@ -3428,7 +3581,11 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <LoadingIndicator
+            showLoader={true}
+/>,
           <Header
+            isMute={false}
             toggleSound={[Function]}
 />,
           <div
@@ -3487,6 +3644,7 @@ ShallowWrapper {
 </div>,
           <Footer />,
         ],
+        "className": "wrapper",
       },
       "ref": null,
       "rendered": Array [
@@ -3495,6 +3653,18 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "showLoader": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "isMute": false,
             "toggleSound": [Function],
           },
           "ref": null,

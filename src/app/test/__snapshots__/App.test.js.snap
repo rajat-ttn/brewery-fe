@@ -1,12 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App renders without crashing should render children correctly 1`] = `
-<div>
+<div
+  className="wrapper"
+>
+  <div
+    className="loader"
+  />
   <header>
     <img
       alt="logo"
       className="logoStyle"
-      src="../images/beer_logo.png"
+      src="/images/beer_logo.png"
     />
     <h1>
       The Brewery
@@ -17,7 +22,7 @@ exports[`App renders without crashing should render children correctly 1`] = `
       <img
         alt="alarm"
         className="bellIcon"
-        src="../images/beer_logo.png"
+        src="/images/alarm.png"
       />
     </span>
   </header>

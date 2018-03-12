@@ -7,8 +7,6 @@ export const TEMPERATURE_TYPE = [
     { name: 'Fahrenheit', value: 'FAHRENHEIT' },
 ];
 
-export const OVERLAY_COLOR = ["redOverlay", "blueOverlay"];
-
 export const TEMP_EVENT = {
     CONTAINER_TEMPERATURE_CHANGE: 'CONTAINER_TEMPERATURE_CHANGE',
 };

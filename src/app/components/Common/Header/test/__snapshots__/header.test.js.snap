@@ -5,18 +5,18 @@ exports[`Header Component Should render correctly renders correctly 1`] = `
   <img
     alt="logo"
     className="logoStyle"
-    src="../images/beer_logo.png"
+    src="/images/beer_logo.png"
   />
   <h1>
     The Brewery
   </h1>
   <span
-    onClick={undefined}
+    onClick={[Function]}
   >
     <img
       alt="alarm"
       className="bellIcon"
-      src="../images/beer_logo.png"
+      src="/images/alarm.png"
     />
   </span>
 </header>

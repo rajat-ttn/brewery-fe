@@ -1,20 +1,21 @@
 import ACTION from '../../../../constants/actions';
+
 const initialState = {
-    error : {
-        type:'',
+    error: {
+        type: '',
         errorMsg: ''
     },
 };
 
-const setErrorMsg = (state, { error, errorMsg }) => {
+const setErrorMsg = (state, {error, errorMsg}) => {
     const errorData = {};
     errorData.type = error && error.status;
     errorData.errorMsg = errorMsg
-    return { ...state, error:errorData };
+    return {...state, error: errorData};
 };
 
 const removeErrorMsg = (state) => {
-    return { ...state, error:initialState.error };
+    return {...state, error: initialState.error};
 };
 
 export default function errorHandlingReducer(state = initialState, action) {

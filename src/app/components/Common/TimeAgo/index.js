@@ -15,7 +15,7 @@ class TimeAgo extends Component {
     }
 
     componentDidMount () {
-        this.interval = setInterval(this.tick, 60000);
+        this.interval = setInterval(this.tick, 30000);
     }
     componentWillUnmount () {
         clearInterval(this.interval);
@@ -32,9 +32,9 @@ class TimeAgo extends Component {
         });
         const lastTime = moment(lastTimeUpdated).fromNow();
         return (
-            <span>
-                {lastTime}
-            </span>
+            <small className="italic">
+                Last updated: {lastTime}
+            </small>
         );
     }
 }
