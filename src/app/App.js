@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 
 import Dashboard from './components/Dashboard';
 import store from './store';
-import { updateBeerTemperature } from './common/action';
+import { updateBeerTemperature } from '../app/components/Dashboard/action';
 import socket from './socket';
 import { TEMP_EVENT } from '../constants/textConstants';
 import '../css/App.css';
