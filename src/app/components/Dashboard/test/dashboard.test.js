@@ -2,11 +2,13 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import { fetchBeerList } from '../async.action';
+import { updateBeerTemperature } from '../action';
 import { setTemperatureType, toggleSound } from '../../Common/RunTimeConfig/action';
 import { DashboardContainer, mapStateToProps, mapDispatchToProps } from '../index';
 
 jest.mock('../async.action');
 jest.mock('../../Common/RunTimeConfig/action');
+jest.mock('../action');
 
 const FETCH_ACTION = Symbol('');
 fetchBeerList.mockReturnValue(FETCH_ACTION);
@@ -16,6 +18,9 @@ setTemperatureType.mockReturnValue(TEMP_ACTION);
 
 const TOGGLE_ACTION = Symbol('');
 toggleSound.mockReturnValue(TOGGLE_ACTION);
+
+const UPDATE_ACTION = Symbol('');
+updateBeerTemperature.mockReturnValue(UPDATE_ACTION);
 
 describe('BeerComponent component renders the BeerComponent correctly', () => {
 	let allProps,
@@ -29,7 +34,8 @@ describe('BeerComponent component renders the BeerComponent correctly', () => {
 			isAnyBeerOutOfTempRange: false,
 			fetchBeerList: () => new Promise((resolve, reject)=>{}),
 			toggleSound: () => {},
-			setTemperatureType: () => {}
+			setTemperatureType: () => {},
+            updateTemperature: () => {}
 		};
 		dashboardContainer = shallow(<DashboardContainer {...allProps}  />);
 	});
@@ -179,6 +185,7 @@ describe('mapDispatchToProps', () => {
 		   fetchBeerList: expect.any(Function),
 		   setTemperatureType: expect.any(Function),
 		   toggleSound: expect.any(Function),
+           updateTemperature: expect.any(Function),
 	   })
 	});
 
@@ -189,6 +196,8 @@ describe('mapDispatchToProps', () => {
 		expect(dispatch).toHaveBeenCalledWith(TEMP_ACTION);
 		expect(actionDispatchers.toggleSound()).toBe(TOGGLE_ACTION);
 		expect(dispatch).toHaveBeenCalledWith(TOGGLE_ACTION);
+        expect(actionDispatchers.updateTemperature()).toBe(UPDATE_ACTION);
+		expect(dispatch).toHaveBeenCalledWith(UPDATE_ACTION);
 	});
 });
 
