@@ -1,8 +1,8 @@
 export function convertTempCelciusToFahrenheit (type, value){
     if(type === 'CELSIUS'){
-        return parseInt(value,10);
+        return parseFloat(value);
     } else {
-        return ((parseInt(value,10)*1.8) + 32)
+        return ((parseFloat(value)*1.8) + 32)
 
     }
 }

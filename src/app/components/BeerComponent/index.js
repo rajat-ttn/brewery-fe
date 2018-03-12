@@ -7,7 +7,7 @@ const BeerComponent = ({ beerContentDetail, temperatureType }) => {
     const { beerType, tempRange, currentTemperature } = beerContentDetail;
     const minTemp = convertTempCelciusToFahrenheit(temperatureType,tempRange[0]);
     const maxTemp = convertTempCelciusToFahrenheit(temperatureType,tempRange[1]);
-    const parsedCurrTemp = parseInt(currentTemperature,10);
+    const parsedCurrTemp = parseFloat(currentTemperature);
     const tempSymbol = temperatureType === 'CELSIUS' ? <span>&#8451;</span> : <span>&#8457;</span>;
     const alertCss = parsedCurrTemp > maxTemp ? 'danger red ' : currentTemperature < minTemp ? 'danger blue' : '';
     const showCurrentTemp = parsedCurrTemp ? convertTempCelciusToFahrenheit(temperatureType,parsedCurrTemp) : '--';
