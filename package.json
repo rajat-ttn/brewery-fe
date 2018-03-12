@@ -20,7 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest --verbose --silent",
-    "test3": "jest ./src/app/components/Dashboard/test/dashboard.test.js",
+    "test3": "jest ./src/app/test/App.test.js",
     "test:coverage": "jest --coverage --silent",
     "eject": "react-scripts eject"
   },
