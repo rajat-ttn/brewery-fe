@@ -19,7 +19,7 @@ const BeerComponent = ({ beerContentDetail, temperatureType }) => {
                     <h3 className="beertype">{beerType}</h3>
                         <span className={`currentTemp ${alertCss}`}>
                                 <img className="iconStyling" src="/images/temp-icon.png" alt="temperature" />
-                            {showCurrentTemp } {showSymbol}
+                            {showCurrentTemp }{showSymbol}
                         </span>
                        <span className="tmpLabel">Current Temp</span>
 
