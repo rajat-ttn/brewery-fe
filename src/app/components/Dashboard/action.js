@@ -6,3 +6,10 @@ export const getBeerList = (beerList) => {
         payload: beerList,
     }
 };
+
+export const updateBeerTemperature = (data) => {
+    return {
+        type: ACTION.UPDATE_CONTAINER_TEMPERATURE,
+        payload: data,
+    }
+};

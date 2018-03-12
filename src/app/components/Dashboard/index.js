@@ -10,12 +10,18 @@ import Footer from '../Common/Footer'
 import BeerComponent from '../BeerComponent';
 import TemperatureFilter from './temperatureFilter';
 import LoadingIndicator from '../Common/LoadingIndicator';
+import subscribeToUpdateTemperature from '../../socket';
+import { updateBeerTemperature } from './action';
 
 class Dashboard extends Component {
     constructor(props){
         super(props);
+        const { updateTemperature } = props;
         this.audio = new Audio('/sounds/Alarm.mp3');
         this.attachAudioEvents();
+        subscribeToUpdateTemperature(data => {
+            updateTemperature(data);
+        });
         this.state = {
             showLoader: true,
         };
@@ -120,6 +126,7 @@ export const mapDispatchToProps = dispatch => ({
     fetchBeerList: () => dispatch(fetchBeerList()),
     setTemperatureType: value => dispatch(setTemperatureType(value)),
     toggleSound: isMute => dispatch(toggleSound(isMute)),
+    updateTemperature: data => dispatch(updateBeerTemperature(data)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

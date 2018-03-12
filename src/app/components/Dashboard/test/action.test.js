@@ -11,3 +11,14 @@ describe('should fetch beer list correctly',() => {
         expect(actions.getBeerList(payload)).toEqual(expectedAction);
     });
 });
+
+describe('update temperature', () => {
+    it('should update beer temperature', () => {
+        const data = 20;
+        const expectedAction = {
+            type: types.default.UPDATE_CONTAINER_TEMPERATURE,
+            payload: data
+        };
+        expect(actions.updateBeerTemperature(data)).toEqual(expectedAction);
+    });
+});
