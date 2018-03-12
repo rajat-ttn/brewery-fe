@@ -8,7 +8,8 @@ const updateBeerData = (state, {beers}) => {
 const updateCurrentBeerTemperature = (state, payload) => {
     const updatedItems = state.map(item => {
         if(parseInt(item.containerId,0) === parseInt(payload.containerId, 10)){
-            return { ...item, ...payload }
+            const lastUpdatedTime = new Date();
+            return { ...item, ...payload, lastUpdatedTime }
         }
         return item
     })

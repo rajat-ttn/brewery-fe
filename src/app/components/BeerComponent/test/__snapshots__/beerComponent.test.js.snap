@@ -179,6 +179,7 @@ ShallowWrapper {
 >
               Temp Range
 </span>,
+            null,
           ],
           "className": "overlay",
         },
@@ -306,6 +307,7 @@ ShallowWrapper {
             "rendered": "Temp Range",
             "type": "span",
           },
+          null,
         ],
         "type": "div",
       },
@@ -468,6 +470,7 @@ ShallowWrapper {
 >
                 Temp Range
 </span>,
+              null,
             ],
             "className": "overlay",
           },
@@ -595,6 +598,7 @@ ShallowWrapper {
               "rendered": "Temp Range",
               "type": "span",
             },
+            null,
           ],
           "type": "div",
         },
@@ -792,6 +796,7 @@ ShallowWrapper {
 >
               Temp Range
 </span>,
+            null,
           ],
           "className": "overlay",
         },
@@ -919,6 +924,7 @@ ShallowWrapper {
             "rendered": "Temp Range",
             "type": "span",
           },
+          null,
         ],
         "type": "div",
       },
@@ -1081,6 +1087,7 @@ ShallowWrapper {
 >
                 Temp Range
 </span>,
+              null,
             ],
             "className": "overlay",
           },
@@ -1208,6 +1215,7 @@ ShallowWrapper {
               "rendered": "Temp Range",
               "type": "span",
             },
+            null,
           ],
           "type": "div",
         },
@@ -1405,6 +1413,7 @@ ShallowWrapper {
 >
               Temp Range
 </span>,
+            null,
           ],
           "className": "overlay",
         },
@@ -1532,6 +1541,7 @@ ShallowWrapper {
             "rendered": "Temp Range",
             "type": "span",
           },
+          null,
         ],
         "type": "div",
       },
@@ -1694,6 +1704,7 @@ ShallowWrapper {
 >
                 Temp Range
 </span>,
+              null,
             ],
             "className": "overlay",
           },
@@ -1821,6 +1832,7 @@ ShallowWrapper {
               "rendered": "Temp Range",
               "type": "span",
             },
+            null,
           ],
           "type": "div",
         },
