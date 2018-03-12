@@ -19,13 +19,13 @@ const BeerComponent = ({ beerContentDetail, temperatureType }) => {
                 <div className="overlay">
                     <h3 className="beertype">{beerType}</h3>
                         <span className={`currentTemp ${alertCss}`}>
-                                <img className="iconStyling" src="../images/temp-icon.png" />
+                                <img className="iconStyling" src="../images/temp-icon.png" alt="temperature" />
                             {showCurrentTemp } {showSymbol}
                         </span>
                        <span className="tmpLabel">Current Temp</span>
 
                        <span className="rangeTemp">
-                           <img className="iconStyling" src="../images/temp-icon.png" />
+                           <img className="iconStyling" src="../images/temp-icon.png" alt="temperature" />
                            {`${minTemp} - ${maxTemp}`}{tempSymbol}
                        </span>
 
