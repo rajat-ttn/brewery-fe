@@ -1,5 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+
 import { convertTempCelciusToFahrenheit } from '../../../util/helper';
 import TimeAgo from '../Common/TimeAgo';
 
@@ -22,20 +23,18 @@ const BeerComponent = ({ beerContentDetail, temperatureType }) => {
                             {showCurrentTemp } {showSymbol}
                         </span>
                        <span className="tmpLabel">Current Temp</span>
-
                        <span className="rangeTemp">
                            <img className="iconStyling" src="/images/temp-icon.png" alt="temperature" />
                            {`${minTemp} - ${maxTemp}`}{tempSymbol}
                        </span>
-
                        <span className="tmpLabel">Temp Range</span>
                         {updatedCurrTemp ? <TimeAgo beerContentDetail={beerContentDetail} /> : null}
-
                 </div>
               </div>
           </div>
     );
 };
+
 BeerComponent.propTypes = {
     beerContentDetail: PropTypes.object.isRequired,
     temperatureType: PropTypes.string.isRequired,
