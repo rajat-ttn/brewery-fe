@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 const Header = ({ toggleSound, isMute }) => {
     const imageName = isMute ? 'alarm-mute.png' : 'alarm.png';
@@ -14,3 +15,8 @@ const Header = ({ toggleSound, isMute }) => {
 }
 
 export default Header;
+
+Header.propTypes = {
+    toggleSound: PropTypes.funct,
+    isMute: PropTypes.string.bool,
+};
