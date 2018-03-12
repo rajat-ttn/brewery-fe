@@ -1,7 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import { convertTempCelciusToFahrenheit } from '../../../util/helper';
-import './style.css';
 import TimeAgo from '../Common/TimeAgo';
 
 const BeerComponent = ({ beerContentDetail, temperatureType }) => {
@@ -19,13 +18,13 @@ const BeerComponent = ({ beerContentDetail, temperatureType }) => {
                 <div className="overlay">
                     <h3 className="beertype">{beerType}</h3>
                         <span className={`currentTemp ${alertCss}`}>
-                                <img className="iconStyling" src="../images/temp-icon.png" alt="temperature" />
+                                <img className="iconStyling" src="/images/temp-icon.png" alt="temperature" />
                             {showCurrentTemp } {showSymbol}
                         </span>
                        <span className="tmpLabel">Current Temp</span>
 
                        <span className="rangeTemp">
-                           <img className="iconStyling" src="../images/temp-icon.png" alt="temperature" />
+                           <img className="iconStyling" src="/images/temp-icon.png" alt="temperature" />
                            {`${minTemp} - ${maxTemp}`}{tempSymbol}
                        </span>
 

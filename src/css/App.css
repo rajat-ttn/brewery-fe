@@ -72,7 +72,7 @@ header h1{
   width:100%;
   height:255px;
   color:#fff;
-  background-image: url("../assets/images/container.png");
+  background-image: url("/images/container.png");
   background-repeat: no-repeat;
   background-size: 100% 120%;
   -webkit-box-shadow: -1px 1px 8px 2px #cccccc;

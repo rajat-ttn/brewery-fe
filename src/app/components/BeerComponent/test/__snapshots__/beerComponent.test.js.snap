@@ -47,7 +47,7 @@ ShallowWrapper {
                         <img
                                 alt="temperature"
                                 className="iconStyling"
-                                src="../images/temp-icon.png"
+                                src="/images/temp-icon.png"
                         />
                         --
                          
@@ -64,7 +64,7 @@ ShallowWrapper {
                         <img
                                 alt="temperature"
                                 className="iconStyling"
-                                src="../images/temp-icon.png"
+                                src="/images/temp-icon.png"
                         />
                         37.4 - 41
                         <span>
@@ -100,7 +100,7 @@ ShallowWrapper {
                     <img
                               alt="temperature"
                               className="iconStyling"
-                              src="../images/temp-icon.png"
+                              src="/images/temp-icon.png"
                     />
                     --
                      
@@ -117,7 +117,7 @@ ShallowWrapper {
                     <img
                               alt="temperature"
                               className="iconStyling"
-                              src="../images/temp-icon.png"
+                              src="/images/temp-icon.png"
                     />
                     37.4 - 41
                     <span>
@@ -150,7 +150,7 @@ ShallowWrapper {
               <img
                             alt="temperature"
                             className="iconStyling"
-                            src="../images/temp-icon.png"
+                            src="/images/temp-icon.png"
               />
               --
                
@@ -167,7 +167,7 @@ ShallowWrapper {
               <img
                             alt="temperature"
                             className="iconStyling"
-                            src="../images/temp-icon.png"
+                            src="/images/temp-icon.png"
               />
               37.4 - 41
               <span>
@@ -206,7 +206,7 @@ ShallowWrapper {
                 <img
                   alt="temperature"
                   className="iconStyling"
-                  src="../images/temp-icon.png"
+                  src="/images/temp-icon.png"
 />,
                 "--",
                 " ",
@@ -223,7 +223,7 @@ ShallowWrapper {
                 "props": Object {
                   "alt": "temperature",
                   "className": "iconStyling",
-                  "src": "../images/temp-icon.png",
+                  "src": "/images/temp-icon.png",
                 },
                 "ref": null,
                 "rendered": null,
@@ -256,7 +256,7 @@ ShallowWrapper {
                 <img
                   alt="temperature"
                   className="iconStyling"
-                  src="../images/temp-icon.png"
+                  src="/images/temp-icon.png"
 />,
                 "37.4 - 41",
                 <span>
@@ -274,7 +274,7 @@ ShallowWrapper {
                 "props": Object {
                   "alt": "temperature",
                   "className": "iconStyling",
-                  "src": "../images/temp-icon.png",
+                  "src": "/images/temp-icon.png",
                 },
                 "ref": null,
                 "rendered": null,
@@ -338,7 +338,7 @@ ShallowWrapper {
                               <img
                                         alt="temperature"
                                         className="iconStyling"
-                                        src="../images/temp-icon.png"
+                                        src="/images/temp-icon.png"
                               />
                               --
                                
@@ -355,7 +355,7 @@ ShallowWrapper {
                               <img
                                         alt="temperature"
                                         className="iconStyling"
-                                        src="../images/temp-icon.png"
+                                        src="/images/temp-icon.png"
                               />
                               37.4 - 41
                               <span>
@@ -391,7 +391,7 @@ ShallowWrapper {
                         <img
                                     alt="temperature"
                                     className="iconStyling"
-                                    src="../images/temp-icon.png"
+                                    src="/images/temp-icon.png"
                         />
                         --
                          
@@ -408,7 +408,7 @@ ShallowWrapper {
                         <img
                                     alt="temperature"
                                     className="iconStyling"
-                                    src="../images/temp-icon.png"
+                                    src="/images/temp-icon.png"
                         />
                         37.4 - 41
                         <span>
@@ -441,7 +441,7 @@ ShallowWrapper {
                 <img
                                 alt="temperature"
                                 className="iconStyling"
-                                src="../images/temp-icon.png"
+                                src="/images/temp-icon.png"
                 />
                 --
                  
@@ -458,7 +458,7 @@ ShallowWrapper {
                 <img
                                 alt="temperature"
                                 className="iconStyling"
-                                src="../images/temp-icon.png"
+                                src="/images/temp-icon.png"
                 />
                 37.4 - 41
                 <span>
@@ -497,7 +497,7 @@ ShallowWrapper {
                   <img
                     alt="temperature"
                     className="iconStyling"
-                    src="../images/temp-icon.png"
+                    src="/images/temp-icon.png"
 />,
                   "--",
                   " ",
@@ -514,7 +514,7 @@ ShallowWrapper {
                   "props": Object {
                     "alt": "temperature",
                     "className": "iconStyling",
-                    "src": "../images/temp-icon.png",
+                    "src": "/images/temp-icon.png",
                   },
                   "ref": null,
                   "rendered": null,
@@ -547,7 +547,7 @@ ShallowWrapper {
                   <img
                     alt="temperature"
                     className="iconStyling"
-                    src="../images/temp-icon.png"
+                    src="/images/temp-icon.png"
 />,
                   "37.4 - 41",
                   <span>
@@ -565,7 +565,7 @@ ShallowWrapper {
                   "props": Object {
                     "alt": "temperature",
                     "className": "iconStyling",
-                    "src": "../images/temp-icon.png",
+                    "src": "/images/temp-icon.png",
                   },
                   "ref": null,
                   "rendered": null,
@@ -664,7 +664,7 @@ ShallowWrapper {
                         <img
                                 alt="temperature"
                                 className="iconStyling"
-                                src="../images/temp-icon.png"
+                                src="/images/temp-icon.png"
                         />
                         --
                          
@@ -681,7 +681,7 @@ ShallowWrapper {
                         <img
                                 alt="temperature"
                                 className="iconStyling"
-                                src="../images/temp-icon.png"
+                                src="/images/temp-icon.png"
                         />
                         37.4 - 41
                         <span>
@@ -717,7 +717,7 @@ ShallowWrapper {
                     <img
                               alt="temperature"
                               className="iconStyling"
-                              src="../images/temp-icon.png"
+                              src="/images/temp-icon.png"
                     />
                     --
                      
@@ -734,7 +734,7 @@ ShallowWrapper {
                     <img
                               alt="temperature"
                               className="iconStyling"
-                              src="../images/temp-icon.png"
+                              src="/images/temp-icon.png"
                     />
                     37.4 - 41
                     <span>
@@ -767,7 +767,7 @@ ShallowWrapper {
               <img
                             alt="temperature"
                             className="iconStyling"
-                            src="../images/temp-icon.png"
+                            src="/images/temp-icon.png"
               />
               --
                
@@ -784,7 +784,7 @@ ShallowWrapper {
               <img
                             alt="temperature"
                             className="iconStyling"
-                            src="../images/temp-icon.png"
+                            src="/images/temp-icon.png"
               />
               37.4 - 41
               <span>
@@ -823,7 +823,7 @@ ShallowWrapper {
                 <img
                   alt="temperature"
                   className="iconStyling"
-                  src="../images/temp-icon.png"
+                  src="/images/temp-icon.png"
 />,
                 "--",
                 " ",
@@ -840,7 +840,7 @@ ShallowWrapper {
                 "props": Object {
                   "alt": "temperature",
                   "className": "iconStyling",
-                  "src": "../images/temp-icon.png",
+                  "src": "/images/temp-icon.png",
                 },
                 "ref": null,
                 "rendered": null,
@@ -873,7 +873,7 @@ ShallowWrapper {
                 <img
                   alt="temperature"
                   className="iconStyling"
-                  src="../images/temp-icon.png"
+                  src="/images/temp-icon.png"
 />,
                 "37.4 - 41",
                 <span>
@@ -891,7 +891,7 @@ ShallowWrapper {
                 "props": Object {
                   "alt": "temperature",
                   "className": "iconStyling",
-                  "src": "../images/temp-icon.png",
+                  "src": "/images/temp-icon.png",
                 },
                 "ref": null,
                 "rendered": null,
@@ -955,7 +955,7 @@ ShallowWrapper {
                               <img
                                         alt="temperature"
                                         className="iconStyling"
-                                        src="../images/temp-icon.png"
+                                        src="/images/temp-icon.png"
                               />
                               --
                                
@@ -972,7 +972,7 @@ ShallowWrapper {
                               <img
                                         alt="temperature"
                                         className="iconStyling"
-                                        src="../images/temp-icon.png"
+                                        src="/images/temp-icon.png"
                               />
                               37.4 - 41
                               <span>
@@ -1008,7 +1008,7 @@ ShallowWrapper {
                         <img
                                     alt="temperature"
                                     className="iconStyling"
-                                    src="../images/temp-icon.png"
+                                    src="/images/temp-icon.png"
                         />
                         --
                          
@@ -1025,7 +1025,7 @@ ShallowWrapper {
                         <img
                                     alt="temperature"
                                     className="iconStyling"
-                                    src="../images/temp-icon.png"
+                                    src="/images/temp-icon.png"
                         />
                         37.4 - 41
                         <span>
@@ -1058,7 +1058,7 @@ ShallowWrapper {
                 <img
                                 alt="temperature"
                                 className="iconStyling"
-                                src="../images/temp-icon.png"
+                                src="/images/temp-icon.png"
                 />
                 --
                  
@@ -1075,7 +1075,7 @@ ShallowWrapper {
                 <img
                                 alt="temperature"
                                 className="iconStyling"
-                                src="../images/temp-icon.png"
+                                src="/images/temp-icon.png"
                 />
                 37.4 - 41
                 <span>
@@ -1114,7 +1114,7 @@ ShallowWrapper {
                   <img
                     alt="temperature"
                     className="iconStyling"
-                    src="../images/temp-icon.png"
+                    src="/images/temp-icon.png"
 />,
                   "--",
                   " ",
@@ -1131,7 +1131,7 @@ ShallowWrapper {
                   "props": Object {
                     "alt": "temperature",
                     "className": "iconStyling",
-                    "src": "../images/temp-icon.png",
+                    "src": "/images/temp-icon.png",
                   },
                   "ref": null,
                   "rendered": null,
@@ -1164,7 +1164,7 @@ ShallowWrapper {
                   <img
                     alt="temperature"
                     className="iconStyling"
-                    src="../images/temp-icon.png"
+                    src="/images/temp-icon.png"
 />,
                   "37.4 - 41",
                   <span>
@@ -1182,7 +1182,7 @@ ShallowWrapper {
                   "props": Object {
                     "alt": "temperature",
                     "className": "iconStyling",
-                    "src": "../images/temp-icon.png",
+                    "src": "/images/temp-icon.png",
                   },
                   "ref": null,
                   "rendered": null,
@@ -1281,7 +1281,7 @@ ShallowWrapper {
                         <img
                                 alt="temperature"
                                 className="iconStyling"
-                                src="../images/temp-icon.png"
+                                src="/images/temp-icon.png"
                         />
                         --
                          
@@ -1298,7 +1298,7 @@ ShallowWrapper {
                         <img
                                 alt="temperature"
                                 className="iconStyling"
-                                src="../images/temp-icon.png"
+                                src="/images/temp-icon.png"
                         />
                         37.4 - 41
                         <span>
@@ -1334,7 +1334,7 @@ ShallowWrapper {
                     <img
                               alt="temperature"
                               className="iconStyling"
-                              src="../images/temp-icon.png"
+                              src="/images/temp-icon.png"
                     />
                     --
                      
@@ -1351,7 +1351,7 @@ ShallowWrapper {
                     <img
                               alt="temperature"
                               className="iconStyling"
-                              src="../images/temp-icon.png"
+                              src="/images/temp-icon.png"
                     />
                     37.4 - 41
                     <span>
@@ -1384,7 +1384,7 @@ ShallowWrapper {
               <img
                             alt="temperature"
                             className="iconStyling"
-                            src="../images/temp-icon.png"
+                            src="/images/temp-icon.png"
               />
               --
                
@@ -1401,7 +1401,7 @@ ShallowWrapper {
               <img
                             alt="temperature"
                             className="iconStyling"
-                            src="../images/temp-icon.png"
+                            src="/images/temp-icon.png"
               />
               37.4 - 41
               <span>
@@ -1440,7 +1440,7 @@ ShallowWrapper {
                 <img
                   alt="temperature"
                   className="iconStyling"
-                  src="../images/temp-icon.png"
+                  src="/images/temp-icon.png"
 />,
                 "--",
                 " ",
@@ -1457,7 +1457,7 @@ ShallowWrapper {
                 "props": Object {
                   "alt": "temperature",
                   "className": "iconStyling",
-                  "src": "../images/temp-icon.png",
+                  "src": "/images/temp-icon.png",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1490,7 +1490,7 @@ ShallowWrapper {
                 <img
                   alt="temperature"
                   className="iconStyling"
-                  src="../images/temp-icon.png"
+                  src="/images/temp-icon.png"
 />,
                 "37.4 - 41",
                 <span>
@@ -1508,7 +1508,7 @@ ShallowWrapper {
                 "props": Object {
                   "alt": "temperature",
                   "className": "iconStyling",
-                  "src": "../images/temp-icon.png",
+                  "src": "/images/temp-icon.png",
                 },
                 "ref": null,
                 "rendered": null,
@@ -1572,7 +1572,7 @@ ShallowWrapper {
                               <img
                                         alt="temperature"
                                         className="iconStyling"
-                                        src="../images/temp-icon.png"
+                                        src="/images/temp-icon.png"
                               />
                               --
                                
@@ -1589,7 +1589,7 @@ ShallowWrapper {
                               <img
                                         alt="temperature"
                                         className="iconStyling"
-                                        src="../images/temp-icon.png"
+                                        src="/images/temp-icon.png"
                               />
                               37.4 - 41
                               <span>
@@ -1625,7 +1625,7 @@ ShallowWrapper {
                         <img
                                     alt="temperature"
                                     className="iconStyling"
-                                    src="../images/temp-icon.png"
+                                    src="/images/temp-icon.png"
                         />
                         --
                          
@@ -1642,7 +1642,7 @@ ShallowWrapper {
                         <img
                                     alt="temperature"
                                     className="iconStyling"
-                                    src="../images/temp-icon.png"
+                                    src="/images/temp-icon.png"
                         />
                         37.4 - 41
                         <span>
@@ -1675,7 +1675,7 @@ ShallowWrapper {
                 <img
                                 alt="temperature"
                                 className="iconStyling"
-                                src="../images/temp-icon.png"
+                                src="/images/temp-icon.png"
                 />
                 --
                  
@@ -1692,7 +1692,7 @@ ShallowWrapper {
                 <img
                                 alt="temperature"
                                 className="iconStyling"
-                                src="../images/temp-icon.png"
+                                src="/images/temp-icon.png"
                 />
                 37.4 - 41
                 <span>
@@ -1731,7 +1731,7 @@ ShallowWrapper {
                   <img
                     alt="temperature"
                     className="iconStyling"
-                    src="../images/temp-icon.png"
+                    src="/images/temp-icon.png"
 />,
                   "--",
                   " ",
@@ -1748,7 +1748,7 @@ ShallowWrapper {
                   "props": Object {
                     "alt": "temperature",
                     "className": "iconStyling",
-                    "src": "../images/temp-icon.png",
+                    "src": "/images/temp-icon.png",
                   },
                   "ref": null,
                   "rendered": null,
@@ -1781,7 +1781,7 @@ ShallowWrapper {
                   <img
                     alt="temperature"
                     className="iconStyling"
-                    src="../images/temp-icon.png"
+                    src="/images/temp-icon.png"
 />,
                   "37.4 - 41",
                   <span>
@@ -1799,7 +1799,7 @@ ShallowWrapper {
                   "props": Object {
                     "alt": "temperature",
                     "className": "iconStyling",
-                    "src": "../images/temp-icon.png",
+                    "src": "/images/temp-icon.png",
                   },
                   "ref": null,
                   "rendered": null,
