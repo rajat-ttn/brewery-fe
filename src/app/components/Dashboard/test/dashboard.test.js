@@ -101,7 +101,7 @@ describe('Dashboard component should render correctly', () => {
         expect(play).toHaveBeenCalled();
         expect(pause).not.toHaveBeenCalled();
 
-        [play, pause].forEach((spy)=>{
+        [play, pause].forEach((spy) => {
             spy.mockReset();
             spy.mockRestore();
         });
@@ -139,7 +139,7 @@ describe('Dashboard component should render correctly', () => {
 
         expect(play).toHaveBeenCalled();
 
-        [play].forEach((spy)=>{
+        [play].forEach((spy) => {
             spy.mockReset();
             spy.mockRestore();
         });
@@ -156,7 +156,7 @@ describe('Dashboard component should render correctly', () => {
 
         expect(play).not.toHaveBeenCalled();
 
-        [play].forEach((spy)=>{
+        [play].forEach((spy) => {
             spy.mockReset();
             spy.mockRestore();
         });

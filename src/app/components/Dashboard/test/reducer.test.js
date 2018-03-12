@@ -1,7 +1,7 @@
 import ACTION from '../../../../constants/actions';
 import beerListReducer from '../reducer';
 
-describe('testing beerList reducer',()=> {
+describe('testing beerList reducer',() => {
 
     let initialState = [];
 
@@ -10,7 +10,7 @@ describe('testing beerList reducer',()=> {
         payload:null
     };
 
-    beforeEach(()=>{
+    beforeEach(() => {
         initialState = [];
     });
 

@@ -2,7 +2,7 @@
 .loader {
     position: fixed;
     opacity: 0.5;
-    background: url('../../../../assets/images/Preloader_6.gif') center no-repeat #f1f1f2;
+    background: url('/images/Loader.gif') center no-repeat #f1f1f2;
     top: 0;
     left: 0;
     width: 100%;

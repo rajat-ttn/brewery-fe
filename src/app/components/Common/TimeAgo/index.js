@@ -50,6 +50,5 @@ export const mapStateToProps = state => {
     })
 };
 
-
 export default connect(mapStateToProps, null)(TimeAgo);
 export { TimeAgo as TimeAgoContainer };

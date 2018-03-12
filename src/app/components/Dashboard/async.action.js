@@ -1,9 +1,10 @@
+import axios from 'axios';
+
 import API from '../../../config/endpoints';
 import { getBeerList } from './action'
 import { setErrorMessage, removeErrorMessage } from '../Common/ErrorHandling/action'
-import axios from 'axios';
 
-export const fetchBeerList = () => async (dispatch) => {
+export const fetchBeerList = () => async(dispatch) => {
     try {
         const {DOMAIN, BASE, VERSION, DASHBOARD} = API.ENDPOINT;
         let {url, method} = DASHBOARD.getBeer;
@@ -21,7 +22,7 @@ export const fetchBeerList = () => async (dispatch) => {
         }
         return response;
     }
-    catch(err){
+    catch (err) {
         console.log('error occurred while fetching beers!' + err);
     }
 };

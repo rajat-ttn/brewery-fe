@@ -113,6 +113,9 @@ span.currentTemp> span {
   font: bold 35px Proxima Nova, Arial, Helvetica, sans-serif;
   display:block;
 }
+span.rangeTemp> span {
+  font-size: 31px;
+}
 .iconStyling{
   margin-top: -8px;
   margin-right:5px;
