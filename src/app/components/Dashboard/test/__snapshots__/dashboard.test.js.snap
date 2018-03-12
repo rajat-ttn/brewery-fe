@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BeerComponent component renders the BeerComponent correctly renders correctly with beer detail and temperature 1`] = `undefined`;
+
+exports[`BeerComponent component renders the BeerComponent correctly renders correctly with change in temperature 1`] = `undefined`;
+
+exports[`BeerComponent component renders the BeerComponent correctly renders correctly with different temperature 1`] = `undefined`;
+
+exports[`BeerComponent component renders the BeerComponent correctly renders correctly with sound 1`] = `undefined`;
+
+exports[`BeerComponent component renders the BeerComponent correctly renders correctly without beerList 1`] = `undefined`;
