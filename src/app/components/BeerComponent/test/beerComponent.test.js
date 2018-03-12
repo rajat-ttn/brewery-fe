@@ -2,14 +2,12 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import BeerComponent from '../index';
 
-
 describe('BeerComponent component renders the BeerComponent correctly', () => {
-    let beerComp,
-        allProps;
+    let beerComp, allProps;
 
     beforeEach(()=> {
         allProps = {
-            beerContentDetail: { beerType : "Aler Beer", containerId: 1, id: 1, tempRange: [3,5] },
+            beerContentDetail: { beerType: "Aler Beer", containerId: 1, id: 1, tempRange: [3, 5] },
             temperatureType: "FAHRENHEIT"
         };
         beerComp = shallow(<BeerComponent {...allProps} />);
