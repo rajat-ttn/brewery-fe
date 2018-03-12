@@ -27,7 +27,7 @@ describe('BeerComponent component renders the BeerComponent correctly', () => {
 			temperatureType: "FAHRENHEIT",
 			isMute: 'false',
 			isAnyBeerOutOfTempRange: 'false',
-			fetchBeerList: () => new Promise(),
+			fetchBeerList: () => new Promise((resolve, reject)=>{}),
 			toggleSound: () => {},
 			setTemperatureType: () => {}
 		};
@@ -40,7 +40,7 @@ describe('BeerComponent component renders the BeerComponent correctly', () => {
 	});
 
 	it('should have audio instance', () => {
-		expect(dashboardContainer.instance().state.audio).not.toBeNull();
+		expect(dashboardContainer.instance().audio).not.toBeNull();
 	});
 
     it('renders correctly with beer detail and temperature', () => {
