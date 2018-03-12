@@ -42,6 +42,7 @@ ShallowWrapper {
           showLoader={true}
 />,
         <Header
+          isMute="false"
           toggleSound={[Function]}
 />,
         <div
@@ -100,6 +101,7 @@ ShallowWrapper {
 </div>,
         <Footer />,
       ],
+      "className": "wrapper",
     },
     "ref": null,
     "rendered": Array [
@@ -119,6 +121,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "isMute": "false",
           "toggleSound": [Function],
         },
         "ref": null,
@@ -414,6 +417,7 @@ ShallowWrapper {
             showLoader={true}
 />,
           <Header
+            isMute="false"
             toggleSound={[Function]}
 />,
           <div
@@ -472,6 +476,7 @@ ShallowWrapper {
 </div>,
           <Footer />,
         ],
+        "className": "wrapper",
       },
       "ref": null,
       "rendered": Array [
@@ -491,6 +496,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "isMute": "false",
             "toggleSound": [Function],
           },
           "ref": null,
@@ -828,6 +834,7 @@ ShallowWrapper {
           showLoader={true}
 />,
         <Header
+          isMute="false"
           toggleSound={[Function]}
 />,
         <div
@@ -886,6 +893,7 @@ ShallowWrapper {
 </div>,
         <Footer />,
       ],
+      "className": "wrapper",
     },
     "ref": null,
     "rendered": Array [
@@ -905,6 +913,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "isMute": "false",
           "toggleSound": [Function],
         },
         "ref": null,
@@ -1200,6 +1209,7 @@ ShallowWrapper {
             showLoader={true}
 />,
           <Header
+            isMute="false"
             toggleSound={[Function]}
 />,
           <div
@@ -1258,6 +1268,7 @@ ShallowWrapper {
 </div>,
           <Footer />,
         ],
+        "className": "wrapper",
       },
       "ref": null,
       "rendered": Array [
@@ -1277,6 +1288,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "isMute": "false",
             "toggleSound": [Function],
           },
           "ref": null,
@@ -1614,6 +1626,7 @@ ShallowWrapper {
           showLoader={true}
 />,
         <Header
+          isMute="false"
           toggleSound={[Function]}
 />,
         <div
@@ -1672,6 +1685,7 @@ ShallowWrapper {
 </div>,
         <Footer />,
       ],
+      "className": "wrapper",
     },
     "ref": null,
     "rendered": Array [
@@ -1691,6 +1705,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "isMute": "false",
           "toggleSound": [Function],
         },
         "ref": null,
@@ -1986,6 +2001,7 @@ ShallowWrapper {
             showLoader={true}
 />,
           <Header
+            isMute="false"
             toggleSound={[Function]}
 />,
           <div
@@ -2044,6 +2060,7 @@ ShallowWrapper {
 </div>,
           <Footer />,
         ],
+        "className": "wrapper",
       },
       "ref": null,
       "rendered": Array [
@@ -2063,6 +2080,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "isMute": "false",
             "toggleSound": [Function],
           },
           "ref": null,
@@ -2400,6 +2418,7 @@ ShallowWrapper {
           showLoader={true}
 />,
         <Header
+          isMute="false"
           toggleSound={[Function]}
 />,
         <div
@@ -2458,6 +2477,7 @@ ShallowWrapper {
 </div>,
         <Footer />,
       ],
+      "className": "wrapper",
     },
     "ref": null,
     "rendered": Array [
@@ -2477,6 +2497,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "isMute": "false",
           "toggleSound": [Function],
         },
         "ref": null,
@@ -2772,6 +2793,7 @@ ShallowWrapper {
             showLoader={true}
 />,
           <Header
+            isMute="false"
             toggleSound={[Function]}
 />,
           <div
@@ -2830,6 +2852,7 @@ ShallowWrapper {
 </div>,
           <Footer />,
         ],
+        "className": "wrapper",
       },
       "ref": null,
       "rendered": Array [
@@ -2849,6 +2872,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "isMute": "false",
             "toggleSound": [Function],
           },
           "ref": null,
@@ -3186,6 +3210,7 @@ ShallowWrapper {
           showLoader={true}
 />,
         <Header
+          isMute="false"
           toggleSound={[Function]}
 />,
         <div
@@ -3244,6 +3269,7 @@ ShallowWrapper {
 </div>,
         <Footer />,
       ],
+      "className": "wrapper",
     },
     "ref": null,
     "rendered": Array [
@@ -3263,6 +3289,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "isMute": "false",
           "toggleSound": [Function],
         },
         "ref": null,
@@ -3558,6 +3585,7 @@ ShallowWrapper {
             showLoader={true}
 />,
           <Header
+            isMute="false"
             toggleSound={[Function]}
 />,
           <div
@@ -3616,6 +3644,7 @@ ShallowWrapper {
 </div>,
           <Footer />,
         ],
+        "className": "wrapper",
       },
       "ref": null,
       "rendered": Array [
@@ -3635,6 +3664,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "isMute": "false",
             "toggleSound": [Function],
           },
           "ref": null,
