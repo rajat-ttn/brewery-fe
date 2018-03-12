@@ -13,7 +13,7 @@ const BeerComponent = ({ beerContentDetail, temperatureType }) => {
     const showCurrentTemp = parsedCurrTemp ? convertTempCelciusToFahrenheit(temperatureType,parsedCurrTemp) : '--';
     const showSymbol = parsedCurrTemp ? tempSymbol : '';
     return (
-         <div className="col-md-4 commonBoxModel">
+         <div className="col-sm-6  col-md-6 col-lg-4 commonBoxModel">
               <div className="beerContainer">
                 <div className="overlay">
                     <h3 className="beertype">{beerType}</h3>
