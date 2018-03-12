@@ -25,8 +25,8 @@ describe('BeerComponent component renders the BeerComponent correctly', () => {
 		allProps = {
 			beerList: [{beerType : "Aler Beer", containerId: 1, id: 1, tempRange: [3,5]}],
 			temperatureType: "FAHRENHEIT",
-			isMute: 'false',
-			isAnyBeerOutOfTempRange: 'false',
+			isMute: false,
+			isAnyBeerOutOfTempRange: false,
 			fetchBeerList: () => new Promise((resolve, reject)=>{}),
 			toggleSound: () => {},
 			setTemperatureType: () => {}

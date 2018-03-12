@@ -17,6 +17,6 @@ const Header = ({ toggleSound, isMute }) => {
 export default Header;
 
 Header.propTypes = {
-    toggleSound: PropTypes.funct,
-    isMute: PropTypes.string.bool,
+    toggleSound: PropTypes.func,
+    isMute: PropTypes.bool,
 };
