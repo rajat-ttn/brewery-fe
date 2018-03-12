@@ -1,7 +1,7 @@
 import * as actions from '../action';
 import * as types from '../../../../../constants/actions';
 
-describe('update error message',()=> {
+describe('update error message', ()=> {
     let error = 'Something went wrong',
         expectedAction = {
             type: types.default.SET_ERROR,
