@@ -1,21 +1,36 @@
-# Brewery-fe
+# Brewery-fe  
+  
+This document will help in starting front-end app.
+  
+**\## Prerequisites**  
+To begin with you need to have the following depedencies installed  
+  
+\* \[\_\_NodeJs\_\_\](https://nodejs.org)  
+  
+**\## Installation**  
+  
+\* Change to the project directory \`cd brewery-fe\`  
 
-This document is for getting started with the `Frontend` environment setup
+\* Install all the dependencies by doing \`npm install\`  
 
-## Get Started
+**Development**
+\* Run in development mode by using \`npm start\` \* Open \[http://localhost:3000\](http://localhost:3000) to view it in the browser.  
 
-You can clone repository [Brewery-fe](https://github.com/rajat-ttn/brewery-fe.git)
+**Production**
 
-## Prerequisites
+	**Set environment variables:-**
+	REACT_APP_API_URL = 'BACKEND_API_URL';
+	REACT_APP_API_URL_PROTOCOL = 'https or http';
 
-* Node Js
+	**create prod build:-**
+	npm run build (this will create a dist folder)
+	//server the dist folder as static resources.
 
-## Steps to run the app
 
-* Install all the dependencies by using `npm install`
-* Run the app using `npm start`
-* Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**\## Testing**  
 
-## Run test cases
+\* Run \`npm test\` will  run the unit tests.
 
-* Use `npm run test` it will launch the test runner in the interactive watch mode.
+\* Run \`npm test:coverage\`  to see coverage.
+
+
