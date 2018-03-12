@@ -19,8 +19,8 @@ ShallowWrapper {
           ]
     }
     fetchBeerList={[Function]}
-    isAnyBeerOutOfTempRange="false"
-    isMute="false"
+    isAnyBeerOutOfTempRange={false}
+    isMute={false}
     setTemperatureType={[Function]}
     temperatureType="FAHRENHEIT"
     toggleSound={[Function]}
@@ -42,7 +42,7 @@ ShallowWrapper {
           showLoader={true}
 />,
         <Header
-          isMute="false"
+          isMute={false}
           toggleSound={[Function]}
 />,
         <div
@@ -121,7 +121,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "isMute": "false",
+          "isMute": false,
           "toggleSound": [Function],
         },
         "ref": null,
@@ -417,7 +417,7 @@ ShallowWrapper {
             showLoader={true}
 />,
           <Header
-            isMute="false"
+            isMute={false}
             toggleSound={[Function]}
 />,
           <div
@@ -496,7 +496,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "isMute": "false",
+            "isMute": false,
             "toggleSound": [Function],
           },
           "ref": null,
@@ -811,8 +811,8 @@ ShallowWrapper {
           ]
     }
     fetchBeerList={[Function]}
-    isAnyBeerOutOfTempRange="false"
-    isMute="false"
+    isAnyBeerOutOfTempRange={false}
+    isMute={false}
     setTemperatureType={[Function]}
     temperatureType="FAHRENHEIT"
     toggleSound={[Function]}
@@ -834,7 +834,7 @@ ShallowWrapper {
           showLoader={true}
 />,
         <Header
-          isMute="false"
+          isMute={false}
           toggleSound={[Function]}
 />,
         <div
@@ -913,7 +913,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "isMute": "false",
+          "isMute": false,
           "toggleSound": [Function],
         },
         "ref": null,
@@ -1209,7 +1209,7 @@ ShallowWrapper {
             showLoader={true}
 />,
           <Header
-            isMute="false"
+            isMute={false}
             toggleSound={[Function]}
 />,
           <div
@@ -1288,7 +1288,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "isMute": "false",
+            "isMute": false,
             "toggleSound": [Function],
           },
           "ref": null,
@@ -1603,8 +1603,8 @@ ShallowWrapper {
           ]
     }
     fetchBeerList={[Function]}
-    isAnyBeerOutOfTempRange="false"
-    isMute="false"
+    isAnyBeerOutOfTempRange={false}
+    isMute={false}
     setTemperatureType={[Function]}
     temperatureType="FAHRENHEIT"
     toggleSound={[Function]}
@@ -1626,7 +1626,7 @@ ShallowWrapper {
           showLoader={true}
 />,
         <Header
-          isMute="false"
+          isMute={false}
           toggleSound={[Function]}
 />,
         <div
@@ -1705,7 +1705,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "isMute": "false",
+          "isMute": false,
           "toggleSound": [Function],
         },
         "ref": null,
@@ -2001,7 +2001,7 @@ ShallowWrapper {
             showLoader={true}
 />,
           <Header
-            isMute="false"
+            isMute={false}
             toggleSound={[Function]}
 />,
           <div
@@ -2080,7 +2080,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "isMute": "false",
+            "isMute": false,
             "toggleSound": [Function],
           },
           "ref": null,
@@ -2395,8 +2395,8 @@ ShallowWrapper {
           ]
     }
     fetchBeerList={[Function]}
-    isAnyBeerOutOfTempRange="false"
-    isMute="false"
+    isAnyBeerOutOfTempRange={false}
+    isMute={false}
     setTemperatureType={[Function]}
     temperatureType="FAHRENHEIT"
     toggleSound={[Function]}
@@ -2418,7 +2418,7 @@ ShallowWrapper {
           showLoader={true}
 />,
         <Header
-          isMute="false"
+          isMute={false}
           toggleSound={[Function]}
 />,
         <div
@@ -2497,7 +2497,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "isMute": "false",
+          "isMute": false,
           "toggleSound": [Function],
         },
         "ref": null,
@@ -2793,7 +2793,7 @@ ShallowWrapper {
             showLoader={true}
 />,
           <Header
-            isMute="false"
+            isMute={false}
             toggleSound={[Function]}
 />,
           <div
@@ -2872,7 +2872,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "isMute": "false",
+            "isMute": false,
             "toggleSound": [Function],
           },
           "ref": null,
@@ -3187,8 +3187,8 @@ ShallowWrapper {
           ]
     }
     fetchBeerList={[Function]}
-    isAnyBeerOutOfTempRange="false"
-    isMute="false"
+    isAnyBeerOutOfTempRange={false}
+    isMute={false}
     setTemperatureType={[Function]}
     temperatureType="FAHRENHEIT"
     toggleSound={[Function]}
@@ -3210,7 +3210,7 @@ ShallowWrapper {
           showLoader={true}
 />,
         <Header
-          isMute="false"
+          isMute={false}
           toggleSound={[Function]}
 />,
         <div
@@ -3289,7 +3289,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "isMute": "false",
+          "isMute": false,
           "toggleSound": [Function],
         },
         "ref": null,
@@ -3585,7 +3585,7 @@ ShallowWrapper {
             showLoader={true}
 />,
           <Header
-            isMute="false"
+            isMute={false}
             toggleSound={[Function]}
 />,
           <div
@@ -3664,7 +3664,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "isMute": "false",
+            "isMute": false,
             "toggleSound": [Function],
           },
           "ref": null,

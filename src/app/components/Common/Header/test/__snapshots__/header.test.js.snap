@@ -11,7 +11,7 @@ exports[`Header Component Should render correctly renders correctly 1`] = `
     The Brewery
   </h1>
   <span
-    onClick={undefined}
+    onClick={[Function]}
   >
     <img
       alt="alarm"

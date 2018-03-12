@@ -1,26 +1,26 @@
 import ACTION from '../../../../../constants/actions';
 import errorHandlingReducer from '../reducer';
 
-describe('testing config reducer',()=> {
+describe('testing config reducer', ()=> {
 
     const initialState = {
-        error : {
-            type:'',
+        error: {
+            type: '',
             errorMsg: ''
         },
     };
 
     let action = {
         type: null,
-        payload:null
+        payload: null
     };
 
     it('SET_ERROR action should set error in reducer state', () => {
         action.type = ACTION.SET_ERROR;
         action.payload = {
-            error:{
-                type:'any_error_type',
-                errorMsg:'any_error_msg'
+            error: {
+                type: 'any_error_type',
+                errorMsg: 'any_error_msg'
             }
         };
         let changedState = errorHandlingReducer(initialState, action);
