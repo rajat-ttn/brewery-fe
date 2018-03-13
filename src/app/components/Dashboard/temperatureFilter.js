@@ -1,21 +1,25 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
 
 import { TEMPERATURE_TYPE } from '../../../constants/textConstants';
 
 const TemperatureFilter = ({ temperatureType, changeTemperatureType }) => {
+    let selectedTempLabel = '';
+    TEMPERATURE_TYPE.filter(({ value,label }) => {
+        if (temperatureType === value) {
+            selectedTempLabel = label;
+        }
+        return selectedTempLabel;
+    });
+
     return (
-        <select
-            className="input-sm form-control input-s-sm inline"
-            value={temperatureType}
+        <Dropdown
+            options={TEMPERATURE_TYPE}
             onChange={changeTemperatureType}
-        >
-            {
-                TEMPERATURE_TYPE.map(filter => (
-                    <option key={filter.value} value={filter.value}>{filter.name}</option>
-                ))
-            }
-        </select>
+            value={selectedTempLabel}
+        />
     );
 }
 

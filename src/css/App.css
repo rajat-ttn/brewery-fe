@@ -12,7 +12,7 @@ body{ background-color: #f1f1f2;}
 .wrapper{
   min-height:100%;
   position:relative;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
 }
 
 /*----Header----*/
@@ -37,17 +37,35 @@ header h1{
   margin-left: 20px;
   margin-right: 6px;
 }
+.Dropdown-control{
+  padding: 0 10px;
+  width: 135px;
+  font-size: 15px;
+}
+.Dropdown-option{
+  padding: 0 10px;
+  font-size: 15px;
+}
+.Dropdown-option:hover {
+  background-color: #eeaf4b;
+  color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px -1px #34302c;
+}
+.Dropdown-arrow{
+  top: 9px;
+}
 .dropdownSection{
   position: absolute;
   right: 100px;
   top: 18px;
 }
-.dropdownSection > select.form-control:not([size]):not([multiple]){
+/*.dropdownSection > select.form-control:not([size]):not([multiple]){
   height: 22px;
   padding-top: 0;
   padding-bottom: 0;
   font-size: 14px;
-}
+}*/
 .bellIcon{
   width: 30px;
   height: 30px;
@@ -228,12 +246,56 @@ footer{
 @media only screen and (max-width: 530px) {
   header {
     height:100px;
+    text-align: center;
+  }
+  h1{
+    display: inline-block;
+  }
+  .logoStyle{
+    display: inline-block;
+    margin-top: -23px;
+    margin-left: 0;
+    float:none;
   }
   .bellIcon{
-    top: 60px;
+    top: 56px;
+    right: 115px;
   }
   .dropdownSection{
     top: 60px;
+    right:170px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .bellIcon{
+    right: 150px;
+  }
+  .dropdownSection{
+    right:210px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .bellIcon{
+    right: 80px;
+  }
+  .dropdownSection{
+    right:150px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .bellIcon{
+    right: 110px;
+  }
+  .dropdownSection{
+    right:165px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .bellIcon{
+    right: 75px;
+  }
+  .dropdownSection{
+    right:130px;
   }
 }
 @media only screen and (min-width: 450px) and (max-width: 575px){

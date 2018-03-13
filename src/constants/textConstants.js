@@ -3,8 +3,8 @@ export const textConstant =  {
 };
 
 export const TEMPERATURE_TYPE = [
-    { name: 'Celsius', value: 'CELSIUS' },
-    { name: 'Fahrenheit', value: 'FAHRENHEIT' },
+    { value: 'CELSIUS', label: 'Celsius' },
+    { value: 'FAHRENHEIT', label: 'Fahrenheit'},
 ];
 
 export const TEMP_EVENT = {
