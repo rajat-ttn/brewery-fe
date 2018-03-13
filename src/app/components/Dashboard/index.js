@@ -22,12 +22,7 @@ class Dashboard extends Component {
         this.attachAudioEvents();
         subscribeToUpdateTemperature(data => {
             updateTemperature(data);
-            if(this.props.isAnyBeerOutOfTempRange) {
-                NotificationService.createNotification({
-                    title: 'Temperature out of range',
-                    body: 'Please check beer containers'
-                });
-            }
+            this.browserNotification(data);
         });
         this.state = {
             showLoader: true,
@@ -52,6 +47,23 @@ class Dashboard extends Component {
         } else if (isAnyBeerOutOfTempRange) {
             audio.play();
         };
+    };
+
+    // this function is to push browser notification if container is out of range
+    browserNotification = (data) => {
+        const { beerList } = this.props;
+        if(beerList.length){
+            const beerItem = beerList.find(item => {
+                return parseInt(item.containerId) === parseInt(data.containerId);
+            });
+            if ((data.currentTemperature < beerItem.tempRange[0]) || (data.currentTemperature > beerItem.tempRange[1])) {
+                let messageTitle = data.currentTemperature < beerItem.tempRange[0] ? 'Low Temp. Alert !! ' : 'High Temp. Alert !!';
+                NotificationService.createNotification({
+                    title: messageTitle,
+                    body: `Please check ${beerItem.beerType} container`
+                });
+            }
+        }
     };
 
     // function to start alarm if any container temperature gets out of temp range
