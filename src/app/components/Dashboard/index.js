@@ -54,7 +54,7 @@ class Dashboard extends Component {
         const { beerList } = this.props;
         if(beerList.length){
             const beerItem = beerList.find(item => {
-                return parseInt(item.containerId) === parseInt(data.containerId);
+                return parseInt(item.containerId, 10) === parseInt(data.containerId, 10);
             });
             if ((data.currentTemperature < beerItem.tempRange[0]) || (data.currentTemperature > beerItem.tempRange[1])) {
                 let messageTitle = data.currentTemperature < beerItem.tempRange[0] ? 'Low Temp. Alert !! ' : 'High Temp. Alert !!';
