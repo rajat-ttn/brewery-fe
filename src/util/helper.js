@@ -6,3 +6,7 @@ export function convertTempCelciusToFahrenheit(type, value) {
     }
     return ((parseFloat(value) * 1.8) + 32);
 }
+
+export function isSafari(){
+    return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+};
