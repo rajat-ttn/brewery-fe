@@ -13,13 +13,17 @@ import LoadingIndicator from '../Common/LoadingIndicator';
 import subscribeToUpdateTemperature from '../../socket';
 import { updateBeerTemperature } from './action';
 import NotificationService from '../../service/notificationService';
+import { isSafari } from "../../../util/helper";
 
 class Dashboard extends Component {
     constructor(props){
         super(props);
         const { updateTemperature } = props;
-        this.audio = new Audio('/sounds/Alarm.mp3');
-        this.attachAudioEvents();
+        // safari doesnt play
+        if(!isSafari()) {
+            this.audio = new Audio('/sounds/Alarm.mp3');
+            this.attachAudioEvents();
+        }
         subscribeToUpdateTemperature(data => {
             updateTemperature(data);
             this.browserNotification(data);
@@ -42,11 +46,13 @@ class Dashboard extends Component {
 
     componentWillReceiveProps({ isMute, isAnyBeerOutOfTempRange }) {
         const audio = this.audio;
-        if (isMute || !isAnyBeerOutOfTempRange) {
-            audio.pause();
-        } else if (isAnyBeerOutOfTempRange) {
-            audio.play();
-        };
+        if(audio) {
+            if (isMute || !isAnyBeerOutOfTempRange) {
+                audio.pause();
+            } else if (isAnyBeerOutOfTempRange) {
+                audio.play();
+            }
+        }
     };
 
     // this function is to push browser notification if container is out of range
