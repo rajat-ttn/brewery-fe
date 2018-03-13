@@ -22,6 +22,7 @@ export default NotificationService = {
                 icon: notificationObj.icon || '/images/beer_logo.png',
                 body: notificationObj.body
             });
+            setTimeout(notification.close.bind(notification), 5000);
             notification.onclick = function () {
                 window.open(window.location);
             };
