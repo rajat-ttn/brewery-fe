@@ -3,6 +3,7 @@ import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
 import moment from 'moment';
 
+// TimeAgo Component for showing Last updated time of temperature of container
 class TimeAgo extends Component {
     constructor(props){
         super(props);
@@ -15,7 +16,7 @@ class TimeAgo extends Component {
     }
 
     componentDidMount () {
-        this.interval = setInterval(this.tick, 30000);
+        this.interval = setInterval(this.tick, 1000);
     }
     componentWillUnmount () {
         clearInterval(this.interval);
@@ -31,8 +32,13 @@ class TimeAgo extends Component {
             return lastTimeUpdated;
         });
         const lastTime = moment(lastTimeUpdated).fromNow();
+        let currTime = moment(new Date());
+        let lastUpdatedTime = moment(lastTimeUpdated);
+        let diff =  currTime.diff(lastUpdatedTime, 'minutes');
+        let colorCSS = diff > 5 ? 'red' : '' ;
+
         return (
-            <small className="italic">
+            <small className={`italic ${colorCSS}`}>
                 Last updated: {lastTime}
             </small>
         );
