@@ -1,5 +1,6 @@
 import ACTION from '../../../../constants/actions';
 
+// default value of current Temperature and audio Sound on load
 const initialState = {
     temperatureType: 'CELSIUS',
     isMute: false,
