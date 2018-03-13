@@ -43,12 +43,14 @@ header h1{
   font-size: 15px;
 }
 .Dropdown-option{
-  padding: 2px 10px;
+  padding: 0 10px;
   font-size: 15px;
 }
 .Dropdown-option:hover {
   background-color: #eeaf4b;
-  color: #333;
+  color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px -1px #34302c;
 }
 .Dropdown-arrow{
   top: 9px;
