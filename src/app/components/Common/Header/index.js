@@ -2,7 +2,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 
 const Header = ({ toggleSound, isMute }) => {
-    const imageName = isMute ? 'alarm-mute.png' : 'alarm.png';
+    const imageName = isMute ? 'alarm_white.png' : 'alarm.png';
     return (
         <header>
             <img src="/images/beer_logo.png" alt="logo" className="logoStyle"/>
