@@ -244,12 +244,56 @@ footer{
 @media only screen and (max-width: 530px) {
   header {
     height:100px;
+    text-align: center;
+  }
+  h1{
+    display: inline-block;
+  }
+  .logoStyle{
+    display: inline-block;
+    margin-top: -23px;
+    margin-left: 0;
+    float:none;
   }
   .bellIcon{
-    top: 60px;
+    top: 56px;
+    right: 115px;
   }
   .dropdownSection{
     top: 60px;
+    right:170px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .bellIcon{
+    right: 150px;
+  }
+  .dropdownSection{
+    right:210px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .bellIcon{
+    right: 80px;
+  }
+  .dropdownSection{
+    right:150px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .bellIcon{
+    right: 110px;
+  }
+  .dropdownSection{
+    right:165px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .bellIcon{
+    right: 75px;
+  }
+  .dropdownSection{
+    right:130px;
   }
 }
 @media only screen and (min-width: 450px) and (max-width: 575px){
