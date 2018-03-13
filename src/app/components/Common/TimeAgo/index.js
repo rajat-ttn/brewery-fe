@@ -16,7 +16,7 @@ class TimeAgo extends Component {
     }
 
     componentDidMount () {
-        this.interval = setInterval(this.tick, 1000);
+        this.interval = setInterval(this.tick, 30000);
     }
     componentWillUnmount () {
         clearInterval(this.interval);
@@ -34,8 +34,8 @@ class TimeAgo extends Component {
         const lastTime = moment(lastTimeUpdated).fromNow();
         let currTime = moment(new Date());
         let lastUpdatedTime = moment(lastTimeUpdated);
-        let diff =  currTime.diff(lastUpdatedTime, 'minutes');
-        let colorCSS = diff > 5 ? 'red' : '' ;
+        let diff =  currTime.diff(lastUpdatedTime, 'seconds');
+        let colorCSS = diff > 299 ? 'red' : '' ;
 
         return (
             <small className={`italic ${colorCSS}`}>
