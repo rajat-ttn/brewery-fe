@@ -18,103 +18,49 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
-      "children": Array [
-        <option
-          value="CELSIUS"
->
-          Celsius
-</option>,
-        <option
-          value="FAHRENHEIT"
->
-          Fahrenheit
-</option>,
-      ],
-      "className": "input-sm form-control input-s-sm inline",
+      "baseClassName": "Dropdown",
       "onChange": [Function],
-      "value": "FAHRENHEIT",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": "CELSIUS",
-        "nodeType": "host",
-        "props": Object {
-          "children": "Celsius",
+      "options": Array [
+        Object {
+          "label": "Celsius",
           "value": "CELSIUS",
         },
-        "ref": null,
-        "rendered": "Celsius",
-        "type": "option",
-      },
-      Object {
-        "instance": null,
-        "key": "FAHRENHEIT",
-        "nodeType": "host",
-        "props": Object {
-          "children": "Fahrenheit",
+        Object {
+          "label": "Fahrenheit",
           "value": "FAHRENHEIT",
         },
-        "ref": null,
-        "rendered": "Fahrenheit",
-        "type": "option",
-      },
-    ],
-    "type": "select",
+      ],
+      "value": "Fahrenheit",
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
-        "children": Array [
-          <option
-            value="CELSIUS"
->
-            Celsius
-</option>,
-          <option
-            value="FAHRENHEIT"
->
-            Fahrenheit
-</option>,
-        ],
-        "className": "input-sm form-control input-s-sm inline",
+        "baseClassName": "Dropdown",
         "onChange": [Function],
-        "value": "FAHRENHEIT",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": "CELSIUS",
-          "nodeType": "host",
-          "props": Object {
-            "children": "Celsius",
+        "options": Array [
+          Object {
+            "label": "Celsius",
             "value": "CELSIUS",
           },
-          "ref": null,
-          "rendered": "Celsius",
-          "type": "option",
-        },
-        Object {
-          "instance": null,
-          "key": "FAHRENHEIT",
-          "nodeType": "host",
-          "props": Object {
-            "children": "Fahrenheit",
+          Object {
+            "label": "Fahrenheit",
             "value": "FAHRENHEIT",
           },
-          "ref": null,
-          "rendered": "Fahrenheit",
-          "type": "option",
-        },
-      ],
-      "type": "select",
+        ],
+        "value": "Fahrenheit",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

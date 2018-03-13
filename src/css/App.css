@@ -37,17 +37,33 @@ header h1{
   margin-left: 20px;
   margin-right: 6px;
 }
+.Dropdown-control{
+  padding: 0 10px;
+  width: 135px;
+  font-size: 15px;
+}
+.Dropdown-option{
+  padding: 2px 10px;
+  font-size: 15px;
+}
+.Dropdown-option:hover {
+  background-color: #eeaf4b;
+  color: #333;
+}
+.Dropdown-arrow{
+  top: 9px;
+}
 .dropdownSection{
   position: absolute;
   right: 100px;
   top: 18px;
 }
-.dropdownSection > select.form-control:not([size]):not([multiple]){
+/*.dropdownSection > select.form-control:not([size]):not([multiple]){
   height: 22px;
   padding-top: 0;
   padding-bottom: 0;
   font-size: 14px;
-}
+}*/
 .bellIcon{
   width: 30px;
   height: 30px;

@@ -32,22 +32,24 @@ exports[`App renders without crashing should render children correctly 1`] = `
     <div
       className="dropdownSection"
     >
-      <select
-        className="input-sm form-control input-s-sm inline"
-        onChange={[Function]}
-        value="CELSIUS"
+      <div
+        className="Dropdown-root"
       >
-        <option
-          value="CELSIUS"
+        <div
+          className="Dropdown-control "
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
         >
-          Celsius
-        </option>
-        <option
-          value="FAHRENHEIT"
-        >
-          Fahrenheit
-        </option>
-      </select>
+          <div
+            className="Dropdown-placeholder"
+          >
+            Celsius
+          </div>
+          <span
+            className="Dropdown-arrow"
+          />
+        </div>
+      </div>
     </div>
     <div
       className="colorInfoWrapper"
