@@ -1,3 +1,4 @@
+// API Configuration
 const API = {
     ENDPOINT: {
         BASE: process.env.REACT_APP_API_URL || 'localhost:3001',

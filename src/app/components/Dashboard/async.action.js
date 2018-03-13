@@ -4,6 +4,7 @@ import API from '../../../config/endpoints';
 import { getBeerList } from './action'
 import { setErrorMessage, removeErrorMessage } from '../Common/ErrorHandling/action'
 
+// Function to fetch Container List
 export const fetchBeerList = () => async(dispatch) => {
     try {
         const {DOMAIN, BASE, VERSION, DASHBOARD} = API.ENDPOINT;
