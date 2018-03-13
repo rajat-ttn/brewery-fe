@@ -18,6 +18,7 @@ const removeErrorMsg = (state) => {
     return {...state, error: initialState.error};
 };
 
+// Error Handling Reducer
 export default function errorHandlingReducer(state = initialState, action) {
     switch (action.type) {
         case ACTION.SET_ERROR: return setErrorMsg(state, action.payload);

@@ -3,6 +3,7 @@ import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
 import moment from 'moment';
 
+// TimeAgo Component for showing Last updated time of temperature of container
 class TimeAgo extends Component {
     constructor(props){
         super(props);

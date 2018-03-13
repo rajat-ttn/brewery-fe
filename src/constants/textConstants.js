@@ -1,7 +1,7 @@
 export const textConstant =  {
     error: 'Something went wrong'
 };
-
+// Temerature dropdown menu
 export const TEMPERATURE_TYPE = [
     { value: 'CELSIUS', label: 'Celsius' },
     { value: 'FAHRENHEIT', label: 'Fahrenheit'},

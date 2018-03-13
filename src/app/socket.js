@@ -6,7 +6,6 @@ import { TEMP_EVENT } from '../constants/textConstants';
 const socket = io(API.ENDPOINT.BASE);
 
 //export the socket subscribed function
-
 export default function subscribeToUpdateTemperature(cb) {
     socket.on(TEMP_EVENT.CONTAINER_TEMPERATURE_CHANGE, data => cb(data));
 }

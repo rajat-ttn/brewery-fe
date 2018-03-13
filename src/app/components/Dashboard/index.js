@@ -47,6 +47,7 @@ class Dashboard extends Component {
         };
     };
 
+    // function to start alarm if any container temperature gets out of temp range
     attachAudioEvents = () => {
         this.audio.onended = () => {
             if (this.props.isAnyBeerOutOfTempRange && !this.props.isMute) {
@@ -55,6 +56,7 @@ class Dashboard extends Component {
         }
     };
 
+    // function to update temperature type in redux state
     changeTemperatureType = selectedData => {
         const { value } = selectedData
         const { setTemperatureType } = this.props;

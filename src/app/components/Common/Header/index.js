@@ -1,6 +1,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
+// Header Component
 const Header = ({ toggleSound, isMute }) => {
     const imageName = isMute ? 'alarm-mute.png' : 'alarm.png';
     return (
