@@ -22,9 +22,4 @@ describe('Temperature Filter filters beer based on temperature correctly', () =>
     it('temperature select should work properly', () => {
         expect(temperatureFilter).toMatchSnapshot()
     });
-
-    it('trigger Event', () => {
-        temperatureFilter.find('select').simulate('change', event);
-        expect(temperatureFilter.find('select').props().value).toBe("FAHRENHEIT");
-    });
 });

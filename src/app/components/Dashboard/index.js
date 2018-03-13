@@ -55,11 +55,11 @@ class Dashboard extends Component {
         }
     };
 
-    changeTemperatureType = event => {
-        const updatedTempType = event.target.value;
+    changeTemperatureType = selectedData => {
+        const { value } = selectedData
         const { setTemperatureType } = this.props;
-        if (updatedTempType) {
-            setTemperatureType(updatedTempType)
+        if (value) {
+            setTemperatureType(value)
         }
     };
     
