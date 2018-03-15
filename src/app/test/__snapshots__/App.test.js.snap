@@ -4,9 +4,6 @@ exports[`App renders without crashing should render children correctly 1`] = `
 <div
   className="wrapper"
 >
-  <div
-    className="loader"
-  />
   <header>
     <img
       alt="logo"
@@ -25,10 +22,6 @@ exports[`App renders without crashing should render children correctly 1`] = `
         src="/images/alarm.png"
       />
     </span>
-  </header>
-  <div
-    className="pageLayout"
-  >
     <div
       className="dropdownSection"
     >
@@ -51,28 +44,39 @@ exports[`App renders without crashing should render children correctly 1`] = `
         </div>
       </div>
     </div>
+  </header>
+  <div
+    className="pageLayout"
+  >
+    <div
+      className="loader"
+    />
     <div
       className="colorInfoWrapper"
     >
       <div
         className="colorInfo"
       >
-        <span
-          className="status-circle blueBackground"
-        />
-        <small>
-          <strong>
-            Too Low
-          </strong>
-        </small>
-        <span
-          className="status-circle redBackground"
-        />
-        <small>
-          <strong>
-            Too High
-          </strong>
-        </small>
+        <span>
+          <span
+            className="status-circle blueBackground"
+          />
+          <small>
+            <strong>
+              Too Low
+            </strong>
+          </small>
+        </span>
+        <span>
+          <span
+            className="status-circle redBackground"
+          />
+          <small>
+            <strong>
+              Too High
+            </strong>
+          </small>
+        </span>
       </div>
     </div>
     <div

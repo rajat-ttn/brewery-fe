@@ -18,28 +18,29 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
-      "baseClassName": "Dropdown",
-      "onChange": [Function],
-      "options": Array [
-        Object {
-          "label": "Celsius",
-          "value": "CELSIUS",
-        },
-        Object {
-          "label": "Fahrenheit",
-          "value": "FAHRENHEIT",
-        },
-      ],
-      "value": "Fahrenheit",
+      "children": <Dropdown
+        baseClassName="Dropdown"
+        onChange={[Function]}
+        options={
+                Array [
+                        Object {
+                          "label": "Celsius",
+                          "value": "CELSIUS",
+                        },
+                        Object {
+                          "label": "Fahrenheit",
+                          "value": "FAHRENHEIT",
+                        },
+                      ]
+        }
+        value="Fahrenheit"
+/>,
+      "className": "dropdownSection",
     },
     "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "class",
@@ -61,6 +62,59 @@ ShallowWrapper {
       "ref": null,
       "rendered": null,
       "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Dropdown
+          baseClassName="Dropdown"
+          onChange={[Function]}
+          options={
+                    Array [
+                              Object {
+                                "label": "Celsius",
+                                "value": "CELSIUS",
+                              },
+                              Object {
+                                "label": "Fahrenheit",
+                                "value": "FAHRENHEIT",
+                              },
+                            ]
+          }
+          value="Fahrenheit"
+/>,
+        "className": "dropdownSection",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "baseClassName": "Dropdown",
+          "onChange": [Function],
+          "options": Array [
+            Object {
+              "label": "Celsius",
+              "value": "CELSIUS",
+            },
+            Object {
+              "label": "Fahrenheit",
+              "value": "FAHRENHEIT",
+            },
+          ],
+          "value": "Fahrenheit",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

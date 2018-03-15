@@ -19,5 +19,27 @@ exports[`Header Component Should render correctly renders correctly 1`] = `
       src="/images/alarm.png"
     />
   </span>
+  <div
+    className="dropdownSection"
+  >
+    <div
+      className="Dropdown-root"
+    >
+      <div
+        className="Dropdown-control "
+        onMouseDown={[Function]}
+        onTouchEnd={[Function]}
+      >
+        <div
+          className="Dropdown-placeholder"
+        >
+          Fahrenheit
+        </div>
+        <span
+          className="Dropdown-arrow"
+        />
+      </div>
+    </div>
+  </div>
 </header>
 `;

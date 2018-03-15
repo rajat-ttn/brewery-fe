@@ -21,9 +21,7 @@ ShallowWrapper {
     fetchBeerList={[Function]}
     isAnyBeerOutOfTempRange={false}
     isMute={false}
-    setTemperatureType={[Function]}
     temperatureType="FAHRENHEIT"
-    toggleSound={[Function]}
     updateTemperature={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -42,67 +40,38 @@ ShallowWrapper {
         <LoadingIndicator
           showLoader={true}
 />,
-        <Header
-          isMute={false}
-          toggleSound={[Function]}
+        <Legends
+          legendColorClass={
+                    Array [
+                              "blueBackground",
+                              "redBackground",
+                            ]
+          }
+          legendsValue={
+                    Array [
+                              "Too Low",
+                              "Too High",
+                            ]
+          }
 />,
-        <div
-          className="pageLayout"
->
-          <div
-                    className="dropdownSection"
-          >
-                    <TemperatureFilter
-                              changeTemperatureType={[Function]}
-                              temperatureType="FAHRENHEIT"
-                    />
-          </div>
-          <div
-                    className="colorInfoWrapper"
-          >
-                    <div
-                              className="colorInfo"
-                    >
-                              <span
-                                        className="status-circle blueBackground"
-                              />
-                              <small>
-                                        <strong>
-                                                  Too Low
-                                        </strong>
-                              </small>
-                              <span
-                                        className="status-circle redBackground"
-                              />
-                              <small>
-                                        <strong>
-                                                  Too High
-                                        </strong>
-                              </small>
-                    </div>
-          </div>
-          <div
-                    className="row beerlistSection"
-          >
-                    <BeerComponent
-                              beerContentDetail={
-                                        Object {
-                                                  "beerType": "Aler Beer",
-                                                  "containerId": 1,
-                                                  "id": 1,
-                                                  "tempRange": Array [
-                                                    3,
-                                                    5,
-                                                  ],
-                                                }
-                              }
-                              temperatureType="FAHRENHEIT"
-                    />
-          </div>
-</div>,
-        <Footer />,
+        <BeerList
+          beerList={
+                    Array [
+                              Object {
+                                "beerType": "Aler Beer",
+                                "containerId": 1,
+                                "id": 1,
+                                "tempRange": Array [
+                                  3,
+                                  5,
+                                ],
+                              },
+                            ]
+          }
+          temperatureType="FAHRENHEIT"
+/>,
       ],
-      "className": "wrapper",
+      "className": "pageLayout",
     },
     "ref": null,
     "rendered": Array [
@@ -122,8 +91,14 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "isMute": false,
-          "toggleSound": [Function],
+          "legendColorClass": Array [
+            "blueBackground",
+            "redBackground",
+          ],
+          "legendsValue": Array [
+            "Too Low",
+            "Too High",
+          ],
         },
         "ref": null,
         "rendered": null,
@@ -132,274 +107,21 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <div
-              className="dropdownSection"
->
-              <TemperatureFilter
-                            changeTemperatureType={[Function]}
-                            temperatureType="FAHRENHEIT"
-              />
-</div>,
-            <div
-              className="colorInfoWrapper"
->
-              <div
-                            className="colorInfo"
-              >
-                            <span
-                                          className="status-circle blueBackground"
-                            />
-                            <small>
-                                          <strong>
-                                                        Too Low
-                                          </strong>
-                            </small>
-                            <span
-                                          className="status-circle redBackground"
-                            />
-                            <small>
-                                          <strong>
-                                                        Too High
-                                          </strong>
-                            </small>
-              </div>
-</div>,
-            <div
-              className="row beerlistSection"
->
-              <BeerComponent
-                            beerContentDetail={
-                                          Object {
-                                                        "beerType": "Aler Beer",
-                                                        "containerId": 1,
-                                                        "id": 1,
-                                                        "tempRange": Array [
-                                                          3,
-                                                          5,
-                                                        ],
-                                                      }
-                            }
-                            temperatureType="FAHRENHEIT"
-              />
-</div>,
-          ],
-          "className": "pageLayout",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <TemperatureFilter
-                changeTemperatureType={[Function]}
-                temperatureType="FAHRENHEIT"
-/>,
-              "className": "dropdownSection",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "changeTemperatureType": [Function],
-                "temperatureType": "FAHRENHEIT",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <div
-                className="colorInfo"
->
-                <span
-                                className="status-circle blueBackground"
-                />
-                <small>
-                                <strong>
-                                                Too Low
-                                </strong>
-                </small>
-                <span
-                                className="status-circle redBackground"
-                />
-                <small>
-                                <strong>
-                                                Too High
-                                </strong>
-                </small>
-</div>,
-              "className": "colorInfoWrapper",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <span
-                    className="status-circle blueBackground"
-/>,
-                  <small>
-                    <strong>
-                                        Too Low
-                    </strong>
-</small>,
-                  <span
-                    className="status-circle redBackground"
-/>,
-                  <small>
-                    <strong>
-                                        Too High
-                    </strong>
-</small>,
-                ],
-                "className": "colorInfo",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "status-circle blueBackground",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "span",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <strong>
-                      Too Low
-</strong>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Too Low",
-                    },
-                    "ref": null,
-                    "rendered": "Too Low",
-                    "type": "strong",
-                  },
-                  "type": "small",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "status-circle redBackground",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "span",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <strong>
-                      Too High
-</strong>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Too High",
-                    },
-                    "ref": null,
-                    "rendered": "Too High",
-                    "type": "strong",
-                  },
-                  "type": "small",
-                },
-              ],
-              "type": "div",
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <BeerComponent
-                  beerContentDetail={
-                                    Object {
-                                                      "beerType": "Aler Beer",
-                                                      "containerId": 1,
-                                                      "id": 1,
-                                                      "tempRange": Array [
-                                                        3,
-                                                        5,
-                                                      ],
-                                                    }
-                  }
-                  temperatureType="FAHRENHEIT"
-/>,
-              ],
-              "className": "row beerlistSection",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": "1",
-                "nodeType": "function",
-                "props": Object {
-                  "beerContentDetail": Object {
-                    "beerType": "Aler Beer",
-                    "containerId": 1,
-                    "id": 1,
-                    "tempRange": Array [
-                      3,
-                      5,
-                    ],
-                  },
-                  "temperatureType": "FAHRENHEIT",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
-          },
-        ],
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "beerList": Array [
+            Object {
+              "beerType": "Aler Beer",
+              "containerId": 1,
+              "id": 1,
+              "tempRange": Array [
+                3,
+                5,
+              ],
+            },
+          ],
+          "temperatureType": "FAHRENHEIT",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -417,67 +139,38 @@ ShallowWrapper {
           <LoadingIndicator
             showLoader={true}
 />,
-          <Header
-            isMute={false}
-            toggleSound={[Function]}
+          <Legends
+            legendColorClass={
+                        Array [
+                                    "blueBackground",
+                                    "redBackground",
+                                  ]
+            }
+            legendsValue={
+                        Array [
+                                    "Too Low",
+                                    "Too High",
+                                  ]
+            }
 />,
-          <div
-            className="pageLayout"
->
-            <div
-                        className="dropdownSection"
-            >
-                        <TemperatureFilter
-                                    changeTemperatureType={[Function]}
-                                    temperatureType="FAHRENHEIT"
-                        />
-            </div>
-            <div
-                        className="colorInfoWrapper"
-            >
-                        <div
-                                    className="colorInfo"
-                        >
-                                    <span
-                                                className="status-circle blueBackground"
-                                    />
-                                    <small>
-                                                <strong>
-                                                            Too Low
-                                                </strong>
-                                    </small>
-                                    <span
-                                                className="status-circle redBackground"
-                                    />
-                                    <small>
-                                                <strong>
-                                                            Too High
-                                                </strong>
-                                    </small>
-                        </div>
-            </div>
-            <div
-                        className="row beerlistSection"
-            >
-                        <BeerComponent
-                                    beerContentDetail={
-                                                Object {
-                                                            "beerType": "Aler Beer",
-                                                            "containerId": 1,
-                                                            "id": 1,
-                                                            "tempRange": Array [
-                                                              3,
-                                                              5,
-                                                            ],
-                                                          }
-                                    }
-                                    temperatureType="FAHRENHEIT"
-                        />
-            </div>
-</div>,
-          <Footer />,
+          <BeerList
+            beerList={
+                        Array [
+                                    Object {
+                                      "beerType": "Aler Beer",
+                                      "containerId": 1,
+                                      "id": 1,
+                                      "tempRange": Array [
+                                        3,
+                                        5,
+                                      ],
+                                    },
+                                  ]
+            }
+            temperatureType="FAHRENHEIT"
+/>,
         ],
-        "className": "wrapper",
+        "className": "pageLayout",
       },
       "ref": null,
       "rendered": Array [
@@ -497,8 +190,14 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "isMute": false,
-            "toggleSound": [Function],
+            "legendColorClass": Array [
+              "blueBackground",
+              "redBackground",
+            ],
+            "legendsValue": Array [
+              "Too Low",
+              "Too High",
+            ],
           },
           "ref": null,
           "rendered": null,
@@ -507,274 +206,21 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <div
-                className="dropdownSection"
->
-                <TemperatureFilter
-                                changeTemperatureType={[Function]}
-                                temperatureType="FAHRENHEIT"
-                />
-</div>,
-              <div
-                className="colorInfoWrapper"
->
-                <div
-                                className="colorInfo"
-                >
-                                <span
-                                                className="status-circle blueBackground"
-                                />
-                                <small>
-                                                <strong>
-                                                                Too Low
-                                                </strong>
-                                </small>
-                                <span
-                                                className="status-circle redBackground"
-                                />
-                                <small>
-                                                <strong>
-                                                                Too High
-                                                </strong>
-                                </small>
-                </div>
-</div>,
-              <div
-                className="row beerlistSection"
->
-                <BeerComponent
-                                beerContentDetail={
-                                                Object {
-                                                                "beerType": "Aler Beer",
-                                                                "containerId": 1,
-                                                                "id": 1,
-                                                                "tempRange": Array [
-                                                                  3,
-                                                                  5,
-                                                                ],
-                                                              }
-                                }
-                                temperatureType="FAHRENHEIT"
-                />
-</div>,
-            ],
-            "className": "pageLayout",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <TemperatureFilter
-                  changeTemperatureType={[Function]}
-                  temperatureType="FAHRENHEIT"
-/>,
-                "className": "dropdownSection",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "changeTemperatureType": [Function],
-                  "temperatureType": "FAHRENHEIT",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <div
-                  className="colorInfo"
->
-                  <span
-                                    className="status-circle blueBackground"
-                  />
-                  <small>
-                                    <strong>
-                                                      Too Low
-                                    </strong>
-                  </small>
-                  <span
-                                    className="status-circle redBackground"
-                  />
-                  <small>
-                                    <strong>
-                                                      Too High
-                                    </strong>
-                  </small>
-</div>,
-                "className": "colorInfoWrapper",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <span
-                      className="status-circle blueBackground"
-/>,
-                    <small>
-                      <strong>
-                                            Too Low
-                      </strong>
-</small>,
-                    <span
-                      className="status-circle redBackground"
-/>,
-                    <small>
-                      <strong>
-                                            Too High
-                      </strong>
-</small>,
-                  ],
-                  "className": "colorInfo",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "status-circle blueBackground",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "span",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <strong>
-                        Too Low
-</strong>,
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Too Low",
-                      },
-                      "ref": null,
-                      "rendered": "Too Low",
-                      "type": "strong",
-                    },
-                    "type": "small",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "status-circle redBackground",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "span",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <strong>
-                        Too High
-</strong>,
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Too High",
-                      },
-                      "ref": null,
-                      "rendered": "Too High",
-                      "type": "strong",
-                    },
-                    "type": "small",
-                  },
-                ],
-                "type": "div",
-              },
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <BeerComponent
-                    beerContentDetail={
-                                        Object {
-                                                            "beerType": "Aler Beer",
-                                                            "containerId": 1,
-                                                            "id": 1,
-                                                            "tempRange": Array [
-                                                              3,
-                                                              5,
-                                                            ],
-                                                          }
-                    }
-                    temperatureType="FAHRENHEIT"
-/>,
-                ],
-                "className": "row beerlistSection",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": "1",
-                  "nodeType": "function",
-                  "props": Object {
-                    "beerContentDetail": Object {
-                      "beerType": "Aler Beer",
-                      "containerId": 1,
-                      "id": 1,
-                      "tempRange": Array [
-                        3,
-                        5,
-                      ],
-                    },
-                    "temperatureType": "FAHRENHEIT",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
-              "type": "div",
-            },
-          ],
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "beerList": Array [
+              Object {
+                "beerType": "Aler Beer",
+                "containerId": 1,
+                "id": 1,
+                "tempRange": Array [
+                  3,
+                  5,
+                ],
+              },
+            ],
+            "temperatureType": "FAHRENHEIT",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -814,9 +260,7 @@ ShallowWrapper {
     fetchBeerList={[Function]}
     isAnyBeerOutOfTempRange={false}
     isMute={false}
-    setTemperatureType={[Function]}
     temperatureType="FAHRENHEIT"
-    toggleSound={[Function]}
     updateTemperature={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -835,67 +279,38 @@ ShallowWrapper {
         <LoadingIndicator
           showLoader={true}
 />,
-        <Header
-          isMute={false}
-          toggleSound={[Function]}
+        <Legends
+          legendColorClass={
+                    Array [
+                              "blueBackground",
+                              "redBackground",
+                            ]
+          }
+          legendsValue={
+                    Array [
+                              "Too Low",
+                              "Too High",
+                            ]
+          }
 />,
-        <div
-          className="pageLayout"
->
-          <div
-                    className="dropdownSection"
-          >
-                    <TemperatureFilter
-                              changeTemperatureType={[Function]}
-                              temperatureType="FAHRENHEIT"
-                    />
-          </div>
-          <div
-                    className="colorInfoWrapper"
-          >
-                    <div
-                              className="colorInfo"
-                    >
-                              <span
-                                        className="status-circle blueBackground"
-                              />
-                              <small>
-                                        <strong>
-                                                  Too Low
-                                        </strong>
-                              </small>
-                              <span
-                                        className="status-circle redBackground"
-                              />
-                              <small>
-                                        <strong>
-                                                  Too High
-                                        </strong>
-                              </small>
-                    </div>
-          </div>
-          <div
-                    className="row beerlistSection"
-          >
-                    <BeerComponent
-                              beerContentDetail={
-                                        Object {
-                                                  "beerType": "Aler Beer",
-                                                  "containerId": 1,
-                                                  "id": 1,
-                                                  "tempRange": Array [
-                                                    3,
-                                                    5,
-                                                  ],
-                                                }
-                              }
-                              temperatureType="FAHRENHEIT"
-                    />
-          </div>
-</div>,
-        <Footer />,
+        <BeerList
+          beerList={
+                    Array [
+                              Object {
+                                "beerType": "Aler Beer",
+                                "containerId": 1,
+                                "id": 1,
+                                "tempRange": Array [
+                                  3,
+                                  5,
+                                ],
+                              },
+                            ]
+          }
+          temperatureType="FAHRENHEIT"
+/>,
       ],
-      "className": "wrapper",
+      "className": "pageLayout",
     },
     "ref": null,
     "rendered": Array [
@@ -915,8 +330,14 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "isMute": false,
-          "toggleSound": [Function],
+          "legendColorClass": Array [
+            "blueBackground",
+            "redBackground",
+          ],
+          "legendsValue": Array [
+            "Too Low",
+            "Too High",
+          ],
         },
         "ref": null,
         "rendered": null,
@@ -925,274 +346,21 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <div
-              className="dropdownSection"
->
-              <TemperatureFilter
-                            changeTemperatureType={[Function]}
-                            temperatureType="FAHRENHEIT"
-              />
-</div>,
-            <div
-              className="colorInfoWrapper"
->
-              <div
-                            className="colorInfo"
-              >
-                            <span
-                                          className="status-circle blueBackground"
-                            />
-                            <small>
-                                          <strong>
-                                                        Too Low
-                                          </strong>
-                            </small>
-                            <span
-                                          className="status-circle redBackground"
-                            />
-                            <small>
-                                          <strong>
-                                                        Too High
-                                          </strong>
-                            </small>
-              </div>
-</div>,
-            <div
-              className="row beerlistSection"
->
-              <BeerComponent
-                            beerContentDetail={
-                                          Object {
-                                                        "beerType": "Aler Beer",
-                                                        "containerId": 1,
-                                                        "id": 1,
-                                                        "tempRange": Array [
-                                                          3,
-                                                          5,
-                                                        ],
-                                                      }
-                            }
-                            temperatureType="FAHRENHEIT"
-              />
-</div>,
-          ],
-          "className": "pageLayout",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <TemperatureFilter
-                changeTemperatureType={[Function]}
-                temperatureType="FAHRENHEIT"
-/>,
-              "className": "dropdownSection",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "changeTemperatureType": [Function],
-                "temperatureType": "FAHRENHEIT",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <div
-                className="colorInfo"
->
-                <span
-                                className="status-circle blueBackground"
-                />
-                <small>
-                                <strong>
-                                                Too Low
-                                </strong>
-                </small>
-                <span
-                                className="status-circle redBackground"
-                />
-                <small>
-                                <strong>
-                                                Too High
-                                </strong>
-                </small>
-</div>,
-              "className": "colorInfoWrapper",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <span
-                    className="status-circle blueBackground"
-/>,
-                  <small>
-                    <strong>
-                                        Too Low
-                    </strong>
-</small>,
-                  <span
-                    className="status-circle redBackground"
-/>,
-                  <small>
-                    <strong>
-                                        Too High
-                    </strong>
-</small>,
-                ],
-                "className": "colorInfo",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "status-circle blueBackground",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "span",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <strong>
-                      Too Low
-</strong>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Too Low",
-                    },
-                    "ref": null,
-                    "rendered": "Too Low",
-                    "type": "strong",
-                  },
-                  "type": "small",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "status-circle redBackground",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "span",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <strong>
-                      Too High
-</strong>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Too High",
-                    },
-                    "ref": null,
-                    "rendered": "Too High",
-                    "type": "strong",
-                  },
-                  "type": "small",
-                },
-              ],
-              "type": "div",
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <BeerComponent
-                  beerContentDetail={
-                                    Object {
-                                                      "beerType": "Aler Beer",
-                                                      "containerId": 1,
-                                                      "id": 1,
-                                                      "tempRange": Array [
-                                                        3,
-                                                        5,
-                                                      ],
-                                                    }
-                  }
-                  temperatureType="FAHRENHEIT"
-/>,
-              ],
-              "className": "row beerlistSection",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": "1",
-                "nodeType": "function",
-                "props": Object {
-                  "beerContentDetail": Object {
-                    "beerType": "Aler Beer",
-                    "containerId": 1,
-                    "id": 1,
-                    "tempRange": Array [
-                      3,
-                      5,
-                    ],
-                  },
-                  "temperatureType": "FAHRENHEIT",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
-          },
-        ],
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "beerList": Array [
+            Object {
+              "beerType": "Aler Beer",
+              "containerId": 1,
+              "id": 1,
+              "tempRange": Array [
+                3,
+                5,
+              ],
+            },
+          ],
+          "temperatureType": "FAHRENHEIT",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -1210,67 +378,38 @@ ShallowWrapper {
           <LoadingIndicator
             showLoader={true}
 />,
-          <Header
-            isMute={false}
-            toggleSound={[Function]}
+          <Legends
+            legendColorClass={
+                        Array [
+                                    "blueBackground",
+                                    "redBackground",
+                                  ]
+            }
+            legendsValue={
+                        Array [
+                                    "Too Low",
+                                    "Too High",
+                                  ]
+            }
 />,
-          <div
-            className="pageLayout"
->
-            <div
-                        className="dropdownSection"
-            >
-                        <TemperatureFilter
-                                    changeTemperatureType={[Function]}
-                                    temperatureType="FAHRENHEIT"
-                        />
-            </div>
-            <div
-                        className="colorInfoWrapper"
-            >
-                        <div
-                                    className="colorInfo"
-                        >
-                                    <span
-                                                className="status-circle blueBackground"
-                                    />
-                                    <small>
-                                                <strong>
-                                                            Too Low
-                                                </strong>
-                                    </small>
-                                    <span
-                                                className="status-circle redBackground"
-                                    />
-                                    <small>
-                                                <strong>
-                                                            Too High
-                                                </strong>
-                                    </small>
-                        </div>
-            </div>
-            <div
-                        className="row beerlistSection"
-            >
-                        <BeerComponent
-                                    beerContentDetail={
-                                                Object {
-                                                            "beerType": "Aler Beer",
-                                                            "containerId": 1,
-                                                            "id": 1,
-                                                            "tempRange": Array [
-                                                              3,
-                                                              5,
-                                                            ],
-                                                          }
-                                    }
-                                    temperatureType="FAHRENHEIT"
-                        />
-            </div>
-</div>,
-          <Footer />,
+          <BeerList
+            beerList={
+                        Array [
+                                    Object {
+                                      "beerType": "Aler Beer",
+                                      "containerId": 1,
+                                      "id": 1,
+                                      "tempRange": Array [
+                                        3,
+                                        5,
+                                      ],
+                                    },
+                                  ]
+            }
+            temperatureType="FAHRENHEIT"
+/>,
         ],
-        "className": "wrapper",
+        "className": "pageLayout",
       },
       "ref": null,
       "rendered": Array [
@@ -1290,8 +429,14 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "isMute": false,
-            "toggleSound": [Function],
+            "legendColorClass": Array [
+              "blueBackground",
+              "redBackground",
+            ],
+            "legendsValue": Array [
+              "Too Low",
+              "Too High",
+            ],
           },
           "ref": null,
           "rendered": null,
@@ -1300,274 +445,21 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <div
-                className="dropdownSection"
->
-                <TemperatureFilter
-                                changeTemperatureType={[Function]}
-                                temperatureType="FAHRENHEIT"
-                />
-</div>,
-              <div
-                className="colorInfoWrapper"
->
-                <div
-                                className="colorInfo"
-                >
-                                <span
-                                                className="status-circle blueBackground"
-                                />
-                                <small>
-                                                <strong>
-                                                                Too Low
-                                                </strong>
-                                </small>
-                                <span
-                                                className="status-circle redBackground"
-                                />
-                                <small>
-                                                <strong>
-                                                                Too High
-                                                </strong>
-                                </small>
-                </div>
-</div>,
-              <div
-                className="row beerlistSection"
->
-                <BeerComponent
-                                beerContentDetail={
-                                                Object {
-                                                                "beerType": "Aler Beer",
-                                                                "containerId": 1,
-                                                                "id": 1,
-                                                                "tempRange": Array [
-                                                                  3,
-                                                                  5,
-                                                                ],
-                                                              }
-                                }
-                                temperatureType="FAHRENHEIT"
-                />
-</div>,
-            ],
-            "className": "pageLayout",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <TemperatureFilter
-                  changeTemperatureType={[Function]}
-                  temperatureType="FAHRENHEIT"
-/>,
-                "className": "dropdownSection",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "changeTemperatureType": [Function],
-                  "temperatureType": "FAHRENHEIT",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <div
-                  className="colorInfo"
->
-                  <span
-                                    className="status-circle blueBackground"
-                  />
-                  <small>
-                                    <strong>
-                                                      Too Low
-                                    </strong>
-                  </small>
-                  <span
-                                    className="status-circle redBackground"
-                  />
-                  <small>
-                                    <strong>
-                                                      Too High
-                                    </strong>
-                  </small>
-</div>,
-                "className": "colorInfoWrapper",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <span
-                      className="status-circle blueBackground"
-/>,
-                    <small>
-                      <strong>
-                                            Too Low
-                      </strong>
-</small>,
-                    <span
-                      className="status-circle redBackground"
-/>,
-                    <small>
-                      <strong>
-                                            Too High
-                      </strong>
-</small>,
-                  ],
-                  "className": "colorInfo",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "status-circle blueBackground",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "span",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <strong>
-                        Too Low
-</strong>,
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Too Low",
-                      },
-                      "ref": null,
-                      "rendered": "Too Low",
-                      "type": "strong",
-                    },
-                    "type": "small",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "status-circle redBackground",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "span",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <strong>
-                        Too High
-</strong>,
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Too High",
-                      },
-                      "ref": null,
-                      "rendered": "Too High",
-                      "type": "strong",
-                    },
-                    "type": "small",
-                  },
-                ],
-                "type": "div",
-              },
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <BeerComponent
-                    beerContentDetail={
-                                        Object {
-                                                            "beerType": "Aler Beer",
-                                                            "containerId": 1,
-                                                            "id": 1,
-                                                            "tempRange": Array [
-                                                              3,
-                                                              5,
-                                                            ],
-                                                          }
-                    }
-                    temperatureType="FAHRENHEIT"
-/>,
-                ],
-                "className": "row beerlistSection",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": "1",
-                  "nodeType": "function",
-                  "props": Object {
-                    "beerContentDetail": Object {
-                      "beerType": "Aler Beer",
-                      "containerId": 1,
-                      "id": 1,
-                      "tempRange": Array [
-                        3,
-                        5,
-                      ],
-                    },
-                    "temperatureType": "FAHRENHEIT",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
-              "type": "div",
-            },
-          ],
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "beerList": Array [
+              Object {
+                "beerType": "Aler Beer",
+                "containerId": 1,
+                "id": 1,
+                "tempRange": Array [
+                  3,
+                  5,
+                ],
+              },
+            ],
+            "temperatureType": "FAHRENHEIT",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -1607,9 +499,7 @@ ShallowWrapper {
     fetchBeerList={[Function]}
     isAnyBeerOutOfTempRange={false}
     isMute={false}
-    setTemperatureType={[Function]}
     temperatureType="FAHRENHEIT"
-    toggleSound={[Function]}
     updateTemperature={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -1628,67 +518,38 @@ ShallowWrapper {
         <LoadingIndicator
           showLoader={true}
 />,
-        <Header
-          isMute={false}
-          toggleSound={[Function]}
+        <Legends
+          legendColorClass={
+                    Array [
+                              "blueBackground",
+                              "redBackground",
+                            ]
+          }
+          legendsValue={
+                    Array [
+                              "Too Low",
+                              "Too High",
+                            ]
+          }
 />,
-        <div
-          className="pageLayout"
->
-          <div
-                    className="dropdownSection"
-          >
-                    <TemperatureFilter
-                              changeTemperatureType={[Function]}
-                              temperatureType="FAHRENHEIT"
-                    />
-          </div>
-          <div
-                    className="colorInfoWrapper"
-          >
-                    <div
-                              className="colorInfo"
-                    >
-                              <span
-                                        className="status-circle blueBackground"
-                              />
-                              <small>
-                                        <strong>
-                                                  Too Low
-                                        </strong>
-                              </small>
-                              <span
-                                        className="status-circle redBackground"
-                              />
-                              <small>
-                                        <strong>
-                                                  Too High
-                                        </strong>
-                              </small>
-                    </div>
-          </div>
-          <div
-                    className="row beerlistSection"
-          >
-                    <BeerComponent
-                              beerContentDetail={
-                                        Object {
-                                                  "beerType": "Aler Beer",
-                                                  "containerId": 1,
-                                                  "id": 1,
-                                                  "tempRange": Array [
-                                                    3,
-                                                    5,
-                                                  ],
-                                                }
-                              }
-                              temperatureType="FAHRENHEIT"
-                    />
-          </div>
-</div>,
-        <Footer />,
+        <BeerList
+          beerList={
+                    Array [
+                              Object {
+                                "beerType": "Aler Beer",
+                                "containerId": 1,
+                                "id": 1,
+                                "tempRange": Array [
+                                  3,
+                                  5,
+                                ],
+                              },
+                            ]
+          }
+          temperatureType="FAHRENHEIT"
+/>,
       ],
-      "className": "wrapper",
+      "className": "pageLayout",
     },
     "ref": null,
     "rendered": Array [
@@ -1708,8 +569,14 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "isMute": false,
-          "toggleSound": [Function],
+          "legendColorClass": Array [
+            "blueBackground",
+            "redBackground",
+          ],
+          "legendsValue": Array [
+            "Too Low",
+            "Too High",
+          ],
         },
         "ref": null,
         "rendered": null,
@@ -1718,274 +585,21 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <div
-              className="dropdownSection"
->
-              <TemperatureFilter
-                            changeTemperatureType={[Function]}
-                            temperatureType="FAHRENHEIT"
-              />
-</div>,
-            <div
-              className="colorInfoWrapper"
->
-              <div
-                            className="colorInfo"
-              >
-                            <span
-                                          className="status-circle blueBackground"
-                            />
-                            <small>
-                                          <strong>
-                                                        Too Low
-                                          </strong>
-                            </small>
-                            <span
-                                          className="status-circle redBackground"
-                            />
-                            <small>
-                                          <strong>
-                                                        Too High
-                                          </strong>
-                            </small>
-              </div>
-</div>,
-            <div
-              className="row beerlistSection"
->
-              <BeerComponent
-                            beerContentDetail={
-                                          Object {
-                                                        "beerType": "Aler Beer",
-                                                        "containerId": 1,
-                                                        "id": 1,
-                                                        "tempRange": Array [
-                                                          3,
-                                                          5,
-                                                        ],
-                                                      }
-                            }
-                            temperatureType="FAHRENHEIT"
-              />
-</div>,
-          ],
-          "className": "pageLayout",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <TemperatureFilter
-                changeTemperatureType={[Function]}
-                temperatureType="FAHRENHEIT"
-/>,
-              "className": "dropdownSection",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "changeTemperatureType": [Function],
-                "temperatureType": "FAHRENHEIT",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <div
-                className="colorInfo"
->
-                <span
-                                className="status-circle blueBackground"
-                />
-                <small>
-                                <strong>
-                                                Too Low
-                                </strong>
-                </small>
-                <span
-                                className="status-circle redBackground"
-                />
-                <small>
-                                <strong>
-                                                Too High
-                                </strong>
-                </small>
-</div>,
-              "className": "colorInfoWrapper",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <span
-                    className="status-circle blueBackground"
-/>,
-                  <small>
-                    <strong>
-                                        Too Low
-                    </strong>
-</small>,
-                  <span
-                    className="status-circle redBackground"
-/>,
-                  <small>
-                    <strong>
-                                        Too High
-                    </strong>
-</small>,
-                ],
-                "className": "colorInfo",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "status-circle blueBackground",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "span",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <strong>
-                      Too Low
-</strong>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Too Low",
-                    },
-                    "ref": null,
-                    "rendered": "Too Low",
-                    "type": "strong",
-                  },
-                  "type": "small",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "status-circle redBackground",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "span",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <strong>
-                      Too High
-</strong>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Too High",
-                    },
-                    "ref": null,
-                    "rendered": "Too High",
-                    "type": "strong",
-                  },
-                  "type": "small",
-                },
-              ],
-              "type": "div",
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <BeerComponent
-                  beerContentDetail={
-                                    Object {
-                                                      "beerType": "Aler Beer",
-                                                      "containerId": 1,
-                                                      "id": 1,
-                                                      "tempRange": Array [
-                                                        3,
-                                                        5,
-                                                      ],
-                                                    }
-                  }
-                  temperatureType="FAHRENHEIT"
-/>,
-              ],
-              "className": "row beerlistSection",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": "1",
-                "nodeType": "function",
-                "props": Object {
-                  "beerContentDetail": Object {
-                    "beerType": "Aler Beer",
-                    "containerId": 1,
-                    "id": 1,
-                    "tempRange": Array [
-                      3,
-                      5,
-                    ],
-                  },
-                  "temperatureType": "FAHRENHEIT",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
-          },
-        ],
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "beerList": Array [
+            Object {
+              "beerType": "Aler Beer",
+              "containerId": 1,
+              "id": 1,
+              "tempRange": Array [
+                3,
+                5,
+              ],
+            },
+          ],
+          "temperatureType": "FAHRENHEIT",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -2003,67 +617,38 @@ ShallowWrapper {
           <LoadingIndicator
             showLoader={true}
 />,
-          <Header
-            isMute={false}
-            toggleSound={[Function]}
+          <Legends
+            legendColorClass={
+                        Array [
+                                    "blueBackground",
+                                    "redBackground",
+                                  ]
+            }
+            legendsValue={
+                        Array [
+                                    "Too Low",
+                                    "Too High",
+                                  ]
+            }
 />,
-          <div
-            className="pageLayout"
->
-            <div
-                        className="dropdownSection"
-            >
-                        <TemperatureFilter
-                                    changeTemperatureType={[Function]}
-                                    temperatureType="FAHRENHEIT"
-                        />
-            </div>
-            <div
-                        className="colorInfoWrapper"
-            >
-                        <div
-                                    className="colorInfo"
-                        >
-                                    <span
-                                                className="status-circle blueBackground"
-                                    />
-                                    <small>
-                                                <strong>
-                                                            Too Low
-                                                </strong>
-                                    </small>
-                                    <span
-                                                className="status-circle redBackground"
-                                    />
-                                    <small>
-                                                <strong>
-                                                            Too High
-                                                </strong>
-                                    </small>
-                        </div>
-            </div>
-            <div
-                        className="row beerlistSection"
-            >
-                        <BeerComponent
-                                    beerContentDetail={
-                                                Object {
-                                                            "beerType": "Aler Beer",
-                                                            "containerId": 1,
-                                                            "id": 1,
-                                                            "tempRange": Array [
-                                                              3,
-                                                              5,
-                                                            ],
-                                                          }
-                                    }
-                                    temperatureType="FAHRENHEIT"
-                        />
-            </div>
-</div>,
-          <Footer />,
+          <BeerList
+            beerList={
+                        Array [
+                                    Object {
+                                      "beerType": "Aler Beer",
+                                      "containerId": 1,
+                                      "id": 1,
+                                      "tempRange": Array [
+                                        3,
+                                        5,
+                                      ],
+                                    },
+                                  ]
+            }
+            temperatureType="FAHRENHEIT"
+/>,
         ],
-        "className": "wrapper",
+        "className": "pageLayout",
       },
       "ref": null,
       "rendered": Array [
@@ -2083,8 +668,14 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "isMute": false,
-            "toggleSound": [Function],
+            "legendColorClass": Array [
+              "blueBackground",
+              "redBackground",
+            ],
+            "legendsValue": Array [
+              "Too Low",
+              "Too High",
+            ],
           },
           "ref": null,
           "rendered": null,
@@ -2093,274 +684,21 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <div
-                className="dropdownSection"
->
-                <TemperatureFilter
-                                changeTemperatureType={[Function]}
-                                temperatureType="FAHRENHEIT"
-                />
-</div>,
-              <div
-                className="colorInfoWrapper"
->
-                <div
-                                className="colorInfo"
-                >
-                                <span
-                                                className="status-circle blueBackground"
-                                />
-                                <small>
-                                                <strong>
-                                                                Too Low
-                                                </strong>
-                                </small>
-                                <span
-                                                className="status-circle redBackground"
-                                />
-                                <small>
-                                                <strong>
-                                                                Too High
-                                                </strong>
-                                </small>
-                </div>
-</div>,
-              <div
-                className="row beerlistSection"
->
-                <BeerComponent
-                                beerContentDetail={
-                                                Object {
-                                                                "beerType": "Aler Beer",
-                                                                "containerId": 1,
-                                                                "id": 1,
-                                                                "tempRange": Array [
-                                                                  3,
-                                                                  5,
-                                                                ],
-                                                              }
-                                }
-                                temperatureType="FAHRENHEIT"
-                />
-</div>,
-            ],
-            "className": "pageLayout",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <TemperatureFilter
-                  changeTemperatureType={[Function]}
-                  temperatureType="FAHRENHEIT"
-/>,
-                "className": "dropdownSection",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "changeTemperatureType": [Function],
-                  "temperatureType": "FAHRENHEIT",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <div
-                  className="colorInfo"
->
-                  <span
-                                    className="status-circle blueBackground"
-                  />
-                  <small>
-                                    <strong>
-                                                      Too Low
-                                    </strong>
-                  </small>
-                  <span
-                                    className="status-circle redBackground"
-                  />
-                  <small>
-                                    <strong>
-                                                      Too High
-                                    </strong>
-                  </small>
-</div>,
-                "className": "colorInfoWrapper",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <span
-                      className="status-circle blueBackground"
-/>,
-                    <small>
-                      <strong>
-                                            Too Low
-                      </strong>
-</small>,
-                    <span
-                      className="status-circle redBackground"
-/>,
-                    <small>
-                      <strong>
-                                            Too High
-                      </strong>
-</small>,
-                  ],
-                  "className": "colorInfo",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "status-circle blueBackground",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "span",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <strong>
-                        Too Low
-</strong>,
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Too Low",
-                      },
-                      "ref": null,
-                      "rendered": "Too Low",
-                      "type": "strong",
-                    },
-                    "type": "small",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "status-circle redBackground",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "span",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <strong>
-                        Too High
-</strong>,
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Too High",
-                      },
-                      "ref": null,
-                      "rendered": "Too High",
-                      "type": "strong",
-                    },
-                    "type": "small",
-                  },
-                ],
-                "type": "div",
-              },
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <BeerComponent
-                    beerContentDetail={
-                                        Object {
-                                                            "beerType": "Aler Beer",
-                                                            "containerId": 1,
-                                                            "id": 1,
-                                                            "tempRange": Array [
-                                                              3,
-                                                              5,
-                                                            ],
-                                                          }
-                    }
-                    temperatureType="FAHRENHEIT"
-/>,
-                ],
-                "className": "row beerlistSection",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": "1",
-                  "nodeType": "function",
-                  "props": Object {
-                    "beerContentDetail": Object {
-                      "beerType": "Aler Beer",
-                      "containerId": 1,
-                      "id": 1,
-                      "tempRange": Array [
-                        3,
-                        5,
-                      ],
-                    },
-                    "temperatureType": "FAHRENHEIT",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
-              "type": "div",
-            },
-          ],
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "beerList": Array [
+              Object {
+                "beerType": "Aler Beer",
+                "containerId": 1,
+                "id": 1,
+                "tempRange": Array [
+                  3,
+                  5,
+                ],
+              },
+            ],
+            "temperatureType": "FAHRENHEIT",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -2400,9 +738,7 @@ ShallowWrapper {
     fetchBeerList={[Function]}
     isAnyBeerOutOfTempRange={false}
     isMute={false}
-    setTemperatureType={[Function]}
     temperatureType="FAHRENHEIT"
-    toggleSound={[Function]}
     updateTemperature={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -2421,67 +757,38 @@ ShallowWrapper {
         <LoadingIndicator
           showLoader={true}
 />,
-        <Header
-          isMute={false}
-          toggleSound={[Function]}
+        <Legends
+          legendColorClass={
+                    Array [
+                              "blueBackground",
+                              "redBackground",
+                            ]
+          }
+          legendsValue={
+                    Array [
+                              "Too Low",
+                              "Too High",
+                            ]
+          }
 />,
-        <div
-          className="pageLayout"
->
-          <div
-                    className="dropdownSection"
-          >
-                    <TemperatureFilter
-                              changeTemperatureType={[Function]}
-                              temperatureType="FAHRENHEIT"
-                    />
-          </div>
-          <div
-                    className="colorInfoWrapper"
-          >
-                    <div
-                              className="colorInfo"
-                    >
-                              <span
-                                        className="status-circle blueBackground"
-                              />
-                              <small>
-                                        <strong>
-                                                  Too Low
-                                        </strong>
-                              </small>
-                              <span
-                                        className="status-circle redBackground"
-                              />
-                              <small>
-                                        <strong>
-                                                  Too High
-                                        </strong>
-                              </small>
-                    </div>
-          </div>
-          <div
-                    className="row beerlistSection"
-          >
-                    <BeerComponent
-                              beerContentDetail={
-                                        Object {
-                                                  "beerType": "Aler Beer",
-                                                  "containerId": 1,
-                                                  "id": 1,
-                                                  "tempRange": Array [
-                                                    3,
-                                                    5,
-                                                  ],
-                                                }
-                              }
-                              temperatureType="FAHRENHEIT"
-                    />
-          </div>
-</div>,
-        <Footer />,
+        <BeerList
+          beerList={
+                    Array [
+                              Object {
+                                "beerType": "Aler Beer",
+                                "containerId": 1,
+                                "id": 1,
+                                "tempRange": Array [
+                                  3,
+                                  5,
+                                ],
+                              },
+                            ]
+          }
+          temperatureType="FAHRENHEIT"
+/>,
       ],
-      "className": "wrapper",
+      "className": "pageLayout",
     },
     "ref": null,
     "rendered": Array [
@@ -2501,8 +808,14 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "isMute": false,
-          "toggleSound": [Function],
+          "legendColorClass": Array [
+            "blueBackground",
+            "redBackground",
+          ],
+          "legendsValue": Array [
+            "Too Low",
+            "Too High",
+          ],
         },
         "ref": null,
         "rendered": null,
@@ -2511,274 +824,21 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <div
-              className="dropdownSection"
->
-              <TemperatureFilter
-                            changeTemperatureType={[Function]}
-                            temperatureType="FAHRENHEIT"
-              />
-</div>,
-            <div
-              className="colorInfoWrapper"
->
-              <div
-                            className="colorInfo"
-              >
-                            <span
-                                          className="status-circle blueBackground"
-                            />
-                            <small>
-                                          <strong>
-                                                        Too Low
-                                          </strong>
-                            </small>
-                            <span
-                                          className="status-circle redBackground"
-                            />
-                            <small>
-                                          <strong>
-                                                        Too High
-                                          </strong>
-                            </small>
-              </div>
-</div>,
-            <div
-              className="row beerlistSection"
->
-              <BeerComponent
-                            beerContentDetail={
-                                          Object {
-                                                        "beerType": "Aler Beer",
-                                                        "containerId": 1,
-                                                        "id": 1,
-                                                        "tempRange": Array [
-                                                          3,
-                                                          5,
-                                                        ],
-                                                      }
-                            }
-                            temperatureType="FAHRENHEIT"
-              />
-</div>,
-          ],
-          "className": "pageLayout",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <TemperatureFilter
-                changeTemperatureType={[Function]}
-                temperatureType="FAHRENHEIT"
-/>,
-              "className": "dropdownSection",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "changeTemperatureType": [Function],
-                "temperatureType": "FAHRENHEIT",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <div
-                className="colorInfo"
->
-                <span
-                                className="status-circle blueBackground"
-                />
-                <small>
-                                <strong>
-                                                Too Low
-                                </strong>
-                </small>
-                <span
-                                className="status-circle redBackground"
-                />
-                <small>
-                                <strong>
-                                                Too High
-                                </strong>
-                </small>
-</div>,
-              "className": "colorInfoWrapper",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <span
-                    className="status-circle blueBackground"
-/>,
-                  <small>
-                    <strong>
-                                        Too Low
-                    </strong>
-</small>,
-                  <span
-                    className="status-circle redBackground"
-/>,
-                  <small>
-                    <strong>
-                                        Too High
-                    </strong>
-</small>,
-                ],
-                "className": "colorInfo",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "status-circle blueBackground",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "span",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <strong>
-                      Too Low
-</strong>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Too Low",
-                    },
-                    "ref": null,
-                    "rendered": "Too Low",
-                    "type": "strong",
-                  },
-                  "type": "small",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "status-circle redBackground",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "span",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <strong>
-                      Too High
-</strong>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Too High",
-                    },
-                    "ref": null,
-                    "rendered": "Too High",
-                    "type": "strong",
-                  },
-                  "type": "small",
-                },
-              ],
-              "type": "div",
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <BeerComponent
-                  beerContentDetail={
-                                    Object {
-                                                      "beerType": "Aler Beer",
-                                                      "containerId": 1,
-                                                      "id": 1,
-                                                      "tempRange": Array [
-                                                        3,
-                                                        5,
-                                                      ],
-                                                    }
-                  }
-                  temperatureType="FAHRENHEIT"
-/>,
-              ],
-              "className": "row beerlistSection",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": "1",
-                "nodeType": "function",
-                "props": Object {
-                  "beerContentDetail": Object {
-                    "beerType": "Aler Beer",
-                    "containerId": 1,
-                    "id": 1,
-                    "tempRange": Array [
-                      3,
-                      5,
-                    ],
-                  },
-                  "temperatureType": "FAHRENHEIT",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
-          },
-        ],
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "beerList": Array [
+            Object {
+              "beerType": "Aler Beer",
+              "containerId": 1,
+              "id": 1,
+              "tempRange": Array [
+                3,
+                5,
+              ],
+            },
+          ],
+          "temperatureType": "FAHRENHEIT",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -2796,67 +856,38 @@ ShallowWrapper {
           <LoadingIndicator
             showLoader={true}
 />,
-          <Header
-            isMute={false}
-            toggleSound={[Function]}
+          <Legends
+            legendColorClass={
+                        Array [
+                                    "blueBackground",
+                                    "redBackground",
+                                  ]
+            }
+            legendsValue={
+                        Array [
+                                    "Too Low",
+                                    "Too High",
+                                  ]
+            }
 />,
-          <div
-            className="pageLayout"
->
-            <div
-                        className="dropdownSection"
-            >
-                        <TemperatureFilter
-                                    changeTemperatureType={[Function]}
-                                    temperatureType="FAHRENHEIT"
-                        />
-            </div>
-            <div
-                        className="colorInfoWrapper"
-            >
-                        <div
-                                    className="colorInfo"
-                        >
-                                    <span
-                                                className="status-circle blueBackground"
-                                    />
-                                    <small>
-                                                <strong>
-                                                            Too Low
-                                                </strong>
-                                    </small>
-                                    <span
-                                                className="status-circle redBackground"
-                                    />
-                                    <small>
-                                                <strong>
-                                                            Too High
-                                                </strong>
-                                    </small>
-                        </div>
-            </div>
-            <div
-                        className="row beerlistSection"
-            >
-                        <BeerComponent
-                                    beerContentDetail={
-                                                Object {
-                                                            "beerType": "Aler Beer",
-                                                            "containerId": 1,
-                                                            "id": 1,
-                                                            "tempRange": Array [
-                                                              3,
-                                                              5,
-                                                            ],
-                                                          }
-                                    }
-                                    temperatureType="FAHRENHEIT"
-                        />
-            </div>
-</div>,
-          <Footer />,
+          <BeerList
+            beerList={
+                        Array [
+                                    Object {
+                                      "beerType": "Aler Beer",
+                                      "containerId": 1,
+                                      "id": 1,
+                                      "tempRange": Array [
+                                        3,
+                                        5,
+                                      ],
+                                    },
+                                  ]
+            }
+            temperatureType="FAHRENHEIT"
+/>,
         ],
-        "className": "wrapper",
+        "className": "pageLayout",
       },
       "ref": null,
       "rendered": Array [
@@ -2876,8 +907,14 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "isMute": false,
-            "toggleSound": [Function],
+            "legendColorClass": Array [
+              "blueBackground",
+              "redBackground",
+            ],
+            "legendsValue": Array [
+              "Too Low",
+              "Too High",
+            ],
           },
           "ref": null,
           "rendered": null,
@@ -2886,274 +923,21 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <div
-                className="dropdownSection"
->
-                <TemperatureFilter
-                                changeTemperatureType={[Function]}
-                                temperatureType="FAHRENHEIT"
-                />
-</div>,
-              <div
-                className="colorInfoWrapper"
->
-                <div
-                                className="colorInfo"
-                >
-                                <span
-                                                className="status-circle blueBackground"
-                                />
-                                <small>
-                                                <strong>
-                                                                Too Low
-                                                </strong>
-                                </small>
-                                <span
-                                                className="status-circle redBackground"
-                                />
-                                <small>
-                                                <strong>
-                                                                Too High
-                                                </strong>
-                                </small>
-                </div>
-</div>,
-              <div
-                className="row beerlistSection"
->
-                <BeerComponent
-                                beerContentDetail={
-                                                Object {
-                                                                "beerType": "Aler Beer",
-                                                                "containerId": 1,
-                                                                "id": 1,
-                                                                "tempRange": Array [
-                                                                  3,
-                                                                  5,
-                                                                ],
-                                                              }
-                                }
-                                temperatureType="FAHRENHEIT"
-                />
-</div>,
-            ],
-            "className": "pageLayout",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <TemperatureFilter
-                  changeTemperatureType={[Function]}
-                  temperatureType="FAHRENHEIT"
-/>,
-                "className": "dropdownSection",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "changeTemperatureType": [Function],
-                  "temperatureType": "FAHRENHEIT",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <div
-                  className="colorInfo"
->
-                  <span
-                                    className="status-circle blueBackground"
-                  />
-                  <small>
-                                    <strong>
-                                                      Too Low
-                                    </strong>
-                  </small>
-                  <span
-                                    className="status-circle redBackground"
-                  />
-                  <small>
-                                    <strong>
-                                                      Too High
-                                    </strong>
-                  </small>
-</div>,
-                "className": "colorInfoWrapper",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <span
-                      className="status-circle blueBackground"
-/>,
-                    <small>
-                      <strong>
-                                            Too Low
-                      </strong>
-</small>,
-                    <span
-                      className="status-circle redBackground"
-/>,
-                    <small>
-                      <strong>
-                                            Too High
-                      </strong>
-</small>,
-                  ],
-                  "className": "colorInfo",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "status-circle blueBackground",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "span",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <strong>
-                        Too Low
-</strong>,
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Too Low",
-                      },
-                      "ref": null,
-                      "rendered": "Too Low",
-                      "type": "strong",
-                    },
-                    "type": "small",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "status-circle redBackground",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "span",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <strong>
-                        Too High
-</strong>,
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Too High",
-                      },
-                      "ref": null,
-                      "rendered": "Too High",
-                      "type": "strong",
-                    },
-                    "type": "small",
-                  },
-                ],
-                "type": "div",
-              },
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <BeerComponent
-                    beerContentDetail={
-                                        Object {
-                                                            "beerType": "Aler Beer",
-                                                            "containerId": 1,
-                                                            "id": 1,
-                                                            "tempRange": Array [
-                                                              3,
-                                                              5,
-                                                            ],
-                                                          }
-                    }
-                    temperatureType="FAHRENHEIT"
-/>,
-                ],
-                "className": "row beerlistSection",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": "1",
-                  "nodeType": "function",
-                  "props": Object {
-                    "beerContentDetail": Object {
-                      "beerType": "Aler Beer",
-                      "containerId": 1,
-                      "id": 1,
-                      "tempRange": Array [
-                        3,
-                        5,
-                      ],
-                    },
-                    "temperatureType": "FAHRENHEIT",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
-              "type": "div",
-            },
-          ],
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "beerList": Array [
+              Object {
+                "beerType": "Aler Beer",
+                "containerId": 1,
+                "id": 1,
+                "tempRange": Array [
+                  3,
+                  5,
+                ],
+              },
+            ],
+            "temperatureType": "FAHRENHEIT",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -3193,9 +977,7 @@ ShallowWrapper {
     fetchBeerList={[Function]}
     isAnyBeerOutOfTempRange={false}
     isMute={false}
-    setTemperatureType={[Function]}
     temperatureType="FAHRENHEIT"
-    toggleSound={[Function]}
     updateTemperature={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -3214,67 +996,38 @@ ShallowWrapper {
         <LoadingIndicator
           showLoader={true}
 />,
-        <Header
-          isMute={false}
-          toggleSound={[Function]}
+        <Legends
+          legendColorClass={
+                    Array [
+                              "blueBackground",
+                              "redBackground",
+                            ]
+          }
+          legendsValue={
+                    Array [
+                              "Too Low",
+                              "Too High",
+                            ]
+          }
 />,
-        <div
-          className="pageLayout"
->
-          <div
-                    className="dropdownSection"
-          >
-                    <TemperatureFilter
-                              changeTemperatureType={[Function]}
-                              temperatureType="FAHRENHEIT"
-                    />
-          </div>
-          <div
-                    className="colorInfoWrapper"
-          >
-                    <div
-                              className="colorInfo"
-                    >
-                              <span
-                                        className="status-circle blueBackground"
-                              />
-                              <small>
-                                        <strong>
-                                                  Too Low
-                                        </strong>
-                              </small>
-                              <span
-                                        className="status-circle redBackground"
-                              />
-                              <small>
-                                        <strong>
-                                                  Too High
-                                        </strong>
-                              </small>
-                    </div>
-          </div>
-          <div
-                    className="row beerlistSection"
-          >
-                    <BeerComponent
-                              beerContentDetail={
-                                        Object {
-                                                  "beerType": "Aler Beer",
-                                                  "containerId": 1,
-                                                  "id": 1,
-                                                  "tempRange": Array [
-                                                    3,
-                                                    5,
-                                                  ],
-                                                }
-                              }
-                              temperatureType="FAHRENHEIT"
-                    />
-          </div>
-</div>,
-        <Footer />,
+        <BeerList
+          beerList={
+                    Array [
+                              Object {
+                                "beerType": "Aler Beer",
+                                "containerId": 1,
+                                "id": 1,
+                                "tempRange": Array [
+                                  3,
+                                  5,
+                                ],
+                              },
+                            ]
+          }
+          temperatureType="FAHRENHEIT"
+/>,
       ],
-      "className": "wrapper",
+      "className": "pageLayout",
     },
     "ref": null,
     "rendered": Array [
@@ -3294,8 +1047,14 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "isMute": false,
-          "toggleSound": [Function],
+          "legendColorClass": Array [
+            "blueBackground",
+            "redBackground",
+          ],
+          "legendsValue": Array [
+            "Too Low",
+            "Too High",
+          ],
         },
         "ref": null,
         "rendered": null,
@@ -3304,274 +1063,21 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <div
-              className="dropdownSection"
->
-              <TemperatureFilter
-                            changeTemperatureType={[Function]}
-                            temperatureType="FAHRENHEIT"
-              />
-</div>,
-            <div
-              className="colorInfoWrapper"
->
-              <div
-                            className="colorInfo"
-              >
-                            <span
-                                          className="status-circle blueBackground"
-                            />
-                            <small>
-                                          <strong>
-                                                        Too Low
-                                          </strong>
-                            </small>
-                            <span
-                                          className="status-circle redBackground"
-                            />
-                            <small>
-                                          <strong>
-                                                        Too High
-                                          </strong>
-                            </small>
-              </div>
-</div>,
-            <div
-              className="row beerlistSection"
->
-              <BeerComponent
-                            beerContentDetail={
-                                          Object {
-                                                        "beerType": "Aler Beer",
-                                                        "containerId": 1,
-                                                        "id": 1,
-                                                        "tempRange": Array [
-                                                          3,
-                                                          5,
-                                                        ],
-                                                      }
-                            }
-                            temperatureType="FAHRENHEIT"
-              />
-</div>,
-          ],
-          "className": "pageLayout",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <TemperatureFilter
-                changeTemperatureType={[Function]}
-                temperatureType="FAHRENHEIT"
-/>,
-              "className": "dropdownSection",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "changeTemperatureType": [Function],
-                "temperatureType": "FAHRENHEIT",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <div
-                className="colorInfo"
->
-                <span
-                                className="status-circle blueBackground"
-                />
-                <small>
-                                <strong>
-                                                Too Low
-                                </strong>
-                </small>
-                <span
-                                className="status-circle redBackground"
-                />
-                <small>
-                                <strong>
-                                                Too High
-                                </strong>
-                </small>
-</div>,
-              "className": "colorInfoWrapper",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <span
-                    className="status-circle blueBackground"
-/>,
-                  <small>
-                    <strong>
-                                        Too Low
-                    </strong>
-</small>,
-                  <span
-                    className="status-circle redBackground"
-/>,
-                  <small>
-                    <strong>
-                                        Too High
-                    </strong>
-</small>,
-                ],
-                "className": "colorInfo",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "status-circle blueBackground",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "span",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <strong>
-                      Too Low
-</strong>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Too Low",
-                    },
-                    "ref": null,
-                    "rendered": "Too Low",
-                    "type": "strong",
-                  },
-                  "type": "small",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "status-circle redBackground",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "span",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <strong>
-                      Too High
-</strong>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Too High",
-                    },
-                    "ref": null,
-                    "rendered": "Too High",
-                    "type": "strong",
-                  },
-                  "type": "small",
-                },
-              ],
-              "type": "div",
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <BeerComponent
-                  beerContentDetail={
-                                    Object {
-                                                      "beerType": "Aler Beer",
-                                                      "containerId": 1,
-                                                      "id": 1,
-                                                      "tempRange": Array [
-                                                        3,
-                                                        5,
-                                                      ],
-                                                    }
-                  }
-                  temperatureType="FAHRENHEIT"
-/>,
-              ],
-              "className": "row beerlistSection",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": "1",
-                "nodeType": "function",
-                "props": Object {
-                  "beerContentDetail": Object {
-                    "beerType": "Aler Beer",
-                    "containerId": 1,
-                    "id": 1,
-                    "tempRange": Array [
-                      3,
-                      5,
-                    ],
-                  },
-                  "temperatureType": "FAHRENHEIT",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
-          },
-        ],
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "beerList": Array [
+            Object {
+              "beerType": "Aler Beer",
+              "containerId": 1,
+              "id": 1,
+              "tempRange": Array [
+                3,
+                5,
+              ],
+            },
+          ],
+          "temperatureType": "FAHRENHEIT",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -3589,67 +1095,38 @@ ShallowWrapper {
           <LoadingIndicator
             showLoader={true}
 />,
-          <Header
-            isMute={false}
-            toggleSound={[Function]}
+          <Legends
+            legendColorClass={
+                        Array [
+                                    "blueBackground",
+                                    "redBackground",
+                                  ]
+            }
+            legendsValue={
+                        Array [
+                                    "Too Low",
+                                    "Too High",
+                                  ]
+            }
 />,
-          <div
-            className="pageLayout"
->
-            <div
-                        className="dropdownSection"
-            >
-                        <TemperatureFilter
-                                    changeTemperatureType={[Function]}
-                                    temperatureType="FAHRENHEIT"
-                        />
-            </div>
-            <div
-                        className="colorInfoWrapper"
-            >
-                        <div
-                                    className="colorInfo"
-                        >
-                                    <span
-                                                className="status-circle blueBackground"
-                                    />
-                                    <small>
-                                                <strong>
-                                                            Too Low
-                                                </strong>
-                                    </small>
-                                    <span
-                                                className="status-circle redBackground"
-                                    />
-                                    <small>
-                                                <strong>
-                                                            Too High
-                                                </strong>
-                                    </small>
-                        </div>
-            </div>
-            <div
-                        className="row beerlistSection"
-            >
-                        <BeerComponent
-                                    beerContentDetail={
-                                                Object {
-                                                            "beerType": "Aler Beer",
-                                                            "containerId": 1,
-                                                            "id": 1,
-                                                            "tempRange": Array [
-                                                              3,
-                                                              5,
-                                                            ],
-                                                          }
-                                    }
-                                    temperatureType="FAHRENHEIT"
-                        />
-            </div>
-</div>,
-          <Footer />,
+          <BeerList
+            beerList={
+                        Array [
+                                    Object {
+                                      "beerType": "Aler Beer",
+                                      "containerId": 1,
+                                      "id": 1,
+                                      "tempRange": Array [
+                                        3,
+                                        5,
+                                      ],
+                                    },
+                                  ]
+            }
+            temperatureType="FAHRENHEIT"
+/>,
         ],
-        "className": "wrapper",
+        "className": "pageLayout",
       },
       "ref": null,
       "rendered": Array [
@@ -3669,8 +1146,14 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "isMute": false,
-            "toggleSound": [Function],
+            "legendColorClass": Array [
+              "blueBackground",
+              "redBackground",
+            ],
+            "legendsValue": Array [
+              "Too Low",
+              "Too High",
+            ],
           },
           "ref": null,
           "rendered": null,
@@ -3679,274 +1162,21 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <div
-                className="dropdownSection"
->
-                <TemperatureFilter
-                                changeTemperatureType={[Function]}
-                                temperatureType="FAHRENHEIT"
-                />
-</div>,
-              <div
-                className="colorInfoWrapper"
->
-                <div
-                                className="colorInfo"
-                >
-                                <span
-                                                className="status-circle blueBackground"
-                                />
-                                <small>
-                                                <strong>
-                                                                Too Low
-                                                </strong>
-                                </small>
-                                <span
-                                                className="status-circle redBackground"
-                                />
-                                <small>
-                                                <strong>
-                                                                Too High
-                                                </strong>
-                                </small>
-                </div>
-</div>,
-              <div
-                className="row beerlistSection"
->
-                <BeerComponent
-                                beerContentDetail={
-                                                Object {
-                                                                "beerType": "Aler Beer",
-                                                                "containerId": 1,
-                                                                "id": 1,
-                                                                "tempRange": Array [
-                                                                  3,
-                                                                  5,
-                                                                ],
-                                                              }
-                                }
-                                temperatureType="FAHRENHEIT"
-                />
-</div>,
-            ],
-            "className": "pageLayout",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <TemperatureFilter
-                  changeTemperatureType={[Function]}
-                  temperatureType="FAHRENHEIT"
-/>,
-                "className": "dropdownSection",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "changeTemperatureType": [Function],
-                  "temperatureType": "FAHRENHEIT",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <div
-                  className="colorInfo"
->
-                  <span
-                                    className="status-circle blueBackground"
-                  />
-                  <small>
-                                    <strong>
-                                                      Too Low
-                                    </strong>
-                  </small>
-                  <span
-                                    className="status-circle redBackground"
-                  />
-                  <small>
-                                    <strong>
-                                                      Too High
-                                    </strong>
-                  </small>
-</div>,
-                "className": "colorInfoWrapper",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <span
-                      className="status-circle blueBackground"
-/>,
-                    <small>
-                      <strong>
-                                            Too Low
-                      </strong>
-</small>,
-                    <span
-                      className="status-circle redBackground"
-/>,
-                    <small>
-                      <strong>
-                                            Too High
-                      </strong>
-</small>,
-                  ],
-                  "className": "colorInfo",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "status-circle blueBackground",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "span",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <strong>
-                        Too Low
-</strong>,
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Too Low",
-                      },
-                      "ref": null,
-                      "rendered": "Too Low",
-                      "type": "strong",
-                    },
-                    "type": "small",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "className": "status-circle redBackground",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "span",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <strong>
-                        Too High
-</strong>,
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Too High",
-                      },
-                      "ref": null,
-                      "rendered": "Too High",
-                      "type": "strong",
-                    },
-                    "type": "small",
-                  },
-                ],
-                "type": "div",
-              },
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <BeerComponent
-                    beerContentDetail={
-                                        Object {
-                                                            "beerType": "Aler Beer",
-                                                            "containerId": 1,
-                                                            "id": 1,
-                                                            "tempRange": Array [
-                                                              3,
-                                                              5,
-                                                            ],
-                                                          }
-                    }
-                    temperatureType="FAHRENHEIT"
-/>,
-                ],
-                "className": "row beerlistSection",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": "1",
-                  "nodeType": "function",
-                  "props": Object {
-                    "beerContentDetail": Object {
-                      "beerType": "Aler Beer",
-                      "containerId": 1,
-                      "id": 1,
-                      "tempRange": Array [
-                        3,
-                        5,
-                      ],
-                    },
-                    "temperatureType": "FAHRENHEIT",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
-              "type": "div",
-            },
-          ],
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "beerList": Array [
+              Object {
+                "beerType": "Aler Beer",
+                "containerId": 1,
+                "id": 1,
+                "tempRange": Array [
+                  3,
+                  5,
+                ],
+              },
+            ],
+            "temperatureType": "FAHRENHEIT",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
