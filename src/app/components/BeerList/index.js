@@ -17,5 +17,6 @@ const BeerList = ({ beerList, temperatureType }) => {
 
 BeerList.propTypes = {
     beerList: PropTypes.array.isRequired,
+    temperatureType: PropTypes.string.isRequired,
 };
 export default BeerList;
