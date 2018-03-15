@@ -3,6 +3,9 @@ import { fetchBeerList } from '../async.action';
 import { shallow } from 'enzyme';
 import { updateBeerTemperature } from '../action';
 import {DashboardContainer, mapStateToProps, mapDispatchToProps} from '../index';
+import LoadingIndicator from '../../Common/LoadingIndicator';
+import BeerList from '../../BeerList';
+import Legends from '../../Common/Legends';
 
 
 jest.mock('../async.action');
@@ -155,6 +158,39 @@ describe('Dashboard component should render correctly', () => {
         [play].forEach((spy) => {
             spy.mockReset();
             spy.mockRestore();
+        });
+    });
+
+    describe("rendered `LoadingIndicator Component`", () => {
+        it("always renders a `LoadingIndicator Component`", () => {
+            expect(dashboardContainer.find(LoadingIndicator).length).toBe(1);
+        });
+
+        it("LoadingIndicator receive 1 props", () => {
+            const loader = dashboardContainer.find(LoadingIndicator);
+            expect(Object.keys(loader.props()).length).toBe(1);
+        });
+    });
+
+    describe("rendered `BeerList Component`", () => {
+        it("always renders a `BeerList Component`", () => {
+            expect(dashboardContainer.find(BeerList).length).toBe(1);
+        });
+
+        it("BeerList receive 2 props", () => {
+            const beerlist = dashboardContainer.find(BeerList);
+            expect(Object.keys(beerlist.props()).length).toBe(2);
+        });
+    });
+
+    describe("rendered `Legends Component`", () => {
+        it("always renders a `Legends Component`", () => {
+            expect(dashboardContainer.find(Legends).length).toBe(1);
+        });
+
+        it("Legends receive 2 props", () => {
+            const legend = dashboardContainer.find(Legends);
+            expect(Object.keys(legend.props()).length).toBe(2);
         });
     });
 

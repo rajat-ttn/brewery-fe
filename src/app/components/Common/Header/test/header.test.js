@@ -4,6 +4,7 @@ import { shallow } from 'enzyme';
 
 import { setTemperatureType, toggleSound } from '../../../Common/RunTimeConfig/action';
 import {HeaderContainer, mapStateToProps, mapDispatchToProps} from '../index';
+import TemperatureFilter from '../temperatureFilter';
 
 jest.mock('../../../Common/RunTimeConfig/action');
 
@@ -28,6 +29,17 @@ describe('Header Component Should render correctly', () => {
 
     it('render the Header component', () => {
         expect(header.length).toEqual(1)
+    });
+
+    describe("rendered `TemperatureFilter`", () => {
+        it("always renders a `TemperatureFilter`", () => {
+            expect(header.find(TemperatureFilter).length).toBe(1);
+        });
+
+        it("TemperatureFilter receive 2 props", () => {
+            const tempFilter = header.find(TemperatureFilter);
+            expect(Object.keys(tempFilter.props()).length).toBe(2);
+        });
     });
     
     it('renders correctly', () => {
