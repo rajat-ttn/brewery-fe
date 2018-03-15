@@ -2,18 +2,15 @@ import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
 
-import '../../../css/bootstrap.css';
 import { fetchBeerList } from './async.action';
-import { setTemperatureType, toggleSound } from '../Common/RunTimeConfig/action';
-import Header from '../Common/Header'
-import Footer from '../Common/Footer'
-import BeerComponent from '../BeerComponent';
-import TemperatureFilter from './temperatureFilter';
+import BeerList from '../BeerList';
+import Legends from '../Common/Legends';
 import LoadingIndicator from '../Common/LoadingIndicator';
 import subscribeToUpdateTemperature from '../../socket';
 import { updateBeerTemperature } from './action';
 import NotificationService from '../../service/notificationService';
 import { isSafari } from "../../../util/helper";
+import { TEMP_LEGEND } from '../../../constants/textConstants'
 
 class Dashboard extends Component {
     constructor(props){
@@ -81,44 +78,15 @@ class Dashboard extends Component {
         }
     };
 
-    // function to update temperature type in redux state
-    changeTemperatureType = selectedData => {
-        const { value } = selectedData
-        const { setTemperatureType } = this.props;
-        if (value) {
-            setTemperatureType(value)
-        }
-    };
     
     render() {
-        const { beerList, temperatureType, isMute } = this.props;
+        const { beerList, temperatureType } = this.props;
         const { showLoader } = this.state;
         return (
-            <div className="wrapper">
+            <div className="pageLayout">
                 <LoadingIndicator showLoader={showLoader}/>
-                <Header toggleSound={() => { this.props.toggleSound(!isMute); }} isMute={isMute} />
-                <div className="pageLayout">
-                    <div className="dropdownSection">
-                        <TemperatureFilter temperatureType={temperatureType} changeTemperatureType={this.changeTemperatureType}/>
-                    </div>
-                    <div className="colorInfoWrapper">
-                        <div className="colorInfo">
-                            <span className="status-circle blueBackground" />
-                            <small><strong>Too Low</strong></small>
-                            <span className="status-circle redBackground" />
-                            <small><strong>Too High</strong></small>
-                        </div>
-                    </div>
-                    <div className="row beerlistSection">
-                        {
-                            beerList && beerList.length ?
-                                beerList.map((beer, index) => (
-                                    <BeerComponent beerContentDetail={beer} key={beer.id} temperatureType={temperatureType} />
-                                )) : <div className="msgStyle"><p>No Container Found</p></div>
-                        }
-                    </div>
-                </div>
-                <Footer />
+                <Legends legendsValue={TEMP_LEGEND} legendColorClass={['blueBackground','redBackground']}/>
+                <BeerList beerList={beerList} temperatureType={temperatureType} />
             </div>
         );
     }
@@ -130,7 +98,6 @@ Dashboard.defaultProps = {
 
 Dashboard.propTypes = {
     fetchBeerList: PropTypes.func.isRequired,
-    setTemperatureType: PropTypes.func.isRequired,
     config: PropTypes.object,
 };
 
@@ -151,8 +118,6 @@ export const mapStateToProps = state => {
 
 export const mapDispatchToProps = dispatch => ({
     fetchBeerList: () => dispatch(fetchBeerList()),
-    setTemperatureType: value => dispatch(setTemperatureType(value)),
-    toggleSound: isMute => dispatch(toggleSound(isMute)),
     updateTemperature: data => dispatch(updateBeerTemperature(data)),
 });
 

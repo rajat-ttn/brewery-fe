@@ -10,3 +10,7 @@ export const TEMPERATURE_TYPE = [
 export const TEMP_EVENT = {
     CONTAINER_TEMPERATURE_CHANGE: 'CONTAINER_TEMPERATURE_CHANGE',
 };
+export const TEMP_LEGEND = [
+    'Too Low',
+    'Too High'
+]
